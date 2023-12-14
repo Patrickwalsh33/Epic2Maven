@@ -43,7 +43,6 @@ class TextHandlerTest {
     }
     @Test
     void testReadTaxiData() throws IOException {
-        // Create a temporary file for testing
         Path tempFile = Files.createTempFile("testTaxis", ".csv");
         Files.write(tempFile, "08-MH-3038,Jhon Doe,4,Toyota,medium,1\n11-D-1234,Jane Smith,3,Ford,small,4".getBytes(), StandardOpenOption.WRITE);
         TextHandler textHandler = new TextHandler();
