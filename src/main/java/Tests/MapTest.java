@@ -16,6 +16,7 @@ public class MapTest {
     }
     @Test
     public void testPrintMap() {
+        //we used try methods at first to catch the exeption but found lambdas were better
         assertDoesNotThrow(() -> testMap.printMap());
     }
     @Test

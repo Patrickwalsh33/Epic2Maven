@@ -5,7 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9e87768c-0d7a-4f13-8d97-1e4f7eae840e" name="Changes" comment="LocationTest implemented">
-      <change afterPath="$PROJECT_DIR$/src/main/java/Tests/MapTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Tests/LoginTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Tests/TaxiTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Tests/UserTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Tests/MapTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Tests/MapTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/users.csv" beforeDir="false" afterPath="$PROJECT_DIR$/users.csv" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -22,7 +28,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="master" />
+        <entry key="$PROJECT_DIR$" value="LoginTest" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -44,12 +50,20 @@
     "JUnit.AppLogicTest.testClearConsole.executor": "Run",
     "JUnit.LinkedListTest.executor": "Run",
     "JUnit.LocationTest.executor": "Run",
+    "JUnit.LoginTest.executor": "Run",
+    "JUnit.LoginTest.testDoesContain.executor": "Run",
+    "JUnit.LoginTest.testLoginOrSignUp.executor": "Run",
+    "JUnit.LoginTest.testLoginOrSignUp_SignUp.executor": "Run",
+    "JUnit.LoginTest.testLoginToApp.executor": "Run",
+    "JUnit.LoginTest.testSignUpToApp.executor": "Run",
     "JUnit.MapTest.executor": "Run",
+    "JUnit.TaxiTest.testGetTaxiDetails.executor": "Run",
     "JUnit.TextHandlerTest.executor": "Run",
     "JUnit.TextHandlerTest.testReadUsersAndPasswords.executor": "Run",
+    "JUnit.UserTest.testGetUsername.executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "MapTest",
+    "git-widget-placeholder": "master",
     "kotlin-language-version-configured": "true"
   }
 }]]></component>
@@ -58,8 +72,21 @@
       <recent name="MainTaxiApp.Classes" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.MapTest">
-    <configuration name="AppLogicTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.TaxiTest.testGetTaxiDetails">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="MainTaxiApp.Main" />
+      <module name="Epic2Maven" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="MainTaxiApp.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="LoginTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Epic2Maven" />
       <extension name="coverage">
         <pattern>
@@ -68,13 +95,13 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="Tests" />
-      <option name="MAIN_CLASS_NAME" value="Tests.AppLogicTest" />
+      <option name="MAIN_CLASS_NAME" value="Tests.LoginTest" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LinkedListTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="TaxiTest.testGetTaxiDetails" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Epic2Maven" />
       <extension name="coverage">
         <pattern>
@@ -83,38 +110,9 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="Tests" />
-      <option name="MAIN_CLASS_NAME" value="Tests.LinkedListTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="LocationTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Epic2Maven" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="Tests.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="Tests" />
-      <option name="MAIN_CLASS_NAME" value="Tests.LocationTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="MapTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Epic2Maven" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="Tests.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="Tests" />
-      <option name="MAIN_CLASS_NAME" value="Tests.MapTest" />
-      <option name="TEST_OBJECT" value="class" />
+      <option name="MAIN_CLASS_NAME" value="Tests.TaxiTest" />
+      <option name="METHOD_NAME" value="testGetTaxiDetails" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -134,13 +132,29 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="UserTest.testGetUsername" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Epic2Maven" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="Tests" />
+      <option name="MAIN_CLASS_NAME" value="Tests.UserTest" />
+      <option name="METHOD_NAME" value="testGetUsername" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.MapTest" />
-        <item itemvalue="JUnit.LocationTest" />
+        <item itemvalue="JUnit.TaxiTest.testGetTaxiDetails" />
+        <item itemvalue="JUnit.UserTest.testGetUsername" />
+        <item itemvalue="Application.Main" />
+        <item itemvalue="JUnit.LoginTest" />
         <item itemvalue="JUnit.TextHandlerTest" />
-        <item itemvalue="JUnit.LinkedListTest" />
-        <item itemvalue="JUnit.AppLogicTest" />
       </list>
     </recent_temporary>
   </component>
