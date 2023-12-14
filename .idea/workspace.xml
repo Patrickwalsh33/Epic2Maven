@@ -4,9 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9e87768c-0d7a-4f13-8d97-1e4f7eae840e" name="Changes" comment="AppLogicTest implemented">
-      <change afterPath="$PROJECT_DIR$/src/main/java/Tests/LinkedListTest.java" afterDir="false" />
+    <list default="true" id="9e87768c-0d7a-4f13-8d97-1e4f7eae840e" name="Changes" comment="Fixed code">
+      <change afterPath="$PROJECT_DIR$/src/main/java/Tests/LocationTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/MainTaxiApp/Classes/TextHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/MainTaxiApp/Classes/TextHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/MainTaxiApp/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/MainTaxiApp/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -21,11 +23,6 @@
     </option>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_BRANCH_BY_REPOSITORY">
-      <map>
-        <entry key="$PROJECT_DIR$" value="master" />
-      </map>
-    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectColorInfo">{
@@ -44,12 +41,12 @@
     "JUnit.AppLogicTest.testAnythingToContinue.executor": "Run",
     "JUnit.AppLogicTest.testClearConsole.executor": "Run",
     "JUnit.LinkedListTest.executor": "Run",
-    "JUnit.LinkedListTest.testPrintAllData.executor": "Run",
+    "JUnit.LocationTest.executor": "Run",
     "JUnit.TextHandlerTest.executor": "Run",
     "JUnit.TextHandlerTest.testReadUsersAndPasswords.executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "LinkedListTests",
+    "git-widget-placeholder": "master",
     "kotlin-language-version-configured": "true"
   }
 }]]></component>
@@ -58,7 +55,7 @@
       <recent name="MainTaxiApp.Classes" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.LinkedListTest.testPrintAllData">
+  <component name="RunManager" selected="JUnit.LocationTest">
     <configuration name="AppLogicTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Epic2Maven" />
       <extension name="coverage">
@@ -90,22 +87,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="AppLogicTest.testClearConsole" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Epic2Maven" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="Tests.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="Tests" />
-      <option name="MAIN_CLASS_NAME" value="Tests.AppLogicTest" />
-      <option name="METHOD_NAME" value="testClearConsole" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="LinkedListTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Epic2Maven" />
       <extension name="coverage">
@@ -121,7 +102,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LinkedListTest.testPrintAllData" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="LocationTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Epic2Maven" />
       <extension name="coverage">
         <pattern>
@@ -130,20 +111,34 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="Tests" />
-      <option name="MAIN_CLASS_NAME" value="Tests.LinkedListTest" />
-      <option name="METHOD_NAME" value="testPrintAllData" />
-      <option name="TEST_OBJECT" value="method" />
+      <option name="MAIN_CLASS_NAME" value="Tests.LocationTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TextHandlerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Epic2Maven" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="Tests" />
+      <option name="MAIN_CLASS_NAME" value="Tests.TextHandlerTest" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.LinkedListTest.testPrintAllData" />
+        <item itemvalue="JUnit.LocationTest" />
+        <item itemvalue="JUnit.TextHandlerTest" />
         <item itemvalue="JUnit.LinkedListTest" />
         <item itemvalue="JUnit.AppLogicTest" />
         <item itemvalue="JUnit.AppLogicTest.testAnythingToContinue" />
-        <item itemvalue="JUnit.AppLogicTest.testClearConsole" />
       </list>
     </recent_temporary>
   </component>
@@ -171,20 +166,11 @@
       <option name="project" value="LOCAL" />
       <updated>1702582306424</updated>
     </task>
-    <task id="LOCAL-00002" summary="AppLogicTest implemented">
-      <option name="closed" value="true" />
-      <created>1702585168239</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1702585168239</updated>
-    </task>
-    <option name="localTasksCounter" value="3" />
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Fixed code" />
-    <MESSAGE value="AppLogicTest implemented" />
-    <option name="LAST_COMMIT_MESSAGE" value="AppLogicTest implemented" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fixed code" />
   </component>
 </project>

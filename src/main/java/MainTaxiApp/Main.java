@@ -12,9 +12,6 @@ public class Main {
 
         Map map = new Map(20,newLogin.getCurrentUser());
         map.printMap();
-
-
-
     }
 
 
