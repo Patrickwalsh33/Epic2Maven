@@ -1,4 +1,4 @@
-package Block2.MainTaxiApp.Enums;
+package MainTaxiApp.Enums;
 
 public enum Direction {
     UP(-1, 0),

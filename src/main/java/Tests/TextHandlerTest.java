@@ -1,4 +1,4 @@
-package Block2.Tests;
+package Tests;
 import MainTaxiApp.Classes.LinkedList;
 import MainTaxiApp.Classes.TextHandler;
 import MainTaxiApp.Classes.User;

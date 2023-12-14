@@ -1,4 +1,4 @@
-package Block2.MainTaxiApp.Classes;
+package MainTaxiApp.Classes;
 
 import java.io.BufferedReader;
 import java.io.BufferedWriter;

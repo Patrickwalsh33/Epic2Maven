@@ -1,4 +1,4 @@
-package Block2.MainTaxiApp.Interfaces;
+package MainTaxiApp.Interfaces;
 
 import MainTaxiApp.Classes.Location;
 

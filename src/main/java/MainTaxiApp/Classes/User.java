@@ -1,4 +1,4 @@
-package Block2.MainTaxiApp.Classes;
+package MainTaxiApp.Classes;
 
 public class User {
     private String username;
