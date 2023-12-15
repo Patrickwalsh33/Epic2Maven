@@ -4,7 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9e87768c-0d7a-4f13-8d97-1e4f7eae840e" name="Changes" comment="Delete files" />
+    <list default="true" id="9e87768c-0d7a-4f13-8d97-1e4f7eae840e" name="Changes" comment="Fix it">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -38,6 +41,9 @@
         <option name="url" value="https://github.com/Patrickwalsh33/Epic2Maven.git" />
       </UrlAndAccount>
     </option>
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 3
@@ -273,7 +279,23 @@
       <option name="project" value="LOCAL" />
       <updated>1702646815890</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="THIS BREAKS STUFF">
+      <option name="closed" value="true" />
+      <created>1702646981156</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1702646981156</updated>
+    </task>
+    <task id="LOCAL-00013" summary="Fix it">
+      <option name="closed" value="true" />
+      <created>1702647058587</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1702647058587</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -284,6 +306,8 @@
     <MESSAGE value="Fix imports" />
     <MESSAGE value="CD pipeline fixes" />
     <MESSAGE value="Delete files" />
-    <option name="LAST_COMMIT_MESSAGE" value="Delete files" />
+    <MESSAGE value="THIS BREAKS STUFF" />
+    <MESSAGE value="Fix it" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fix it" />
   </component>
 </project>
