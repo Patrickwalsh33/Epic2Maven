@@ -5,8 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9e87768c-0d7a-4f13-8d97-1e4f7eae840e" name="Changes" comment="Docker">
-      <change beforePath="$PROJECT_DIR$/.github/workflows/maven-test.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.github/workflows/maven-test.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/users.csv" beforeDir="false" afterPath="$PROJECT_DIR$/users.csv" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -95,7 +95,7 @@
       <command value="maven test" />
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.AppLogicTest (1)">
+  <component name="RunManager" selected="Application.Main">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="MainTaxiApp.Main" />
       <module name="Epic2Maven" />
@@ -167,9 +167,9 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Main" />
         <item itemvalue="JUnit.AppLogicTest (1)" />
         <item itemvalue="JUnit.AppLogicTest" />
-        <item itemvalue="Application.Main" />
         <item itemvalue="JUnit.TaxiTest.testGetTaxiDetails" />
         <item itemvalue="JUnit.UserTest.testGetUsername" />
       </list>
@@ -352,7 +352,23 @@
       <option name="project" value="LOCAL" />
       <updated>1702667520926</updated>
     </task>
-    <option name="localTasksCounter" value="21" />
+    <task id="LOCAL-00021" summary="Docker">
+      <option name="closed" value="true" />
+      <created>1702668107417</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1702668107418</updated>
+    </task>
+    <task id="LOCAL-00022" summary="Docker">
+      <option name="closed" value="true" />
+      <created>1702668326904</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1702668326904</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
