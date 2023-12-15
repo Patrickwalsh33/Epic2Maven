@@ -49,7 +49,7 @@ public class Map {
         public void taxiRide(){
 
         }
-        public Taxi findClosestTaxi(){
+       /* public Taxi findClosestTaxi(){
            int x=usersLocation.getX();
            int y=usersLocation.getY();
            int distance=40;
@@ -61,6 +61,6 @@ public class Map {
                }
            }
          return closestTaxi;
-        }
+        }*/
 }
 
