@@ -4,13 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9e87768c-0d7a-4f13-8d97-1e4f7eae840e" name="Changes" comment="LocationTest implemented">
-      <change afterPath="$PROJECT_DIR$/src/main/java/Tests/LoginTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Tests/TaxiTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Tests/UserTest.java" afterDir="false" />
+    <list default="true" id="9e87768c-0d7a-4f13-8d97-1e4f7eae840e" name="Changes" comment="User and taxi tests">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Tests/MapTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Tests/MapTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/MainTaxiApp/Classes/Location.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/MainTaxiApp/Classes/Location.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/MainTaxiApp/Classes/Map.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/MainTaxiApp/Classes/Map.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/MainTaxiApp/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/MainTaxiApp/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/users.csv" beforeDir="false" afterPath="$PROJECT_DIR$/users.csv" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -42,37 +41,37 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Application.Main.executor": "Run",
-    "JUnit.AppLogicTest.executor": "Run",
-    "JUnit.AppLogicTest.testAnythingToContinue.executor": "Run",
-    "JUnit.AppLogicTest.testClearConsole.executor": "Run",
-    "JUnit.LinkedListTest.executor": "Run",
-    "JUnit.LocationTest.executor": "Run",
-    "JUnit.LoginTest.executor": "Run",
-    "JUnit.LoginTest.testDoesContain.executor": "Run",
-    "JUnit.LoginTest.testLoginOrSignUp.executor": "Run",
-    "JUnit.LoginTest.testLoginOrSignUp_SignUp.executor": "Run",
-    "JUnit.LoginTest.testLoginToApp.executor": "Run",
-    "JUnit.LoginTest.testSignUpToApp.executor": "Run",
-    "JUnit.MapTest.executor": "Run",
-    "JUnit.TaxiTest.testGetTaxiDetails.executor": "Run",
-    "JUnit.TextHandlerTest.executor": "Run",
-    "JUnit.TextHandlerTest.testReadUsersAndPasswords.executor": "Run",
-    "JUnit.UserTest.testGetUsername.executor": "Run",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "master",
-    "kotlin-language-version-configured": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.Main.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.AppLogicTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.AppLogicTest.testAnythingToContinue.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.AppLogicTest.testClearConsole.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.LinkedListTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.LocationTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.LoginTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.LoginTest.testDoesContain.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.LoginTest.testLoginOrSignUp.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.LoginTest.testLoginOrSignUp_SignUp.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.LoginTest.testLoginToApp.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.LoginTest.testSignUpToApp.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.MapTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.TaxiTest.testGetTaxiDetails.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.TextHandlerTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.TextHandlerTest.testReadUsersAndPasswords.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.UserTest.testGetUsername.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="MainTaxiApp.Classes" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.TaxiTest.testGetTaxiDetails">
+  <component name="RunManager" selected="Application.Main">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="MainTaxiApp.Main" />
       <module name="Epic2Maven" />
@@ -150,9 +149,9 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Main" />
         <item itemvalue="JUnit.TaxiTest.testGetTaxiDetails" />
         <item itemvalue="JUnit.UserTest.testGetUsername" />
-        <item itemvalue="Application.Main" />
         <item itemvalue="JUnit.LoginTest" />
         <item itemvalue="JUnit.TextHandlerTest" />
       </list>
@@ -161,6 +160,7 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
+        <option value="jdk-21.0.1-openjdk-21.0.1-249ae16d76d6-a618e4d4" />
         <option value="jdk-21.0.1-openjdk-21.0.1-8336523bb0d9-657b72ed" />
       </set>
     </attachedChunks>
@@ -190,12 +190,21 @@
       <option name="project" value="LOCAL" />
       <updated>1702588802889</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="User and taxi tests">
+      <option name="closed" value="true" />
+      <created>1702595948461</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1702595948461</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Fixed code" />
     <MESSAGE value="LocationTest implemented" />
-    <option name="LAST_COMMIT_MESSAGE" value="LocationTest implemented" />
+    <MESSAGE value="User and taxi tests" />
+    <option name="LAST_COMMIT_MESSAGE" value="User and taxi tests" />
   </component>
 </project>

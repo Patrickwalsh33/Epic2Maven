@@ -5,7 +5,10 @@ import java.util.Random;
 public class Map {
     TextHandler text = new TextHandler();
     private final LinkedList<Taxi> taxis =text.readTaxiData(text.getTAXIS_FILE_PATH());
+
+    LinkedList<Location> taxisOnMap = new LinkedList<>();
         private final Location[][] grid;
+        private Location usersLocation;
         private final int mapRadius;
         public Map(int radius, User currentUser){
             this.grid = new Location[radius][radius];
@@ -30,12 +33,34 @@ public class Map {
         }
         public void addTaxisAndUsersToMap(int radius, User currentUser){
             Random random = new Random();
-            grid[random.nextInt(radius)][random.nextInt(radius)].addUser(currentUser);
+            usersLocation=grid[random.nextInt(radius)][random.nextInt(radius)];
+            usersLocation.addUser(currentUser);
             int numberOfTaxi = random.nextInt(11)+10;
             taxis.moveToFirst();
             for(int i=0; i<numberOfTaxi; i++) {
-                grid[random.nextInt(radius)][random.nextInt(radius)].addTaxi(taxis.getData());
+                Location newTaxi=grid[random.nextInt(radius)][random.nextInt(radius)];
+                newTaxi.addTaxi(taxis.getData());
+                taxisOnMap.insert(newTaxi);
                 taxis.moveToNext();
             }
         }
+        public void callTaxiToUser(){
+        }
+        public void taxiRide(){
+
+        }
+        public Taxi findClosestTaxi(){
+           int x=usersLocation.getX();
+           int y=usersLocation.getY();
+           int distance=40;
+           Location closestTaxi;
+           for(int i=0; i<taxisOnMap.size();i++){
+               if((taxisOnMap.getData().getX()+taxisOnMap.getData().getY())<distance){
+                   distance=(taxisOnMap.getData().getX()+taxisOnMap.getData().getY();
+                   closestTaxi=taxisOnMap.getData();
+               }
+           }
+         return closestTaxi;
+        }
 }
+

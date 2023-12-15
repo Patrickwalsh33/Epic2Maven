@@ -23,15 +23,15 @@ public class Location {
         this.y = y;
         this.mapPoint = ".\t";
     }
-
     public void addUser(User user){
         System.out.println(user.getUsername()+" added");
         mapPoint = "U\t";
-    }
 
+    }
    public void addTaxi(Taxi taxi){
         System.out.println(taxi.getRegistration()+" added to x:"+x+", y:"+y);
         mapPoint = "T\t";
     }
+
 
 }
