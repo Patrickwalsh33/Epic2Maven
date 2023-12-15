@@ -1,5 +1,8 @@
 package MainTaxiApp;
-import MainTaxiApp.Classes.*;
+
+import MainTaxiApp.Classes.AppLogic;
+import MainTaxiApp.Classes.Login;
+import MainTaxiApp.Classes.Map;
 public class Main {
     public static void main(String[] args) {
        AppLogic.clearConsole();

@@ -1,8 +1,9 @@
 package Tests;
+
 import MainTaxiApp.Classes.LinkedList;
+import MainTaxiApp.Classes.Taxi;
 import MainTaxiApp.Classes.TextHandler;
 import MainTaxiApp.Classes.User;
-import MainTaxiApp.Classes.Taxi;
 import org.junit.jupiter.api.Test;
 
 import java.io.BufferedReader;
@@ -11,6 +12,7 @@ import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.StandardOpenOption;
+
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 class TextHandlerTest {

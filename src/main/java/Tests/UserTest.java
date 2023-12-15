@@ -2,6 +2,7 @@ package Tests;
 
 import MainTaxiApp.Classes.User;
 import org.junit.jupiter.api.Test;
+
 import static org.junit.jupiter.api.Assertions.assertEquals;
 public class UserTest {
     @Test

@@ -1,10 +1,11 @@
 package Tests;
 
-import MainTaxiApp.Classes.*;
+import MainTaxiApp.Classes.Map;
+import MainTaxiApp.Classes.User;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
-import static org.junit.jupiter.api.Assertions.*;
+import static org.junit.jupiter.api.Assertions.assertDoesNotThrow;
 public class MapTest {
     private static final int MAP_RADIUS = 10;
     private User testUser;

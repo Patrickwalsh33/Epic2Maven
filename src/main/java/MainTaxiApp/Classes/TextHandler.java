@@ -1,10 +1,6 @@
 package MainTaxiApp.Classes;
 
-import java.io.BufferedReader;
-import java.io.BufferedWriter;
-import java.io.FileReader;
-import java.io.FileWriter;
-import java.io.IOException;
+import java.io.*;
 
 public class TextHandler {
     private final String USERS_FILE_PATH = "users.csv";

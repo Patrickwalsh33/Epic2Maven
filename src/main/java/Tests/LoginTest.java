@@ -1,6 +1,9 @@
 package Tests;
 
-import MainTaxiApp.Classes.*;
+import MainTaxiApp.Classes.LinkedList;
+import MainTaxiApp.Classes.Login;
+import MainTaxiApp.Classes.TextHandler;
+import MainTaxiApp.Classes.User;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
@@ -9,7 +12,8 @@ import java.io.ByteArrayInputStream;
 import java.io.InputStream;
 import java.io.PrintStream;
 
-import static org.junit.Assert.*;
+import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertNotNull;
 
 public class LoginTest {
     private final InputStream originalSystemIn = System.in;
