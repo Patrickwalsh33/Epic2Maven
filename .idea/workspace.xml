@@ -5,17 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9e87768c-0d7a-4f13-8d97-1e4f7eae840e" name="Changes" comment="Fix imports">
-      <change afterPath="$PROJECT_DIR$/src/test/java/LoginTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Tests/AppLogicTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/AppLogicTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Tests/LinkedListTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/LinkedListTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Tests/LocationTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/LocationTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Tests/LoginTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Tests/MapTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/MapTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Tests/TaxiTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/TaxiTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Tests/TextHandlerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/TextHandlerTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Tests/UserTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/UserTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,6 +27,20 @@
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "eddiephelanfortyfive"
+  }
+}]]></component>
+  <component name="GithubPullRequestsUISettings">
+    <option name="selectedUrlAndAccountId">
+      <UrlAndAccount>
+        <option name="accountId" value="80ce898d-3a46-4a66-89df-c16527a4f7e6" />
+        <option name="url" value="https://github.com/Patrickwalsh33/Epic2Maven.git" />
+      </UrlAndAccount>
+    </option>
+  </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 3
 }</component>
@@ -49,6 +53,7 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "Application.Main.executor": "Run",
+    "JUnit.AppLogicTest (1).executor": "Run",
     "JUnit.AppLogicTest.executor": "Run",
     "JUnit.AppLogicTest.testAnythingToContinue.executor": "Run",
     "JUnit.AppLogicTest.testClearConsole.executor": "Run",
@@ -76,13 +81,16 @@
     <key name="CreateClassDialog.RecentsKey">
       <recent name="MainTaxiApp.Classes" />
     </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\eddie_uooosyh\Documents\GitHub\Epic2MavenTaxiApp\src\test\java" />
+    </key>
   </component>
   <component name="RunAnythingCache">
     <option name="myCommands">
       <command value="maven test" />
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.AppLogicTest">
+  <component name="RunManager" selected="JUnit.AppLogicTest (1)">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="MainTaxiApp.Main" />
       <module name="Epic2Maven" />
@@ -92,6 +100,15 @@
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="AppLogicTest (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Epic2Maven" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="AppLogicTest" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -106,21 +123,6 @@
       </extension>
       <option name="PACKAGE_NAME" value="Tests" />
       <option name="MAIN_CLASS_NAME" value="Tests.AppLogicTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="LoginTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Epic2Maven" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="Tests.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="Tests" />
-      <option name="MAIN_CLASS_NAME" value="Tests.LoginTest" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -160,11 +162,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.AppLogicTest (1)" />
         <item itemvalue="JUnit.AppLogicTest" />
         <item itemvalue="Application.Main" />
         <item itemvalue="JUnit.TaxiTest.testGetTaxiDetails" />
         <item itemvalue="JUnit.UserTest.testGetUsername" />
-        <item itemvalue="JUnit.LoginTest" />
       </list>
     </recent_temporary>
   </component>
@@ -241,7 +243,15 @@
       <option name="project" value="LOCAL" />
       <updated>1702644612773</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Fix imports">
+      <option name="closed" value="true" />
+      <created>1702645487988</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1702645487988</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">

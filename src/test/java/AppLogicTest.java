@@ -45,7 +45,7 @@ public class AppLogicTest {
     }
 
     private String repeatString() {
-        return String.valueOf("\n").repeat(Math.max(0, 100));
+        return "\n".repeat(Math.max(0, 100));
     }
 }
 
