@@ -4,9 +4,18 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9e87768c-0d7a-4f13-8d97-1e4f7eae840e" name="Changes" comment="fix eddie projetct">
+    <list default="true" id="9e87768c-0d7a-4f13-8d97-1e4f7eae840e" name="Changes" comment="Fix imports">
+      <change afterPath="$PROJECT_DIR$/src/test/java/LoginTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Tests/AppLogicTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/AppLogicTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Tests/LinkedListTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/LinkedListTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Tests/LocationTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/LocationTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Tests/LoginTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Tests/MapTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/MapTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Tests/TaxiTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/TaxiTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Tests/TextHandlerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/TextHandlerTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Tests/UserTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/UserTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,37 +46,43 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Application.Main.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.AppLogicTest.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.AppLogicTest.testAnythingToContinue.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.AppLogicTest.testClearConsole.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.LinkedListTest.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.LocationTest.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.LoginTest.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.LoginTest.testDoesContain.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.LoginTest.testLoginOrSignUp.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.LoginTest.testLoginOrSignUp_SignUp.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.LoginTest.testLoginToApp.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.LoginTest.testSignUpToApp.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.MapTest.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.TaxiTest.testGetTaxiDetails.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.TextHandlerTest.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.TextHandlerTest.testReadUsersAndPasswords.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.UserTest.testGetUsername.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.Main.executor": "Run",
+    "JUnit.AppLogicTest.executor": "Run",
+    "JUnit.AppLogicTest.testAnythingToContinue.executor": "Run",
+    "JUnit.AppLogicTest.testClearConsole.executor": "Run",
+    "JUnit.LinkedListTest.executor": "Run",
+    "JUnit.LocationTest.executor": "Run",
+    "JUnit.LoginTest.executor": "Run",
+    "JUnit.LoginTest.testDoesContain.executor": "Run",
+    "JUnit.LoginTest.testLoginOrSignUp.executor": "Run",
+    "JUnit.LoginTest.testLoginOrSignUp_SignUp.executor": "Run",
+    "JUnit.LoginTest.testLoginToApp.executor": "Run",
+    "JUnit.LoginTest.testSignUpToApp.executor": "Run",
+    "JUnit.MapTest.executor": "Run",
+    "JUnit.TaxiTest.testGetTaxiDetails.executor": "Run",
+    "JUnit.TextHandlerTest.executor": "Run",
+    "JUnit.TextHandlerTest.testReadUsersAndPasswords.executor": "Run",
+    "JUnit.UserTest.testGetUsername.executor": "Run",
+    "Maven.Epic2Maven [test].executor": "Run",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "master",
+    "kotlin-language-version-configured": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="MainTaxiApp.Classes" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Main">
+  <component name="RunAnythingCache">
+    <option name="myCommands">
+      <command value="maven test" />
+    </option>
+  </component>
+  <component name="RunManager" selected="JUnit.AppLogicTest">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="MainTaxiApp.Main" />
       <module name="Epic2Maven" />
@@ -77,6 +92,21 @@
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="AppLogicTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Epic2Maven" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="Tests" />
+      <option name="MAIN_CLASS_NAME" value="Tests.AppLogicTest" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -112,21 +142,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TextHandlerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Epic2Maven" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="Tests.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="Tests" />
-      <option name="MAIN_CLASS_NAME" value="Tests.TextHandlerTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="UserTest.testGetUsername" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Epic2Maven" />
       <extension name="coverage">
@@ -145,11 +160,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.AppLogicTest" />
         <item itemvalue="Application.Main" />
         <item itemvalue="JUnit.TaxiTest.testGetTaxiDetails" />
         <item itemvalue="JUnit.UserTest.testGetUsername" />
         <item itemvalue="JUnit.LoginTest" />
-        <item itemvalue="JUnit.TextHandlerTest" />
       </list>
     </recent_temporary>
   </component>
@@ -210,7 +225,23 @@
       <option name="project" value="LOCAL" />
       <updated>1702644397978</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="fix eddie projetct">
+      <option name="closed" value="true" />
+      <created>1702644483304</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1702644483304</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Fix imports">
+      <option name="closed" value="true" />
+      <created>1702644612773</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1702644612773</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -218,6 +249,7 @@
     <MESSAGE value="LocationTest implemented" />
     <MESSAGE value="User and taxi tests" />
     <MESSAGE value="fix eddie projetct" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix eddie projetct" />
+    <MESSAGE value="Fix imports" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fix imports" />
   </component>
 </project>

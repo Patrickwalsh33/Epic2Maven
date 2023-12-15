@@ -1,4 +1,3 @@
-package Tests;
 import MainTaxiApp.Classes.Location;
 import MainTaxiApp.Classes.Taxi;
 import MainTaxiApp.Classes.User;

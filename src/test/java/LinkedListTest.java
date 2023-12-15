@@ -1,5 +1,3 @@
-package Tests;
-
 import MainTaxiApp.Classes.LinkedList;
 import org.junit.jupiter.api.Test;
 

@@ -1,5 +1,3 @@
-package Tests;
-
 import MainTaxiApp.Classes.Taxi;
 import org.junit.jupiter.api.Test;
 

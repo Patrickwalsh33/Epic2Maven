@@ -1,5 +1,3 @@
-package Tests;
-
 import MainTaxiApp.Classes.LinkedList;
 import MainTaxiApp.Classes.Taxi;
 import MainTaxiApp.Classes.TextHandler;

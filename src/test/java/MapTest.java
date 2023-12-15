@@ -1,5 +1,3 @@
-package Tests;
-
 import MainTaxiApp.Classes.Map;
 import MainTaxiApp.Classes.User;
 import org.junit.jupiter.api.BeforeEach;

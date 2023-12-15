@@ -1,4 +1,3 @@
-package Tests;
 import MainTaxiApp.Classes.AppLogic;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
