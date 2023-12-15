@@ -24,7 +24,7 @@ public class AppLogicTest {
     @AfterEach
     public void tearDown() {
         System.setIn(originalSystemIn);
-        System.setOut(originalSystemOut)
+        System.setOut(originalSystemOut);
     }
 
     @Test
