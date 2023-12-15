@@ -36,5 +36,5 @@ jobs:
         DOCKER_PASSWORD: ${{ secrets.DOCKER_PASSWORD }}
       run: |
         echo $DOCKER_PASSWORD | docker login -u $DOCKER_USERNAME --password-stdin
-        docker build  eddiephelan45/epic2:tagname
+        docker build -t  eddiephelan45/epic2:tagname
         docker push eddiephelan45/epic2:tagname
