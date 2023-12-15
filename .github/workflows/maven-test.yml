@@ -29,12 +29,3 @@ jobs:
         cache: maven
     - name: Build with Maven
       run: mvn -B package --file pom.xml
-
-#    - name: Build and Push Docker Image
-#      env:
-#        DOCKER_USERNAME: ${{ secrets.DOCKER_USERNAME }}
-#        DOCKER_PASSWORD: ${{ secrets.DOCKER_PASSWORD }}
-#      run: |
-#        echo $DOCKER_PASSWORD | docker login -u $DOCKER_USERNAME --password-stdin
-#        docker build -t  eddiephelan45/epic2:tagname
-#        docker push eddiephelan45/epic2:tagname
