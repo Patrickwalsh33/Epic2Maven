@@ -5,19 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9e87768c-0d7a-4f13-8d97-1e4f7eae840e" name="Changes" comment="Docker push">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/AppLogicTest.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/AppLogicTest.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/LinkedListTest.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/LinkedListTest.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/LocationTest.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/LocationTest.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-AppLogicTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-AppLogicTest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-LinkedListTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-LinkedListTest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-LocationTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-LocationTest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-MapTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-MapTest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-TaxiTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-TaxiTest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-TextHandlerTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-TextHandlerTest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-UserTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-UserTest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/UserTest.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/UserTest.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -96,6 +86,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "master",
     "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/eddie_uooosyh/Documents/GitHub/Epic2MavenTaxiApp",
     "settings.editor.selected.configurable": "com.intellij.jarRepository.settings.RemoteRepositoriesConfigurable"
   }
 }]]></component>
@@ -103,7 +94,11 @@
     <key name="CreateClassDialog.RecentsKey">
       <recent name="MainTaxiApp.Classes" />
     </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\eddie_uooosyh\Documents\GitHub\Epic2MavenTaxiApp" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\eddie_uooosyh\Documents\GitHub\Epic2MavenTaxiApp\src\main" />
       <recent name="C:\Users\eddie_uooosyh\Documents\GitHub\Epic2MavenTaxiApp" />
       <recent name="C:\Users\eddie_uooosyh\Documents\GitHub\Epic2MavenTaxiApp\src" />
       <recent name="C:\Users\eddie_uooosyh\Documents\GitHub\Epic2MavenTaxiApp\src\test\java" />
@@ -114,7 +109,7 @@
       <command value="maven test" />
     </option>
   </component>
-  <component name="RunManager" selected="Docker.Dockerfile">
+  <component name="RunManager" selected="Application.Main">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="MainTaxiApp.Main" />
       <module name="Epic2Maven" />
@@ -174,9 +169,9 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Main" />
         <item itemvalue="Docker.Dockerfile" />
         <item itemvalue="Docker.src/Dockerfile" />
-        <item itemvalue="Application.Main" />
         <item itemvalue="JUnit.AppLogicTest (1)" />
         <item itemvalue="JUnit.AppLogicTest" />
       </list>
@@ -519,7 +514,15 @@
       <option name="project" value="LOCAL" />
       <updated>1702684648344</updated>
     </task>
-    <option name="localTasksCounter" value="41" />
+    <task id="LOCAL-00041" summary="Docker push">
+      <option name="closed" value="true" />
+      <created>1702686226938</created>
+      <option name="number" value="00041" />
+      <option name="presentableId" value="LOCAL-00041" />
+      <option name="project" value="LOCAL" />
+      <updated>1702686226938</updated>
+    </task>
+    <option name="localTasksCounter" value="42" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">

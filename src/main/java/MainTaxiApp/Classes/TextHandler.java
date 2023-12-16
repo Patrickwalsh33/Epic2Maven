@@ -25,6 +25,7 @@ public class TextHandler {
                 usersAndPasswords.insert(new User(values[0], values[1]));
             }
         } catch (IOException e) {
+            System.out.println("Cant find or read users.csv file");
             e.printStackTrace();
         }
         return usersAndPasswords;
@@ -56,8 +57,10 @@ public class TextHandler {
                 taxis.insert( new Taxi(values[0],values[1],Integer.parseInt(values[2]),values[3],values[4],Integer.parseInt(values[5])));
             }
         } catch (IOException e) {
+            System.out.println("Cant find or read Taxis.csv file");
             e.printStackTrace();
         }
         return taxis;
     }
+
 }
