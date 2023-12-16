@@ -5,9 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9e87768c-0d7a-4f13-8d97-1e4f7eae840e" name="Changes" comment="Docker push">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_14_12_2023_20_54__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_14_12_2023_20_54__Changes_.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_15_12_2023_19_05__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_15_12_2023_19_05__Changes_.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/MainTaxiApp/Classes/Location.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/MainTaxiApp/Classes/Location.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/MainTaxiApp/Classes/Map.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/MainTaxiApp/Classes/Map.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/MainTaxiApp/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/MainTaxiApp/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/MainTaxiApp/Classes/Location.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/MainTaxiApp/Classes/Location.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/MainTaxiApp/Classes/Map.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/MainTaxiApp/Classes/Map.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/MainTaxiApp/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/MainTaxiApp/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/users.csv" beforeDir="false" afterPath="$PROJECT_DIR$/users.csv" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -24,7 +31,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="LoginTest" />
+        <entry key="$PROJECT_DIR$" value="master" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -84,7 +91,7 @@
     "Maven.Epic2Maven [verify].executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "master",
+    "git-widget-placeholder": "SearchAlgorithm",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "C:/Users/eddie_uooosyh/Documents/GitHub/Epic2MavenTaxiApp",
     "settings.editor.selected.configurable": "com.intellij.jarRepository.settings.RemoteRepositoriesConfigurable"
@@ -156,7 +163,9 @@
       <method v="2" />
     </configuration>
     <configuration default="true" type="docker-deploy" factoryName="dockerfile" temporary="true">
-      <deployment type="dockerfile" />
+      <deployment type="dockerfile">
+        <settings />
+      </deployment>
       <method v="2" />
     </configuration>
     <configuration name="src/Dockerfile" type="docker-deploy" factoryName="dockerfile" temporary="true" server-name="Docker">
@@ -524,6 +533,17 @@
     </task>
     <option name="localTasksCounter" value="42" />
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Fixed code" />
