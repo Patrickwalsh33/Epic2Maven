@@ -11,9 +11,6 @@ public class Map {
         private Location usersLocation;
         private final int mapRadius;
 
-    public LinkedList<Location> getTaxisOnMap() {
-        return taxisOnMap;
-    }
         public Map(int radius, User currentUser){
             this.grid = new Location[radius][radius];
             this.mapRadius = radius;
@@ -87,9 +84,5 @@ public class Map {
 
         return null; // No taxi found within the current search radius
     }
-
-    /*public static void implementSearchAlgorithm(){
-            searchAlgorithm();
-    }*/
 }
 

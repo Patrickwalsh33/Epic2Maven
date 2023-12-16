@@ -37,8 +37,4 @@ public class Taxi {
         return seats;
     }
 
-    /*method to calculate distance between user and taxi
-    using pythagoras theorem */
-
-
 }
