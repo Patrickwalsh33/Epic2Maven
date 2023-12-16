@@ -1,0 +1,49 @@
+Index: src/main/java/Passenger.java
+===================================================================
+diff --git a/src/main/java/Passenger.java b/src/main/java/MainTaxiApp/Classes/Passenger.java
+rename from src/main/java/Passenger.java
+rename to src/main/java/MainTaxiApp/Classes/Passenger.java
+--- a/src/main/java/Passenger.java	
++++ b/src/main/java/MainTaxiApp/Classes/Passenger.java	
+@@ -1,9 +1,11 @@
+-package Block2;
++package MainTaxiApp.Classes;
++
++import MainTaxiApp.Classes.User;
+ 
+ public class Passenger extends User {
+     private String password;
+     public Passenger(String username, String password){
+-        super(username);
++        super(username, password);
+         this.password=password;
+ 
+     }
+Index: src/main/java/Tests/TextHandlerTest.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/main/java/Tests/TextHandlerTest.java b/src/test/java/TextHandlerTest.java
+rename from src/main/java/Tests/TextHandlerTest.java
+rename to src/test/java/TextHandlerTest.java
+--- a/src/main/java/Tests/TextHandlerTest.java	
++++ b/src/test/java/TextHandlerTest.java	
+@@ -1,8 +1,7 @@
+-package Block2.Tests;
+ import MainTaxiApp.Classes.LinkedList;
++import MainTaxiApp.Classes.Taxi;
+ import MainTaxiApp.Classes.TextHandler;
+ import MainTaxiApp.Classes.User;
+-import MainTaxiApp.Classes.Taxi;
+ import org.junit.jupiter.api.Test;
+ 
+ import java.io.BufferedReader;
+@@ -11,6 +10,7 @@
+ import java.nio.file.Files;
+ import java.nio.file.Path;
+ import java.nio.file.StandardOpenOption;
++
+ import static org.junit.jupiter.api.Assertions.assertEquals;
+ 
+ class TextHandlerTest {

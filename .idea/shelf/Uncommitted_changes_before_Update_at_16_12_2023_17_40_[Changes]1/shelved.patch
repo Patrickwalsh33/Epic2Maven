@@ -1,0 +1,341 @@
+Index: src/main/java/MainTaxiApp/Classes/Location.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package Block2.MainTaxiApp.Classes;\r\n\r\npublic class Location {\r\n    private final int x;\r\n    private final int y;\r\n    private String mapPoint;\r\n\r\n    public int getX() {\r\n        return x;\r\n    }\r\n\r\n    public int getY() {\r\n        return y;\r\n    }\r\n\r\n\r\n    public String getMapPoint() {\r\n        return mapPoint;\r\n    }\r\n\r\n    public Location(int x, int y){\r\n        this.x = x;\r\n        this.y = y;\r\n        this.mapPoint = \".\\t\";\r\n    }\r\n\r\n    public void addUser(User user){\r\n        System.out.println(user.getUsername()+\" added\");\r\n        mapPoint = \"U\\t\";\r\n    }\r\n\r\n   public void addTaxi(Taxi taxi){\r\n        System.out.println(taxi.getRegistration()+\" added to x:\"+x+\", y:\"+y);\r\n        mapPoint = \"T\\t\";\r\n    }\r\n\r\n}\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/main/java/MainTaxiApp/Classes/Location.java b/src/main/java/MainTaxiApp/Classes/Location.java
+--- a/src/main/java/MainTaxiApp/Classes/Location.java	
++++ b/src/main/java/MainTaxiApp/Classes/Location.java	
+@@ -1,4 +1,4 @@
+-package Block2.MainTaxiApp.Classes;
++package MainTaxiApp.Classes;
+ 
+ public class Location {
+     private final int x;
+Index: src/main/java/MainTaxiApp/Main.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package Block2.MainTaxiApp;\r\n\r\nimport MainTaxiApp.Classes.AppLogic;\r\nimport MainTaxiApp.Classes.Map;\r\nimport MainTaxiApp.Classes.Login;\r\n\r\npublic class Main {\r\n    public static void main(String[] args) {\r\n       AppLogic.clearConsole();\r\n       Login newLogin = new Login();\r\n       newLogin.loginOrSignUp();\r\n       AppLogic.anythingToContinue();\r\n       AppLogic.clearConsole();\r\n\r\n        Map map = new Map(20,newLogin.getCurrentUser());\r\n        map.printMap();\r\n\r\n\r\n\r\n    }\r\n\r\n\r\n    }
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/main/java/MainTaxiApp/Main.java b/src/main/java/MainTaxiApp/Main.java
+--- a/src/main/java/MainTaxiApp/Main.java	
++++ b/src/main/java/MainTaxiApp/Main.java	
+@@ -1,4 +1,4 @@
+-package Block2.MainTaxiApp;
++package MainTaxiApp;
+ 
+ import MainTaxiApp.Classes.AppLogic;
+ import MainTaxiApp.Classes.Map;
+Index: src/main/java/MainTaxiApp/Classes/AppLogic.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package Block2.MainTaxiApp.Classes;\r\n\r\nimport java.util.Scanner;\r\npublic class AppLogic {\r\n\r\n    static Scanner scanner = new Scanner(System.in);\r\n    public static void clearConsole(){\r\n        for(int i = 0; i < 100; i++)\r\n            System.out.println();\r\n        //System.out.print(\"\\033[H\\033[2J\");\r\n        //System.out.flush();\r\n    }\r\n\r\n    public static void anythingToContinue(){\r\n        System.out.println(\"\\nPress any key to continue...\");\r\n        scanner.next();\r\n    }\r\n}\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/main/java/MainTaxiApp/Classes/AppLogic.java b/src/main/java/MainTaxiApp/Classes/AppLogic.java
+--- a/src/main/java/MainTaxiApp/Classes/AppLogic.java	
++++ b/src/main/java/MainTaxiApp/Classes/AppLogic.java	
+@@ -1,4 +1,4 @@
+-package Block2.MainTaxiApp.Classes;
++package MainTaxiApp.Classes;
+ 
+ import java.util.Scanner;
+ public class AppLogic {
+Index: src/main/java/MainTaxiApp/Classes/User.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package Block2.MainTaxiApp.Classes;\r\n\r\npublic class User {\r\n    private String username;\r\n    private String password;\r\n    public User(String username, String password){\r\n        this.password=password;\r\n        this.username=username;\r\n    }\r\n\r\n    public String getUsername() {\r\n        return username;\r\n    }\r\n\r\n    public String getPassword() {\r\n        return password;\r\n    }\r\n\r\n    public void setUsername(String username) {\r\n        this.username = username;\r\n    }\r\n\r\n    public void setPassword(String password) {\r\n        this.password = password;\r\n    }\r\n}\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/main/java/MainTaxiApp/Classes/User.java b/src/main/java/MainTaxiApp/Classes/User.java
+--- a/src/main/java/MainTaxiApp/Classes/User.java	
++++ b/src/main/java/MainTaxiApp/Classes/User.java	
+@@ -1,4 +1,4 @@
+-package Block2.MainTaxiApp.Classes;
++package MainTaxiApp.Classes;
+ 
+ public class User {
+     private String username;
+Index: src/main/java/MainTaxiApp/Classes/Login.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package Block2.MainTaxiApp.Classes;\r\n\r\nimport java.sql.SQLOutput;\r\nimport java.util.Scanner;\r\nimport java.util.stream.IntStream;\r\n\r\npublic class Login {\r\n    private String username;\r\n    private String password;\r\n    private static final String OPTION_ZERO =\"0\";\r\n    private static final String OPTION_ONE =\"1\";\r\n\r\n    public void loginOrSignUp(){\r\n        Scanner input = new Scanner(System.in);\r\n        TextHandler text = new TextHandler();\r\n        LinkedList<User> usernames =text.readUsersAndPasswords(text.getUSERS_FILE_PATH());\r\n        System.out.println(\"---\\nWelcome to the TaxiApp.\\n Sign up [0]\\n or\\n Log in[1]\");\r\n        for(int i =0; i<1; i++) {\r\n            String logInOrSignUp = input.nextLine();\r\n            switch (logInOrSignUp) {\r\n                case OPTION_ZERO:\r\n                    System.out.println(\"\\nSignUp chosen\\n\");\r\n                    signUpToApp(usernames, text);\r\n                    break;\r\n                case OPTION_ONE:\r\n                    System.out.println(\"\\nLogin chosen\\n\");\r\n                    loginToApp(usernames, text);\r\n                    break;\r\n                default:\r\n                    System.out.println(\"Invalid input, please try again.\");\r\n                    i--;\r\n            }\r\n        }\r\n    }\r\n    public void loginToApp(LinkedList<User> usernames,TextHandler text){\r\n        Scanner input = new Scanner(System.in);\r\n        for(int i=0; i<1; i++) {\r\n            System.out.println(\"---\\nLogin please enter your username: \");\r\n            String username = input.nextLine();\r\n            String usernameLowerCase = username.toLowerCase();\r\n            if (doesContain(usernameLowerCase, usernames) != -1) {\r\n                int index = doesContain(usernameLowerCase, usernames);\r\n                System.out.println(\"Welcome back \" + username + \" please enter your password.\");\r\n                usernames.moveToFirst();\r\n                IntStream.range(0, index).forEach(p -> usernames.moveToNext());\r\n                for (int k = 0; k < 1; k++) {\r\n                    String password = input.nextLine();\r\n                    String passwordLowerCase = password.toLowerCase();\r\n                    if (passwordLowerCase.equals((usernames.getData()).getPassword())) {\r\n                        System.out.println(\"Correct, you are now logged into the account \" + username);\r\n                    } else {\r\n                        System.out.println(\"Incorrect password for the account \" + username + \" please try again.\");\r\n                        k--;\r\n                    }this.password=passwordLowerCase;\r\n                }this.username=usernameLowerCase;\r\n            } else {\r\n                System.out.println(\"The account \" + username + \" does not exist.\\n Would you like to try again?[0]\\n Or\\n Sign up?[1]\");\r\n                for (int j = 0; j < 1; j++) {\r\n                    String choice = input.nextLine();\r\n                    switch (choice) {\r\n                        case OPTION_ZERO:\r\n                            i--;\r\n                            System.out.println(\"You chose to try again.\");\r\n                            break;\r\n                        case OPTION_ONE:\r\n                            System.out.println(\"You chose Sign up.\");\r\n                            signUpToApp(usernames, text);\r\n                            break;\r\n                        default:\r\n                            System.out.println(\"Invalid input please try again.\");\r\n                            j--;\r\n                    }\r\n                }\r\n\r\n            }\r\n\r\n        }\r\n    }\r\n    public void signUpToApp(LinkedList<User> usernames,TextHandler text){\r\n        Scanner input = new Scanner(System.in);\r\n    for(int i=0; i<1; i++){\r\n        System.out.println(\"---\\nSign up enter your chosen username: \");\r\n        String username=input.nextLine();\r\n        String usernameLowerCase = username.toLowerCase();\r\n        if(usernameLowerCase.equals(\"\")) {\r\n            System.out.println(\"Invalid input please try again.\");\r\n            i--;\r\n        }else if(doesContain(usernameLowerCase, usernames)!=-1) {\r\n            System.out.println(\"The account \"+username+\" already exists.\\n Would you like to log in to this account?[0]\\n Or\\n Input a different username?[1]\\n\");\r\n            for(int j=0; j<1; j++) {\r\n                String choice = input.nextLine();\r\n                switch (choice) {\r\n                    case OPTION_ZERO:\r\n                        System.out.println(\"You chose to login to the account \"+username);\r\n                        loginToApp(usernames, text);\r\n                        break;\r\n                    case OPTION_ONE:\r\n                        i--;\r\n                        System.out.println(\"You chose to input a different username.\");\r\n                        break;\r\n                    default:\r\n                        System.out.println(\"Invalid input please try again.\");\r\n                        j--;\r\n                }\r\n            }\r\n        }else{\r\n            System.out.println(\"---\\nWelcome \"+username+\" please enter your chosen password:\");\r\n            String password= input.nextLine();\r\n            String passwordLowerCase = password.toLowerCase();\r\n            text.writeInNewUser(usernameLowerCase,passwordLowerCase,text.getUSERS_FILE_PATH());\r\n            System.out.println(\"Congratulations \"+username+\" you are now registered!\");\r\n            this.password=passwordLowerCase;\r\n        }this.username=usernameLowerCase;\r\n\r\n        }\r\n    }\r\n    public int doesContain(String username,LinkedList<User> usernames) {\r\n        int result = -1;\r\n        usernames.moveToFirst();\r\n        for (int i = 0; i <username.length(); i++) {\r\n            if (username.equals((usernames.getData()).getUsername())) {\r\n                result = i;\r\n                break;\r\n            }\r\n            usernames.moveToNext();\r\n        }\r\n        return result;\r\n    }\r\n    public User getCurrentUser(){\r\n        return new User(username,password);\r\n    }\r\n}\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/main/java/MainTaxiApp/Classes/Login.java b/src/main/java/MainTaxiApp/Classes/Login.java
+--- a/src/main/java/MainTaxiApp/Classes/Login.java	
++++ b/src/main/java/MainTaxiApp/Classes/Login.java	
+@@ -1,6 +1,5 @@
+-package Block2.MainTaxiApp.Classes;
++package MainTaxiApp.Classes;
+ 
+-import java.sql.SQLOutput;
+ import java.util.Scanner;
+ import java.util.stream.IntStream;
+ 
+Index: src/main/java/MainTaxiApp/Classes/LinkedList.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package Block2.MainTaxiApp.Classes;\r\n\r\ninterface List<T> {\r\n\r\n    boolean isEmpty();\r\n\r\n    void moveToFirst();\r\n\r\n    void moveToNext();\r\n\r\n    boolean isLast();\r\n\r\n    T getData();\r\n\r\n    void updateData(T e);\r\n\r\n    void insert(T e);\r\n\r\n    void remove();\r\n\r\n    int size();\r\n\r\n    void printAllData();\r\n}\r\n\r\npublic class LinkedList<T> implements List<T> {\r\n    private Node head;\r\n    private Node current;\r\n    private int size;\r\n\r\n    public void remove(T entryToRemove) {\r\n        if (head == null) {\r\n            return;\r\n        }\r\n\r\n        if (head.data.equals(entryToRemove)) {\r\n            head = head.next;\r\n            return;\r\n        }\r\n\r\n        Node current = head;\r\n        while (current.next != null && !current.next.data.equals(entryToRemove)) {\r\n            current = current.next;\r\n        }\r\n\r\n        if (current.next != null) {\r\n            current.next = current.next.next;\r\n        }\r\n    }\r\n\r\n    private class Node {\r\n        public T data;\r\n        public Node next;\r\n\r\n        public Node(T val) {\r\n            data = val;\r\n            next = null;\r\n        }\r\n    }\r\n\r\n    public LinkedList() {\r\n        head = null;\r\n        current = null;\r\n        size = 0;\r\n    }\r\n\r\n    @Override\r\n    public boolean isEmpty() {\r\n        return head == null;\r\n    }\r\n\r\n    @Override\r\n    public void moveToFirst() {\r\n        current = head;\r\n    }\r\n\r\n    @Override\r\n    public void moveToNext() {\r\n        if (!isEmpty() && current.next != null) {\r\n            current = current.next;\r\n        }\r\n    }\r\n\r\n    @Override\r\n    public boolean isLast() {\r\n        return !isEmpty() && current.next == null;\r\n    }\r\n\r\n    @Override\r\n    public T getData() {\r\n        if (isEmpty()) {\r\n            System.out.println(\"List is empty, null will be returned\");\r\n            return null;\r\n        }\r\n        return current.data;\r\n    }\r\n\r\n    @Override\r\n    public void updateData(T e) {\r\n        if (!isEmpty()) {\r\n            current.data = e;\r\n        } else {\r\n            System.out.println(\"List is empty, data not updated\");\r\n        }\r\n    }\r\n\r\n    @Override\r\n    public void insert(T e) {\r\n        if (isEmpty()) {\r\n            head = current = new Node(e);\r\n        } else {\r\n            Node tmp = current.next;\r\n            current.next = new Node(e);\r\n            current = current.next;\r\n            current.next = tmp;\r\n        }\r\n        size++;\r\n    }\r\n\r\n    @Override\r\n    public void remove() {\r\n        if (isEmpty()) {\r\n            System.out.println(\"List is empty, nothing to remove.\");\r\n            return;\r\n        }\r\n\r\n        if (current == head) {\r\n            // If removing the first node, update head\r\n            head = head.next;\r\n            current = head;\r\n        } else {\r\n            // Otherwise, update the next reference of the previous node\r\n            Node prev = findPreviousNode();\r\n            if (prev != null) {\r\n                prev.next = current.next;\r\n                current = prev; // Move the cursor back to the previous node\r\n            }\r\n        }\r\n\r\n        size--;\r\n    }\r\n    private Node findPreviousNode() {\r\n        Node temp = head;\r\n        while (temp != null && temp.next != current) {\r\n            temp = temp.next;\r\n        }\r\n        return temp;\r\n    }\r\n   public void printAllData(){\r\n        moveToFirst();\r\n       int size= size();\r\n       for(int i =0; i<size; i++){\r\n           System.out.println(getData().toString()+\" \");\r\n           moveToNext();\r\n       }\r\n    }\r\n\r\n    public int size() {\r\n        return size;\r\n    }\r\n}\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/main/java/MainTaxiApp/Classes/LinkedList.java b/src/main/java/MainTaxiApp/Classes/LinkedList.java
+--- a/src/main/java/MainTaxiApp/Classes/LinkedList.java	
++++ b/src/main/java/MainTaxiApp/Classes/LinkedList.java	
+@@ -1,4 +1,4 @@
+-package Block2.MainTaxiApp.Classes;
++package MainTaxiApp.Classes;
+ 
+ interface List<T> {
+ 
+Index: src/main/java/MainTaxiApp/Classes/TextHandler.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package Block2.MainTaxiApp.Classes;\r\n\r\nimport java.io.BufferedReader;\r\nimport java.io.BufferedWriter;\r\nimport java.io.FileReader;\r\nimport java.io.FileWriter;\r\nimport java.io.IOException;\r\n\r\npublic class TextHandler {\r\n    private final String USERS_FILE_PATH = \"users.csv\";\r\n    private final String TAXIS_FILE_PATH = \"Taxis.csv\";\r\n\r\n    public String getUSERS_FILE_PATH() {\r\n        return USERS_FILE_PATH;\r\n    }\r\n\r\n    public String getTAXIS_FILE_PATH() {\r\n        return TAXIS_FILE_PATH;\r\n    }\r\n\r\n\r\n\r\n    public LinkedList<User> readUsersAndPasswords(String file) {\r\n        LinkedList<User> usersAndPasswords = new LinkedList<>();\r\n        try (BufferedReader resultReader = new BufferedReader(new FileReader(file))) {\r\n            String line;\r\n            while ((line = resultReader.readLine()) != null) {\r\n                String[] values = line.split(\",\");\r\n                usersAndPasswords.insert(new User(values[0], values[1]));\r\n            }\r\n        } catch (IOException e) {\r\n            e.printStackTrace();\r\n        }\r\n        return usersAndPasswords;\r\n    }\r\n    public void writeInNewUser(String username, String password, String file){\r\n        try {\r\n            BufferedWriter writer = new BufferedWriter(new FileWriter(file, true));\r\n\r\n            String[] data = { username, password };\r\n            String dataLine = String.join(\",\", data);\r\n            writer.write(dataLine);\r\n            writer.newLine();\r\n\r\n            writer.close();\r\n\r\n        } catch (IOException e) {\r\n            e.printStackTrace();\r\n        }\r\n\r\n\r\n    }\r\n    public LinkedList<Taxi> readTaxiData(String file) {\r\n        LinkedList<Taxi> taxis = new LinkedList<>();\r\n        try (BufferedReader resultReader = new BufferedReader(new FileReader(file))) {\r\n            String line;\r\n            taxis.moveToFirst();\r\n            while ((line = resultReader.readLine()) != null) {\r\n                String[] values = line.split(\",\");\r\n                taxis.insert( new Taxi(values[0], values[1], Integer.parseInt(values[2]),values[3],values[4],Integer.parseInt(values[5])));\r\n            }\r\n        } catch (IOException e) {\r\n            e.printStackTrace();\r\n        }\r\n        return taxis;\r\n    }\r\n}\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/main/java/MainTaxiApp/Classes/TextHandler.java b/src/main/java/MainTaxiApp/Classes/TextHandler.java
+--- a/src/main/java/MainTaxiApp/Classes/TextHandler.java	
++++ b/src/main/java/MainTaxiApp/Classes/TextHandler.java	
+@@ -1,4 +1,4 @@
+-package Block2.MainTaxiApp.Classes;
++package MainTaxiApp.Classes;
+ 
+ import java.io.BufferedReader;
+ import java.io.BufferedWriter;
+Index: src/main/java/MainTaxiApp/Interfaces/Testing.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package Block2.MainTaxiApp.Interfaces;\r\n\r\nimport MainTaxiApp.Classes.Location;\r\n\r\npublic interface Testing {\r\n    public interface VehicleHiringTest {\r\n        // Inserts the vehicle with registration number reg to the map at location loc if it has not been already added to map.\r\n// It should return false if the vehicle is not registered or is already on map\r\n        public abstract boolean testAddToMap(String reg, Location loc);\r\n        // Update the location of the vehicle with the specified reg number to location loc if vehicle exists and return true.\r\n//Return false if vehicle not registered or has not been added to the map\r\n        public abstract boolean testMoveVehicle(String reg, Location loc);\r\n        // Remove the vehicle with the specified reg number from the map if it is registered and return true.\r\n// If vehicle is not registered or is not on map the method returns false.\r\n        public abstract boolean testRemoveVehicle(String reg);\r\n        // Return the location of vehicle specified by the reg number if it is registered and added to the map, null otherwise.\r\n        public abstract Location testGetVehicleLoc(String reg);\r\n        // Return a list of all vehicles registration numbers located within a square of side 2*r centered at location loc (inclusive\r\n//of the boundaries).\r\n        //public abstract List<String> testGetVehiclesInRange(Location loc, int r);\r\n    }\r\n}\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/main/java/MainTaxiApp/Interfaces/Testing.java b/src/main/java/MainTaxiApp/Interfaces/Testing.java
+--- a/src/main/java/MainTaxiApp/Interfaces/Testing.java	
++++ b/src/main/java/MainTaxiApp/Interfaces/Testing.java	
+@@ -1,4 +1,4 @@
+-package Block2.MainTaxiApp.Interfaces;
++package MainTaxiApp.Interfaces;
+ 
+ import MainTaxiApp.Classes.Location;
+ 
+Index: users.csv
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/users.csv b/users.csv
+--- a/users.csv	
++++ b/users.csv	
+@@ -1,0 +1,25 @@
++eddie,password
++paddy,password
++andrew,password
++peter,password
++albert,password
++fred,password
++sloggoking,king
++patrick,patrick
++pat,pat
++patrick walsh,patrick walsh
++ed,ed
++jhondoe,password
++oscar,pass
++pat,pat
++pat,pat
++er,er
++er,e
++er,er
++er,er
++er,er
++er,e
++er,er
++thrtfbd,dsbbdf
++pat,pat
++k,k
+\ No newline at end of file
+Index: .idea/workspace.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<project version=\"4\">\r\n  <component name=\"AutoImportSettings\">\r\n    <option name=\"autoReloadType\" value=\"SELECTIVE\" />\r\n  </component>\r\n  <component name=\"ChangeListManager\">\r\n    <list default=\"true\" id=\"9e87768c-0d7a-4f13-8d97-1e4f7eae840e\" name=\"Changes\" comment=\"\">\r\n      <change beforePath=\"$PROJECT_DIR$/pom.xml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/pom.xml\" afterDir=\"false\" />\r\n    </list>\r\n    <option name=\"SHOW_DIALOG\" value=\"false\" />\r\n    <option name=\"HIGHLIGHT_CONFLICTS\" value=\"true\" />\r\n    <option name=\"HIGHLIGHT_NON_ACTIVE_CHANGELIST\" value=\"false\" />\r\n    <option name=\"LAST_RESOLUTION\" value=\"IGNORE\" />\r\n  </component>\r\n  <component name=\"Git.Settings\">\r\n    <option name=\"RECENT_GIT_ROOT_PATH\" value=\"$PROJECT_DIR$\" />\r\n  </component>\r\n  <component name=\"ProjectColorInfo\"><![CDATA[{\r\n  \"associatedIndex\": 3\r\n}]]></component>\r\n  <component name=\"ProjectId\" id=\"2ZWxOGa6KfisUxIDGaDZNZmakWq\" />\r\n  <component name=\"ProjectLevelVcsManager\" settingsEditedManually=\"true\" />\r\n  <component name=\"ProjectViewState\">\r\n    <option name=\"hideEmptyMiddlePackages\" value=\"true\" />\r\n    <option name=\"showLibraryContents\" value=\"true\" />\r\n  </component>\r\n  <component name=\"PropertiesComponent\"><![CDATA[{\r\n  \"keyToString\": {\r\n    \"RunOnceActivity.OpenProjectViewOnStart\": \"true\",\r\n    \"RunOnceActivity.ShowReadmeOnStart\": \"true\",\r\n    \"git-widget-placeholder\": \"master\"\r\n  }\r\n}]]></component>\r\n  <component name=\"SpellCheckerSettings\" RuntimeDictionaries=\"0\" Folders=\"0\" CustomDictionaries=\"0\" DefaultDictionary=\"application-level\" UseSingleDictionary=\"true\" transferred=\"true\" />\r\n  <component name=\"TaskManager\">\r\n    <task active=\"true\" id=\"Default\" summary=\"Default task\">\r\n      <changelist id=\"9e87768c-0d7a-4f13-8d97-1e4f7eae840e\" name=\"Changes\" comment=\"\" />\r\n      <created>1702551602801</created>\r\n      <option name=\"number\" value=\"Default\" />\r\n      <option name=\"presentableId\" value=\"Default\" />\r\n      <updated>1702551602801</updated>\r\n    </task>\r\n    <servers />\r\n  </component>\r\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/workspace.xml b/.idea/workspace.xml
+--- a/.idea/workspace.xml	
++++ b/.idea/workspace.xml	
+@@ -5,7 +5,22 @@
+   </component>
+   <component name="ChangeListManager">
+     <list default="true" id="9e87768c-0d7a-4f13-8d97-1e4f7eae840e" name="Changes" comment="">
++      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/main/java/MainTaxiApp/Classes/AppLogic.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/MainTaxiApp/Classes/AppLogic.java" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/main/java/MainTaxiApp/Classes/LinkedList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/MainTaxiApp/Classes/LinkedList.java" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/main/java/MainTaxiApp/Classes/Location.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/MainTaxiApp/Classes/Location.java" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/main/java/MainTaxiApp/Classes/Login.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/MainTaxiApp/Classes/Login.java" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/main/java/MainTaxiApp/Classes/Map.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/MainTaxiApp/Classes/Map.java" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/main/java/MainTaxiApp/Classes/Taxi.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/MainTaxiApp/Classes/Taxi.java" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/main/java/MainTaxiApp/Classes/TextHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/MainTaxiApp/Classes/TextHandler.java" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/main/java/MainTaxiApp/Classes/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/MainTaxiApp/Classes/User.java" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/main/java/MainTaxiApp/Enums/Direction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/MainTaxiApp/Enums/Direction.java" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/main/java/MainTaxiApp/Interfaces/Testing.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/MainTaxiApp/Interfaces/Testing.java" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/main/java/MainTaxiApp/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/MainTaxiApp/Main.java" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/main/java/Passenger.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/MainTaxiApp/Classes/Passenger.java" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/main/java/Tests/TextHandlerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/TextHandlerTest.java" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/users.csv" beforeDir="false" afterPath="$PROJECT_DIR$/users.csv" afterDir="false" />
+     </list>
+     <option name="SHOW_DIALOG" value="false" />
+     <option name="HIGHLIGHT_CONFLICTS" value="true" />
+@@ -15,9 +30,9 @@
+   <component name="Git.Settings">
+     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+   </component>
+-  <component name="ProjectColorInfo"><![CDATA[{
+-  "associatedIndex": 3
+-}]]></component>
++  <component name="ProjectColorInfo">{
++  &quot;associatedIndex&quot;: 3
++}</component>
+   <component name="ProjectId" id="2ZWxOGa6KfisUxIDGaDZNZmakWq" />
+   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+   <component name="ProjectViewState">
+@@ -28,9 +43,40 @@
+   "keyToString": {
+     "RunOnceActivity.OpenProjectViewOnStart": "true",
+     "RunOnceActivity.ShowReadmeOnStart": "true",
+-    "git-widget-placeholder": "master"
++    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
++    "git-widget-placeholder": "master",
++    "last_opened_file_path": "C:/Users/Patri/Documents/Code/Epic2Maven",
++    "project.structure.last.edited": "Modules",
++    "project.structure.proportion": "0.15",
++    "project.structure.side.proportion": "0.0"
+   }
+ }]]></component>
++  <component name="RecentsManager">
++    <key name="CopyFile.RECENT_KEYS">
++      <recent name="C:\Users\Patri\Documents\Code\Epic2Maven" />
++      <recent name="C:\Users\Patri\Documents\Code\Epic2Maven\src\main\java" />
++    </key>
++    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
++      <recent name="" />
++    </key>
++  </component>
++  <component name="RunManager">
++    <configuration name="TextHandlerTest.testReadUsersAndPasswords" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
++      <module name="Epic2Maven" />
++      <option name="PACKAGE_NAME" value="" />
++      <option name="MAIN_CLASS_NAME" value="TextHandlerTest" />
++      <option name="METHOD_NAME" value="testReadUsersAndPasswords" />
++      <option name="TEST_OBJECT" value="method" />
++      <method v="2">
++        <option name="Make" enabled="true" />
++      </method>
++    </configuration>
++    <recent_temporary>
++      <list>
++        <item itemvalue="JUnit.TextHandlerTest.testReadUsersAndPasswords" />
++      </list>
++    </recent_temporary>
++  </component>
+   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+   <component name="TaskManager">
+     <task active="true" id="Default" summary="Default task">
+Index: pom.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<project xmlns=\"http://maven.apache.org/POM/4.0.0\"\r\n         xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\"\r\n         xsi:schemaLocation=\"http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd\">\r\n    <modelVersion>4.0.0</modelVersion>\r\n\r\n    <groupId>org.example</groupId>\r\n    <artifactId>Epic2Maven</artifactId>\r\n    <version>1.0-SNAPSHOT</version>\r\n\r\n    <properties>\r\n        <maven.compiler.source>21</maven.compiler.source>\r\n        <maven.compiler.target>21</maven.compiler.target>\r\n        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>\r\n    </properties>\r\n    \r\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/pom.xml b/pom.xml
+--- a/pom.xml	
++++ b/pom.xml	
+@@ -13,5 +13,27 @@
+         <maven.compiler.target>21</maven.compiler.target>
+         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+     </properties>
+-    
++    <dependencies>
++        <dependency>
++            <groupId>junit</groupId>
++            <artifactId>junit</artifactId>
++            <version>RELEASE</version>
++            <scope>compile</scope>
++        </dependency>
++        <!-- https://mvnrepository.com/artifact/junit/junit -->
++        <dependency>
++            <groupId>junit</groupId>
++            <artifactId>junit</artifactId>
++            <version>4.13.2</version>
++            <scope>test</scope>
++        </dependency>
++        <dependency>
++            <groupId>org.junit.jupiter</groupId>
++            <artifactId>junit-jupiter</artifactId>
++            <version>RELEASE</version>
++            <scope>compile</scope>
++        </dependency>
++
++    </dependencies>
++
+ </project>
+\ No newline at end of file
+Index: src/main/java/MainTaxiApp/Classes/Map.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package Block2.MainTaxiApp.Classes;\r\n\r\nimport java.util.Random;\r\n\r\npublic class Map {\r\n    TextHandler text = new TextHandler();\r\n    private final LinkedList<Taxi> taxis =text.readTaxiData(text.getTAXIS_FILE_PATH());\r\n        private final Location[][] grid;\r\n        private final int mapRadius;\r\n        public Map(int radius, User currentUser){\r\n            this.grid = new Location[radius][radius];\r\n            this.mapRadius = radius;\r\n            for(int i=0; i < radius; i++) {\r\n                for (int j = 0; j < radius; j++) {\r\n                    this.grid[i][j] = new Location(i, j);\r\n                }\r\n            }\r\n            addTaxisAndUsersToMap(radius,currentUser);\r\n\r\n        }\r\n\r\n        public void printMap(){\r\n            for(int i=0; i<mapRadius; i++) {\r\n                for (int j = 0; j < mapRadius; j++) {\r\n                    Location location = grid[j][i];\r\n                    System.out.print(location.getMapPoint());\r\n                }\r\n                System.out.println();\r\n            }\r\n        }\r\n        public void addTaxisAndUsersToMap(int radius, User currentUser){\r\n            Random random = new Random();\r\n            grid[random.nextInt(radius)][random.nextInt(radius)].addUser(currentUser);\r\n            int numberOfTaxi = random.nextInt(11)+10;\r\n            taxis.moveToFirst();\r\n            for(int i=0; i<numberOfTaxi; i++) {\r\n                grid[random.nextInt(radius)][random.nextInt(radius)].addTaxi(taxis.getData());\r\n                taxis.moveToNext();\r\n            }\r\n        }\r\n}\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/main/java/MainTaxiApp/Classes/Map.java b/src/main/java/MainTaxiApp/Classes/Map.java
+--- a/src/main/java/MainTaxiApp/Classes/Map.java	
++++ b/src/main/java/MainTaxiApp/Classes/Map.java	
+@@ -1,4 +1,4 @@
+-package Block2.MainTaxiApp.Classes;
++package MainTaxiApp.Classes;
+ 
+ import java.util.Random;
+ 
+Index: src/main/java/MainTaxiApp/Classes/Taxi.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package Block2.MainTaxiApp.Classes;\r\n\r\npublic class Taxi {\r\n    private final String registration;\r\n    private final String name;\r\n    private final int rating;\r\n    private final String brand;\r\n    private final String size;\r\n    private final int seats;\r\n\r\n\r\n    public Taxi(String registration, String name, int rating, String brand, String size, int seats){\r\n        this.registration = registration;\r\n        this.name = name;\r\n        this.rating = rating;\r\n        this.brand = brand;\r\n        this.size = size;\r\n        this.seats = seats;\r\n    }\r\n\r\n    public String getRegistration() {\r\n        return registration;\r\n    }\r\n    public String getName() {\r\n        return name;\r\n    }\r\n    public int getRating() {\r\n        return rating;\r\n    }\r\n    public String getBrand() {\r\n        return brand;\r\n    }\r\n    public String getSize() {\r\n        return size;\r\n    }\r\n    public int getSeats() {\r\n        return seats;\r\n    }\r\n\r\n    /*method to calculate distance between user and taxi\r\n    using pythagoras theorem */\r\n\r\n\r\n}\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/main/java/MainTaxiApp/Classes/Taxi.java b/src/main/java/MainTaxiApp/Classes/Taxi.java
+--- a/src/main/java/MainTaxiApp/Classes/Taxi.java	
++++ b/src/main/java/MainTaxiApp/Classes/Taxi.java	
+@@ -1,4 +1,4 @@
+-package Block2.MainTaxiApp.Classes;
++package MainTaxiApp.Classes;
+ 
+ public class Taxi {
+     private final String registration;
+Index: src/main/java/MainTaxiApp/Enums/Direction.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package Block2.MainTaxiApp.Enums;\r\n\r\npublic enum Direction {\r\n    UP(-1, 0),\r\n    DOWN(1, 0),\r\n    LEFT(0, -1),\r\n    RIGHT(0, 1);\r\n\r\n    private final int x;\r\n    private final int y;\r\n\r\n    Direction(int x, int y) {\r\n        this.x = x;\r\n        this.y = y;\r\n    }\r\n\r\n    public int getX() {\r\n        return x;\r\n    }\r\n\r\n    public int getY() {\r\n        return y;\r\n    }\r\n}
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/main/java/MainTaxiApp/Enums/Direction.java b/src/main/java/MainTaxiApp/Enums/Direction.java
+--- a/src/main/java/MainTaxiApp/Enums/Direction.java	
++++ b/src/main/java/MainTaxiApp/Enums/Direction.java	
+@@ -1,4 +1,4 @@
+-package Block2.MainTaxiApp.Enums;
++package MainTaxiApp.Enums;
+ 
+ public enum Direction {
+     UP(-1, 0),
