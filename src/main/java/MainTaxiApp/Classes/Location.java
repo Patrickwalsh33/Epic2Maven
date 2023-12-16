@@ -33,5 +33,10 @@ public class Location {
         mapPoint = "T\t";
     }
 
+    public boolean hasTaxi() {
+        return this.getMapPoint().equals("T\t");
+    }
+
+
 
 }
