@@ -59,7 +59,7 @@
                         <manifest>
                             <addClasspath>true</addClasspath>
                             <classpathPrefix>lib</classpathPrefix>
-                            <mainClass>package.Class-name</mainClass>
+                            <mainClass>MainTaxiApp.Main</mainClass>
                         </manifest>
                     </archive>
                 </configuration>

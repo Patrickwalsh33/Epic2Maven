@@ -10,7 +10,6 @@
       <change beforePath="$PROJECT_DIR$/target/surefire-reports/AppLogicTest.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/AppLogicTest.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/surefire-reports/LinkedListTest.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/LinkedListTest.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/surefire-reports/LocationTest.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/LocationTest.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/MapTest.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/MapTest.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-AppLogicTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-AppLogicTest.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-LinkedListTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-LinkedListTest.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-LocationTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-LocationTest.xml" afterDir="false" />
@@ -18,7 +17,6 @@
       <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-TaxiTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-TaxiTest.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-TextHandlerTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-TextHandlerTest.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-UserTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-UserTest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TextHandlerTest.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TextHandlerTest.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/surefire-reports/UserTest.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/UserTest.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -71,6 +69,7 @@
   "keyToString": {
     "Application.Main.executor": "Run",
     "Docker.Dockerfile.executor": "Run",
+    "Docker.src/Dockerfile.executor": "Run",
     "JUnit.AppLogicTest (1).executor": "Run",
     "JUnit.AppLogicTest.executor": "Run",
     "JUnit.AppLogicTest.testAnythingToContinue.executor": "Run",
@@ -88,6 +87,7 @@
     "JUnit.TextHandlerTest.executor": "Run",
     "JUnit.TextHandlerTest.testReadUsersAndPasswords.executor": "Run",
     "JUnit.UserTest.testGetUsername.executor": "Run",
+    "Maven.Epic2Maven [deploy].executor": "Run",
     "Maven.Epic2Maven [install].executor": "Run",
     "Maven.Epic2Maven [package].executor": "Run",
     "Maven.Epic2Maven [test].executor": "Run",
@@ -104,6 +104,8 @@
       <recent name="MainTaxiApp.Classes" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\eddie_uooosyh\Documents\GitHub\Epic2MavenTaxiApp" />
+      <recent name="C:\Users\eddie_uooosyh\Documents\GitHub\Epic2MavenTaxiApp\src" />
       <recent name="C:\Users\eddie_uooosyh\Documents\GitHub\Epic2MavenTaxiApp\src\test\java" />
     </key>
   </component>
@@ -150,22 +152,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TaxiTest.testGetTaxiDetails" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Epic2Maven" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="Tests.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="Tests" />
-      <option name="MAIN_CLASS_NAME" value="Tests.TaxiTest" />
-      <option name="METHOD_NAME" value="testGetTaxiDetails" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="Dockerfile" type="docker-deploy" factoryName="dockerfile" temporary="true" server-name="Docker">
       <deployment type="dockerfile">
         <settings>
@@ -178,13 +164,21 @@
       <deployment type="dockerfile" />
       <method v="2" />
     </configuration>
+    <configuration name="src/Dockerfile" type="docker-deploy" factoryName="dockerfile" temporary="true" server-name="Docker">
+      <deployment type="dockerfile">
+        <settings>
+          <option name="sourceFilePath" value="src/Dockerfile" />
+        </settings>
+      </deployment>
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="Docker.Dockerfile" />
+        <item itemvalue="Docker.src/Dockerfile" />
         <item itemvalue="Application.Main" />
         <item itemvalue="JUnit.AppLogicTest (1)" />
         <item itemvalue="JUnit.AppLogicTest" />
-        <item itemvalue="JUnit.TaxiTest.testGetTaxiDetails" />
       </list>
     </recent_temporary>
   </component>
@@ -517,7 +511,15 @@
       <option name="project" value="LOCAL" />
       <updated>1702682595825</updated>
     </task>
-    <option name="localTasksCounter" value="40" />
+    <task id="LOCAL-00040" summary="Docker push">
+      <option name="closed" value="true" />
+      <created>1702684648344</created>
+      <option name="number" value="00040" />
+      <option name="presentableId" value="LOCAL-00040" />
+      <option name="project" value="LOCAL" />
+      <updated>1702684648344</updated>
+    </task>
+    <option name="localTasksCounter" value="41" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
