@@ -6,16 +6,14 @@ public class Taxi {
     private final int rating;
     private final String brand;
     private final String size;
-    private final int seats;
 
 
-    public Taxi(String registration, String name, int rating, String brand, String size, int seats){
+    public Taxi(String registration, String name, int rating, String brand, String size){
         this.registration = registration;
         this.name = name;
         this.rating = rating;
         this.brand = brand;
         this.size = size;
-        this.seats = seats;
     }
 
     public String getRegistration() {
@@ -32,9 +30,6 @@ public class Taxi {
     }
     public String getSize() {
         return size;
-    }
-    public int getSeats() {
-        return seats;
     }
 
 }

@@ -52,11 +52,13 @@ public class Map {
 
         }
 
-    public void searchAlgorithm() {
+    public Taxi searchAlgorithm() {
+            AppLogic size = new AppLogic();
+            String taxiSize =(size.findSize()+"").toLowerCase();
         int searchRadius = 1; // Start with a small search radius
-
+        Location nearestTaxiLocation=null;
         while (true) {
-            Location nearestTaxiLocation = findNearestTaxi(usersLocation, searchRadius);
+            nearestTaxiLocation = findNearestTaxi(usersLocation, searchRadius,taxiSize);
 
             if (nearestTaxiLocation != null) {
                 System.out.println("Nearest taxi found at coordinates: (" + nearestTaxiLocation.getX() + ", " + nearestTaxiLocation.getY() + ")");
@@ -66,9 +68,10 @@ public class Map {
                 searchRadius++; // Increment the search radius for the next iteration
             }
         }
+        return nearestTaxiLocation.getTaxi();
     }
 
-    private Location findNearestTaxi(Location userLocation, int searchRadius) {
+    private Location findNearestTaxi(Location userLocation, int searchRadius,String size) {
         for (int i = Math.max(0, userLocation.getX() - searchRadius); i <= Math.min(mapRadius - 1, userLocation.getX() + searchRadius); i++) {
             for (int j = Math.max(0, userLocation.getY() - searchRadius); j <= Math.min(mapRadius - 1, userLocation.getY() + searchRadius); j++) {
                 Location location = grid[i][j];
@@ -76,7 +79,7 @@ public class Map {
                 //Debug prints
                 System.out.println("Checking Location: (" + i + ", " + j + ") for a taxi. hasTaxi(map): " + location.hasTaxi());
 
-                if (location.hasTaxi()) {
+                if (location.getTaxi()!=null&& location.getTaxi().getSize().equals(size)) {
                     return location; // Found a taxi within the search radius
                 }
             }

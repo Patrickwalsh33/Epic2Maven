@@ -3,6 +3,7 @@ package MainTaxiApp;
 import MainTaxiApp.Classes.AppLogic;
 import MainTaxiApp.Classes.Login;
 import MainTaxiApp.Classes.Map;
+import MainTaxiApp.Classes.Taxi;
 public class Main {
     public static void main(String[] args) {
        AppLogic.clearConsole();
@@ -15,6 +16,13 @@ public class Main {
         map.printMap();
 
         AppLogic.anythingToContinue();
-        map.searchAlgorithm();
+        Taxi taxiFound = map.searchAlgorithm();
+        System.out.println("The closest taxi found was "
+                + taxiFound.getRegistration()
+                + " driven by "
+                + taxiFound.getName()
+                + " Taxi size: "
+                +taxiFound.getSize());
+
     }
 }

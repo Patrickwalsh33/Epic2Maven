@@ -54,7 +54,7 @@ public class TextHandler {
             taxis.moveToFirst();
             while ((line = resultReader.readLine()) != null) {
                 String[] values = line.split(",");
-                taxis.insert( new Taxi(values[0],values[1],Integer.parseInt(values[2]),values[3],values[4],Integer.parseInt(values[5])));
+                taxis.insert( new Taxi(values[0],values[1],Integer.parseInt(values[2]),values[3],values[4]));
             }
         } catch (IOException e) {
             System.out.println("Cant find or read Taxis.csv file");
