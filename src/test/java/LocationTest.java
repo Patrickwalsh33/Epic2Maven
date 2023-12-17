@@ -26,7 +26,7 @@ public class LocationTest {
     @Test
     public void testAddTaxi() {
         Location location = new Location(5, 6);
-        Taxi taxi = new Taxi("08-MH-3038","Jhon Doe",4,"Toyota","medium",1);
+        Taxi taxi = new Taxi("08-MH-3038","Jhon Doe",4,"Toyota","medium");
         location.addTaxi(taxi);
         assertEquals("T\t", location.getMapPoint());
     }

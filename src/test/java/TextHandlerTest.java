@@ -44,7 +44,7 @@ class TextHandlerTest {
     @Test
     void testReadTaxiData() throws IOException {
         Path tempFile = Files.createTempFile("testTaxis", ".csv");
-        Files.write(tempFile, "08-MH-3038,Jhon Doe,4,Toyota,medium,1\n11-D-1234,Jane Smith,3,Ford,small,4".getBytes(), StandardOpenOption.WRITE);
+        Files.write(tempFile, "08-MH-3038,John Doe,4,Toyota,medium\n11-D-1234,Jane Smith,3,Ford,small".getBytes(), StandardOpenOption.WRITE);
         TextHandler textHandler = new TextHandler();
 
         LinkedList<Taxi> testTaxis = textHandler.readTaxiData(tempFile.toString());
@@ -52,11 +52,11 @@ class TextHandlerTest {
         testTaxis.moveToFirst();
         Taxi taxi1 = testTaxis.getData();
         assertEquals("08-MH-3038", taxi1.getRegistration());
-        assertEquals("Jhon Doe", taxi1.getName());
+        assertEquals("John Doe", taxi1.getName());
         assertEquals(4, taxi1.getRating());
         assertEquals("Toyota", taxi1.getBrand());
         assertEquals("medium", taxi1.getSize());
-        assertEquals(1, taxi1.getSeats());
+
         testTaxis.moveToNext();
         Taxi taxi2 = testTaxis.getData();
         assertEquals("11-D-1234", taxi2.getRegistration());
@@ -64,7 +64,7 @@ class TextHandlerTest {
         assertEquals(3, taxi2.getRating());
         assertEquals("Ford", taxi2.getBrand());
         assertEquals("small", taxi2.getSize());
-        assertEquals(4, taxi2.getSeats());
+
 
         Files.delete(tempFile);
     }
