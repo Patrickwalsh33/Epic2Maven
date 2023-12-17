@@ -18,11 +18,11 @@ public class Login {
             String logInOrSignUp = input.nextLine();
             switch (logInOrSignUp) {
                 case OPTION_ZERO:
-                    System.out.println("\n---\nSignUp chosen\n---\n");
+                    System.out.println("\n---\nSignUp chosen");
                     signUpToApp(usernames, text);
                     break;
                 case OPTION_ONE:
-                    System.out.println("\n---\nLogin chosen\n---\n");
+                    System.out.println("\n---\nLogin chosen");
                     loginToApp(usernames, text);
                     break;
                 default:

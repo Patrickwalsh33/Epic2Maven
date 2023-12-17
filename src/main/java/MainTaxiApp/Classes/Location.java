@@ -26,12 +26,12 @@ public class Location {
         this.mapPoint = ".\t";
     }
     public void addUser(User user){
-        System.out.println(user.getUsername()+" added to (" + x + "," + y + ")");
+        //System.out.println(user.getUsername()+" added to (" + x + "," + y + ")");
         mapPoint = "U\t";
 
     }
    public void addTaxi(Taxi taxi){
-        System.out.println(taxi.getRegistration()+" added to ("+x+","+y + ")");
+        //System.out.println(taxi.getRegistration()+" added to ("+x+","+y + ")");
         this.taxiInLocation=taxi;
         mapPoint = "T\t";
     }
