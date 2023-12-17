@@ -5,6 +5,10 @@ public class Location {
     private final int y;
     private String mapPoint;
 
+    public Taxi taxiInLocation=null;
+
+    public User userInLocation=null;
+
     public int getX() {
         return x;
     }
@@ -30,11 +34,17 @@ public class Location {
     }
    public void addTaxi(Taxi taxi){
         System.out.println(taxi.getRegistration()+" added to ("+x+","+y + ")");
+        this.taxiInLocation=taxi;
         mapPoint = "T\t";
     }
 
     public boolean hasTaxi() {
         return this.getMapPoint().equals("T\t");
+    }
+
+    public Taxi getTaxi(){
+        return taxiInLocation;
+        //if get taxi is not null taxi is in location
     }
 
 

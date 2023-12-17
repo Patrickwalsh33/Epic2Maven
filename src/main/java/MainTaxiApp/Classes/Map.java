@@ -52,11 +52,11 @@ public class Map {
 
         }
 
-    public void searchAlgorithm() {
+    public Taxi searchAlgorithm() {
         int searchRadius = 1; // Start with a small search radius
-
+        Location nearestTaxiLocation=null;
         while (true) {
-            Location nearestTaxiLocation = findNearestTaxi(usersLocation, searchRadius);
+            nearestTaxiLocation = findNearestTaxi(usersLocation, searchRadius);
 
             if (nearestTaxiLocation != null) {
                 System.out.println("Nearest taxi found at coordinates: (" + nearestTaxiLocation.getX() + ", " + nearestTaxiLocation.getY() + ")");
@@ -66,6 +66,7 @@ public class Map {
                 searchRadius++; // Increment the search radius for the next iteration
             }
         }
+        return nearestTaxiLocation.getTaxi();
     }
 
     private Location findNearestTaxi(Location userLocation, int searchRadius) {
