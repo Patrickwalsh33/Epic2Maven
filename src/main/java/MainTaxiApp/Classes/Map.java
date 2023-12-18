@@ -11,6 +11,8 @@ public class Map {
         private Location usersLocation;
         private final int mapRadius;
 
+
+
         public Map(int radius, User currentUser){
             this.grid = new Location[radius][radius];
             this.mapRadius = radius;
@@ -20,10 +22,10 @@ public class Map {
                 }
             }
             addTaxisAndUsersToMap(radius,currentUser);
-
+            printMap(usersLocation);
         }
 
-        public void printMap(){
+        public void printMap(Location usersLoc){
             for(int i=0; i<mapRadius; i++) {
                 for (int j = 0; j < mapRadius; j++) {
                     Location location = grid[j][i];
@@ -31,12 +33,11 @@ public class Map {
                 }
                 System.out.println();
             }
-            System.out.println("You are at: (" + usersLocation.getX() + ", " + usersLocation.getY() + ")");
+            if(usersLoc!=null)
+            {System.out.println("You are at: (" + usersLoc.getX() + ", " + usersLoc.getY() + ")");}
         }
         public void addTaxisAndUsersToMap(int radius, User currentUser){
             Random random = new Random();
-            usersLocation=grid[random.nextInt(radius)][random.nextInt(radius)];
-            usersLocation.addUser(currentUser);
             int numberOfTaxi = random.nextInt(11)+10;
             taxis.moveToFirst();
             for(int i=0; i<numberOfTaxi; i++) {
@@ -45,6 +46,8 @@ public class Map {
                 taxisOnMap.insert(newTaxi);
                 taxis.moveToNext();
             }
+            usersLocation=grid[random.nextInt(radius)][random.nextInt(radius)];
+            usersLocation.addUser(currentUser);
         }
         public void callTaxiToUser(){
         }
@@ -52,7 +55,7 @@ public class Map {
 
         }
 
-    public Taxi searchAlgorithm() {
+    private Location searchAlgorithm() {
             AppLogic size = new AppLogic();
             String taxiSize =(size.findSize()+"").toLowerCase();
         int searchRadius = 1; // Start with a small search radius
@@ -61,6 +64,7 @@ public class Map {
             nearestTaxiLocation = findNearestTaxi(usersLocation, searchRadius,taxiSize);
 
             if (nearestTaxiLocation != null) {
+                nearestTaxiLocation.DrivingTaxi();
                 System.out.println("Nearest taxi found at coordinates: (" + nearestTaxiLocation.getX() + ", " + nearestTaxiLocation.getY() + ")");
                 break; // Exit the loop once a taxi is found
             } else {
@@ -68,7 +72,7 @@ public class Map {
                 searchRadius++; // Increment the search radius for the next iteration
             }//test
         }
-        return nearestTaxiLocation.getTaxi();
+        return nearestTaxiLocation;
     }
 
     private Location findNearestTaxi(Location userLocation, int searchRadius,String size) {
@@ -87,5 +91,38 @@ public class Map {
 
         return null; // No taxi found within the current search radius
     }
+    public void moveTaxiToUser()  {
+        Location nearestTaxi = searchAlgorithm();
+        moveTaxisOnTheMap(usersLocation,nearestTaxi,usersLocation);
+        System.out.println("The taxi has arrived and has picked you up.");
+    }
+    public void moveTaxiAndUserToLocation(int x,int y)  {
+        System.out.println("Beginning drive to destination.");
+            Location destination = grid[x][y];
+            moveTaxisOnTheMap(destination,usersLocation,null);
+        System.out.println("You have arrived at your destination.");
+    }
+    public void moveTaxisOnTheMap(Location destination, Location taxi, Location user) {
+        while (!taxi.equals(destination)) {
+            int deltaX = Integer.compare(destination.getX(), taxi.getX());
+            int deltaY = Integer.compare(destination.getY(), taxi.getY());
+
+            Location old = taxi;
+            taxi = grid[taxi.getX() + deltaX][taxi.getY() + deltaY];
+            taxi.addTaxi(old.getTaxi());
+            old.removeTaxi();
+            taxi.DrivingTaxi();
+            printMap(user);
+            System.out.println("Taxi is now at (" + taxi.getX() + "," + taxi.getY() + ")");
+            try {
+                Thread.sleep(1000);
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
+        }
+
+
+    }
 }
+
 
