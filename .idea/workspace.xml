@@ -542,7 +542,23 @@
       <option name="project" value="LOCAL" />
       <updated>1702843375880</updated>
     </task>
-    <option name="localTasksCounter" value="44" />
+    <task id="LOCAL-00044" summary="Taxi algorithm now intakes size">
+      <option name="closed" value="true" />
+      <created>1702844052080</created>
+      <option name="number" value="00044" />
+      <option name="presentableId" value="LOCAL-00044" />
+      <option name="project" value="LOCAL" />
+      <updated>1702844052080</updated>
+    </task>
+    <task id="LOCAL-00045" summary="Taxi algorithm now intakes size">
+      <option name="closed" value="true" />
+      <created>1702844152348</created>
+      <option name="number" value="00045" />
+      <option name="presentableId" value="LOCAL-00045" />
+      <option name="project" value="LOCAL" />
+      <updated>1702844152348</updated>
+    </task>
+    <option name="localTasksCounter" value="46" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
