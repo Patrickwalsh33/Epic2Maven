@@ -4,7 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9e87768c-0d7a-4f13-8d97-1e4f7eae840e" name="Changes" comment="Taxi algorithm now intakes size" />
+    <list default="true" id="9e87768c-0d7a-4f13-8d97-1e4f7eae840e" name="Changes" comment="Scanner test">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -26,7 +29,7 @@
     </option>
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="LoginTest" />
+        <entry key="$PROJECT_DIR$" value="master" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -57,41 +60,41 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Application.Main.executor&quot;: &quot;Run&quot;,
-    &quot;Docker.Dockerfile.executor&quot;: &quot;Run&quot;,
-    &quot;Docker.src/Dockerfile.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.AppLogicTest (1).executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.AppLogicTest.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.AppLogicTest.testAnythingToContinue.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.AppLogicTest.testClearConsole.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.LinkedListTest.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.LocationTest.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.LoginTest.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.LoginTest.testDoesContain.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.LoginTest.testLoginOrSignUp.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.LoginTest.testLoginOrSignUp_SignUp.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.LoginTest.testLoginToApp.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.LoginTest.testSignUpToApp.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.MapTest.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.TaxiTest.testGetTaxiDetails.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.TextHandlerTest.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.TextHandlerTest.testReadUsersAndPasswords.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.UserTest.testGetUsername.executor&quot;: &quot;Run&quot;,
-    &quot;Maven.Epic2Maven [deploy].executor&quot;: &quot;Run&quot;,
-    &quot;Maven.Epic2Maven [install].executor&quot;: &quot;Run&quot;,
-    &quot;Maven.Epic2Maven [package].executor&quot;: &quot;Run&quot;,
-    &quot;Maven.Epic2Maven [test].executor&quot;: &quot;Run&quot;,
-    &quot;Maven.Epic2Maven [verify].executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/eddie_uooosyh/Documents/GitHub/Epic2MavenTaxiApp&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;com.intellij.jarRepository.settings.RemoteRepositoriesConfigurable&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.Main.executor": "Run",
+    "Docker.Dockerfile.executor": "Run",
+    "Docker.src/Dockerfile.executor": "Run",
+    "JUnit.AppLogicTest (1).executor": "Run",
+    "JUnit.AppLogicTest.executor": "Run",
+    "JUnit.AppLogicTest.testAnythingToContinue.executor": "Run",
+    "JUnit.AppLogicTest.testClearConsole.executor": "Run",
+    "JUnit.LinkedListTest.executor": "Run",
+    "JUnit.LocationTest.executor": "Run",
+    "JUnit.LoginTest.executor": "Run",
+    "JUnit.LoginTest.testDoesContain.executor": "Run",
+    "JUnit.LoginTest.testLoginOrSignUp.executor": "Run",
+    "JUnit.LoginTest.testLoginOrSignUp_SignUp.executor": "Run",
+    "JUnit.LoginTest.testLoginToApp.executor": "Run",
+    "JUnit.LoginTest.testSignUpToApp.executor": "Run",
+    "JUnit.MapTest.executor": "Run",
+    "JUnit.TaxiTest.testGetTaxiDetails.executor": "Run",
+    "JUnit.TextHandlerTest.executor": "Run",
+    "JUnit.TextHandlerTest.testReadUsersAndPasswords.executor": "Run",
+    "JUnit.UserTest.testGetUsername.executor": "Run",
+    "Maven.Epic2Maven [deploy].executor": "Run",
+    "Maven.Epic2Maven [install].executor": "Run",
+    "Maven.Epic2Maven [package].executor": "Run",
+    "Maven.Epic2Maven [test].executor": "Run",
+    "Maven.Epic2Maven [verify].executor": "Run",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "DockerTest",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/eddie_uooosyh/Documents/GitHub/Epic2MavenTaxiApp",
+    "settings.editor.selected.configurable": "com.intellij.jarRepository.settings.RemoteRepositoriesConfigurable"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="MainTaxiApp.Classes" />
@@ -111,7 +114,14 @@
       <command value="maven test" />
     </option>
   </component>
-  <component name="RunManager" selected="Application.Main">
+  <component name="RunDashboard">
+    <option name="configurationTypes">
+      <set>
+        <option value="docker-deploy" />
+      </set>
+    </option>
+  </component>
+  <component name="RunManager" selected="Docker.Dockerfile">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="MainTaxiApp.Main" />
       <module name="Epic2Maven" />
@@ -173,11 +183,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.AppLogicTest (1)" />
-        <item itemvalue="JUnit.AppLogicTest" />
-        <item itemvalue="Docker.src/Dockerfile" />
         <item itemvalue="Docker.Dockerfile" />
         <item itemvalue="Application.Main" />
+        <item itemvalue="Docker.src/Dockerfile" />
+        <item itemvalue="JUnit.AppLogicTest (1)" />
+        <item itemvalue="JUnit.AppLogicTest" />
       </list>
     </recent_temporary>
   </component>
@@ -542,7 +552,47 @@
       <option name="project" value="LOCAL" />
       <updated>1702843375880</updated>
     </task>
-    <option name="localTasksCounter" value="44" />
+    <task id="LOCAL-00044" summary="docker file updated to add the csv files">
+      <option name="closed" value="true" />
+      <created>1702849035620</created>
+      <option name="number" value="00044" />
+      <option name="presentableId" value="LOCAL-00044" />
+      <option name="project" value="LOCAL" />
+      <updated>1702849035620</updated>
+    </task>
+    <task id="LOCAL-00045" summary="jar file made to not be a snapshot">
+      <option name="closed" value="true" />
+      <created>1702849217389</created>
+      <option name="number" value="00045" />
+      <option name="presentableId" value="LOCAL-00045" />
+      <option name="project" value="LOCAL" />
+      <updated>1702849217389</updated>
+    </task>
+    <task id="LOCAL-00046" summary="jar file made to not be a snapshot">
+      <option name="closed" value="true" />
+      <created>1702849231506</created>
+      <option name="number" value="00046" />
+      <option name="presentableId" value="LOCAL-00046" />
+      <option name="project" value="LOCAL" />
+      <updated>1702849231506</updated>
+    </task>
+    <task id="LOCAL-00047" summary="jar file made to not be a snapshot">
+      <option name="closed" value="true" />
+      <created>1702849241145</created>
+      <option name="number" value="00047" />
+      <option name="presentableId" value="LOCAL-00047" />
+      <option name="project" value="LOCAL" />
+      <updated>1702849241146</updated>
+    </task>
+    <task id="LOCAL-00048" summary="Scanner test">
+      <option name="closed" value="true" />
+      <created>1702849773485</created>
+      <option name="number" value="00048" />
+      <option name="presentableId" value="LOCAL-00048" />
+      <option name="project" value="LOCAL" />
+      <updated>1702849773485</updated>
+    </task>
+    <option name="localTasksCounter" value="49" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -560,6 +610,9 @@
     <MESSAGE value="user coordinates printed to console once user is added" />
     <MESSAGE value="Docker push" />
     <MESSAGE value="Taxi algorithm now intakes size" />
-    <option name="LAST_COMMIT_MESSAGE" value="Taxi algorithm now intakes size" />
+    <MESSAGE value="docker file updated to add the csv files" />
+    <MESSAGE value="jar file made to not be a snapshot" />
+    <MESSAGE value="Scanner test" />
+    <option name="LAST_COMMIT_MESSAGE" value="Scanner test" />
   </component>
 </project>

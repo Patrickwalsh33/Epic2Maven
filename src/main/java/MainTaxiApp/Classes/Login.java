@@ -15,19 +15,21 @@ public class Login {
         LinkedList<User> usernames =text.readUsersAndPasswords(text.getUSERS_FILE_PATH());
         System.out.println("---\nWelcome to the TaxiApp.\n Sign up [0]\n or\n Log in[1]");
         for(int i =0; i<1; i++) {
-            String logInOrSignUp = input.nextLine();
-            switch (logInOrSignUp) {
-                case OPTION_ZERO:
-                    System.out.println("\n---\nSignUp chosen\n---\n");
-                    signUpToApp(usernames, text);
-                    break;
-                case OPTION_ONE:
-                    System.out.println("\n---\nLogin chosen\n---\n");
-                    loginToApp(usernames, text);
-                    break;
-                default:
-                    System.out.println("Invalid input, please try again.");
-                    i--;
+            if(input.hasNextLine()) {
+                String logInOrSignUp = input.nextLine();
+                switch (logInOrSignUp) {
+                    case OPTION_ZERO:
+                        System.out.println("\n---\nSignUp chosen");
+                        signUpToApp(usernames, text);
+                        break;
+                    case OPTION_ONE:
+                        System.out.println("\n---\nLogin chosen");
+                        loginToApp(usernames, text);
+                        break;
+                    default:
+                        System.out.println("Invalid input, please try again.");
+                        i--;
+                }
             }
         }
     }
