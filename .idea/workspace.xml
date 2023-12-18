@@ -4,8 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9e87768c-0d7a-4f13-8d97-1e4f7eae840e" name="Changes" comment="jar file made to not be a snapshot">
+    <list default="true" id="9e87768c-0d7a-4f13-8d97-1e4f7eae840e" name="Changes" comment="Scanner test">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -111,6 +112,13 @@
   <component name="RunAnythingCache">
     <option name="myCommands">
       <command value="maven test" />
+    </option>
+  </component>
+  <component name="RunDashboard">
+    <option name="configurationTypes">
+      <set>
+        <option value="docker-deploy" />
+      </set>
     </option>
   </component>
   <component name="RunManager" selected="Docker.Dockerfile">
@@ -576,7 +584,15 @@
       <option name="project" value="LOCAL" />
       <updated>1702849241146</updated>
     </task>
-    <option name="localTasksCounter" value="48" />
+    <task id="LOCAL-00048" summary="Scanner test">
+      <option name="closed" value="true" />
+      <created>1702849773485</created>
+      <option name="number" value="00048" />
+      <option name="presentableId" value="LOCAL-00048" />
+      <option name="project" value="LOCAL" />
+      <updated>1702849773485</updated>
+    </task>
+    <option name="localTasksCounter" value="49" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -596,6 +612,7 @@
     <MESSAGE value="Taxi algorithm now intakes size" />
     <MESSAGE value="docker file updated to add the csv files" />
     <MESSAGE value="jar file made to not be a snapshot" />
-    <option name="LAST_COMMIT_MESSAGE" value="jar file made to not be a snapshot" />
+    <MESSAGE value="Scanner test" />
+    <option name="LAST_COMMIT_MESSAGE" value="Scanner test" />
   </component>
 </project>
