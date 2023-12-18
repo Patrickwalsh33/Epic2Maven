@@ -66,7 +66,7 @@ public class Map {
             } else {
                 System.out.println("No taxi found within the current radius. Increasing search radius.");
                 searchRadius++; // Increment the search radius for the next iteration
-            }
+            }//test
         }
         return nearestTaxiLocation.getTaxi();
     }

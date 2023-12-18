@@ -173,11 +173,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Main" />
-        <item itemvalue="Docker.Dockerfile" />
-        <item itemvalue="Docker.src/Dockerfile" />
         <item itemvalue="JUnit.AppLogicTest (1)" />
         <item itemvalue="JUnit.AppLogicTest" />
+        <item itemvalue="Docker.src/Dockerfile" />
+        <item itemvalue="Docker.Dockerfile" />
+        <item itemvalue="Application.Main" />
       </list>
     </recent_temporary>
   </component>
