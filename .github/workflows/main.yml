@@ -34,6 +34,3 @@ jobs:
 
       - name: Image digest
         run: echo ${{ steps.docker_build.outputs.digest }}
-
-      - name: Run Interactive Container
-        run: docker run -it ${{ secrets.DOCKER_USERNAME }}/epic2:latest /bin/bash

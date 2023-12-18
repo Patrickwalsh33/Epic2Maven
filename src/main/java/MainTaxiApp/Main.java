@@ -22,7 +22,7 @@ public class Main {
                 + " driven by "
                 + taxiFound.getName()
                 + " Taxi size: "
-                +taxiFound.getSize());//test
+                +taxiFound.getSize());//tes
 
     }
 }
