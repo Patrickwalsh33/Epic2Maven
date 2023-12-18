@@ -4,8 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9e87768c-0d7a-4f13-8d97-1e4f7eae840e" name="Changes" comment="Scanner test">
+    <list default="true" id="9e87768c-0d7a-4f13-8d97-1e4f7eae840e" name="Changes" comment="interactive dockerfile">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/MainTaxiApp/Classes/AppLogic.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/MainTaxiApp/Classes/AppLogic.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/MainTaxiApp/Classes/Location.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/MainTaxiApp/Classes/Location.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/MainTaxiApp/Classes/Map.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/MainTaxiApp/Classes/Map.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/MainTaxiApp/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/MainTaxiApp/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/MainTaxiApp/Classes/AppLogic.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/MainTaxiApp/Classes/AppLogic.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/MainTaxiApp/Classes/Location.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/MainTaxiApp/Classes/Location.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/MainTaxiApp/Classes/Login.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/MainTaxiApp/Classes/Login.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/MainTaxiApp/Classes/Map.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/MainTaxiApp/Classes/Map.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/MainTaxiApp/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/MainTaxiApp/Main.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -88,7 +97,7 @@
     "Maven.Epic2Maven [verify].executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "master",
+    "git-widget-placeholder": "MoveTaxis",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "C:/Users/eddie_uooosyh/Documents/GitHub/Epic2MavenTaxiApp",
     "settings.editor.selected.configurable": "com.intellij.jarRepository.settings.RemoteRepositoriesConfigurable"
@@ -120,7 +129,7 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Docker.Dockerfile">
+  <component name="RunManager" selected="Application.Main">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="MainTaxiApp.Main" />
       <module name="Epic2Maven" />
@@ -182,8 +191,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Docker.Dockerfile" />
         <item itemvalue="Application.Main" />
+        <item itemvalue="Docker.Dockerfile" />
         <item itemvalue="Docker.src/Dockerfile" />
         <item itemvalue="JUnit.AppLogicTest (1)" />
         <item itemvalue="JUnit.AppLogicTest" />
@@ -591,7 +600,15 @@
       <option name="project" value="LOCAL" />
       <updated>1702849773485</updated>
     </task>
-    <option name="localTasksCounter" value="49" />
+    <task id="LOCAL-00049" summary="interactive dockerfile">
+      <option name="closed" value="true" />
+      <created>1702904665734</created>
+      <option name="number" value="00049" />
+      <option name="presentableId" value="LOCAL-00049" />
+      <option name="project" value="LOCAL" />
+      <updated>1702904665734</updated>
+    </task>
+    <option name="localTasksCounter" value="50" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -612,6 +629,12 @@
     <MESSAGE value="docker file updated to add the csv files" />
     <MESSAGE value="jar file made to not be a snapshot" />
     <MESSAGE value="Scanner test" />
-    <option name="LAST_COMMIT_MESSAGE" value="Scanner test" />
+    <MESSAGE value="interactive dockerfile" />
+    <option name="LAST_COMMIT_MESSAGE" value="interactive dockerfile" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/Epic2MavenTaxiApp$Main.ic" NAME="Main Coverage Results" MODIFIED="1702912226381" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>MainTaxiApp.*</FILTER>
+    </SUITE>
   </component>
 </project>

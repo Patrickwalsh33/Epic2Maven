@@ -15,7 +15,7 @@ public class AppLogic {
     }
 
     public static void anythingToContinue(){
-        System.out.print("\nPress any key to continue...");
+        System.out.print("\nPress any key to continue...\n");
         scanner.next();
     }
     public Size findSize(){
@@ -40,6 +40,17 @@ public class AppLogic {
         }
 
         return null;
+    }
+    public static void taxiRide(Login user){
+        Map map = new Map(20,user.getCurrentUser());
+        AppLogic.anythingToContinue();
+        map.moveTaxiToUser();
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("\n---\nWhere would you like to go?\nInput 2 integers between 0 and 19.");
+        int x=scanner.nextInt();
+        int y=scanner.nextInt();
+        map.moveTaxiAndUserToLocation(x,y);
+
     }
 
 }

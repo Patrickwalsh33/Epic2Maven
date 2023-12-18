@@ -35,6 +35,13 @@ public class Location {
         this.taxiInLocation=taxi;
         mapPoint = "T\t";
     }
+    public void DrivingTaxi(){
+        mapPoint ="D\t";
+    }
+    public void removeTaxi(){
+        this.taxiInLocation=null;
+        mapPoint =".\t";
+    }
 
     public boolean hasTaxi() {
         return this.getMapPoint().equals("T\t");
