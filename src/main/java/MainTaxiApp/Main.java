@@ -10,9 +10,10 @@ public class Main {
        newLogin.loginOrSignUp();
        AppLogic.anythingToContinue();
        AppLogic.clearConsole();
-       AppLogic.taxiRide(newLogin);
+        Map map = new Map(20,newLogin.getCurrentUser());
+       AppLogic.taxiRide(map);
        AppLogic.rateTaxiDriver();
-       AppLogic.printExitMessage();
+       AppLogic.printExitMessage(newLogin);
 
     }
 }

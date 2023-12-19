@@ -5,27 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9e87768c-0d7a-4f13-8d97-1e4f7eae840e" name="Changes" comment="Locations can now take multiple taxis and user saves their location">
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_19_12_2023_14_56__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_19_12_2023_14_56__Changes_.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/MainTaxiApp/Classes/Map.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/MainTaxiApp/Classes/Map.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Epic2Maven-1.0.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/Epic2Maven-1.0.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/MainTaxiApp/Classes/Map.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/MainTaxiApp/Classes/Map.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/AppLogicTest.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/AppLogicTest.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/LinkedListTest.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/LinkedListTest.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/LocationTest.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/LocationTest.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/MapTest.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/MapTest.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-AppLogicTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-AppLogicTest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-LinkedListTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-LinkedListTest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-LocationTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-LocationTest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-MapTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-MapTest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-TaxiTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-TaxiTest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-TextHandlerTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-TextHandlerTest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-UserTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-UserTest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TaxiTest.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TaxiTest.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TextHandlerTest.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TextHandlerTest.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/UserTest.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/UserTest.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/MapTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/MapTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Taxis.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Taxis.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/MainTaxiApp/Classes/AppLogic.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/MainTaxiApp/Classes/AppLogic.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/MainTaxiApp/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/MainTaxiApp/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/MainTaxiApp/Classes/AppLogic.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/MainTaxiApp/Classes/AppLogic.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/MainTaxiApp/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/MainTaxiApp/Main.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -227,22 +212,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1702551602801</updated>
-    </task>
-    <task id="LOCAL-00008" summary="Fix imports">
-      <option name="closed" value="true" />
-      <created>1702645487988</created>
-      <option name="number" value="00008" />
-      <option name="presentableId" value="LOCAL-00008" />
-      <option name="project" value="LOCAL" />
-      <updated>1702645487988</updated>
-    </task>
-    <task id="LOCAL-00009" summary="CD pipeline fixes">
-      <option name="closed" value="true" />
-      <created>1702645932590</created>
-      <option name="number" value="00009" />
-      <option name="presentableId" value="LOCAL-00009" />
-      <option name="project" value="LOCAL" />
-      <updated>1702645932590</updated>
     </task>
     <task id="LOCAL-00010" summary="Delete files">
       <option name="closed" value="true" />
@@ -620,7 +589,23 @@
       <option name="project" value="LOCAL" />
       <updated>1703000131668</updated>
     </task>
-    <option name="localTasksCounter" value="57" />
+    <task id="LOCAL-00057" summary="Locations can now take multiple taxis and user saves their location">
+      <option name="closed" value="true" />
+      <created>1703001882421</created>
+      <option name="number" value="00057" />
+      <option name="presentableId" value="LOCAL-00057" />
+      <option name="project" value="LOCAL" />
+      <updated>1703001882422</updated>
+    </task>
+    <task id="LOCAL-00058" summary="Locations can now take multiple taxis and user saves their location">
+      <option name="closed" value="true" />
+      <created>1703002006514</created>
+      <option name="number" value="00058" />
+      <option name="presentableId" value="LOCAL-00058" />
+      <option name="project" value="LOCAL" />
+      <updated>1703002006515</updated>
+    </task>
+    <option name="localTasksCounter" value="59" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">

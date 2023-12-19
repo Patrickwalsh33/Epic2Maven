@@ -41,8 +41,7 @@ public class AppLogic {
 
         return null;
     }
-    public static void taxiRide(Login user){
-        Map map = new Map(20,user.getCurrentUser());
+    public static void taxiRide(Map map){
         current=map;
         AppLogic.anythingToContinue();
         map.moveTaxiToUser();
@@ -78,8 +77,8 @@ public class AppLogic {
         }
         System.out.println("Thank you for your input!");
     }
-    public static void printExitMessage(){
-        System.out.println("\n---\nThank you for using the taxi app see you next time!\n---");
+    public static void printExitMessage(Login newLogin){
+        System.out.println("\n---\nThank you for using the taxi app "+newLogin.getCurrentUser().getUsername()+".See you next time!\n---");
     }
 }
 
