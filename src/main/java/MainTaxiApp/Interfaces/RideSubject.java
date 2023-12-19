@@ -1,4 +1,6 @@
-package MainTaxiApp.Classes;
+package MainTaxiApp.Interfaces;
+
+import MainTaxiApp.Interfaces.RideObserver;
 
 public interface RideSubject {
     void addObserver(RideObserver observer);

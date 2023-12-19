@@ -1,6 +1,9 @@
 package MainTaxiApp.Classes;
 
-public class User implements RideObserver{
+import MainTaxiApp.Interfaces.RideObserver;
+import MainTaxiApp.Interfaces.RideSubject;
+
+public class User implements RideObserver {
     private String username;
     private String password;
 

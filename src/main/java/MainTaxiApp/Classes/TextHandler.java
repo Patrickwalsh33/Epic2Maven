@@ -64,22 +64,16 @@ public class TextHandler {
     }
         public void writeInNewTaxiRating(Taxi subject, int newRating, String file) {
             LinkedList<Taxi> updatedTaxis = readTaxiData(file);
-            //System.out.println( subject.getName());
+
             updatedTaxis.moveToFirst();
-            // Find the taxi to update
-            //System.out.println("beggining search");
             for(int i=0; i<updatedTaxis.size();i++) {
-                //System.out.println(updatedTaxis.getData().getName());
                 if (subject.getName().equals(updatedTaxis.getData().getName())) {
-                    //System.out.println("found");
                     updatedTaxis.getData().setRating(newRating);
                     break;
                 } else {
-                   // System.out.println("move to next");
                     updatedTaxis.moveToNext();
                 }
             }
-            //System.out.println("writing in taxi");
             try (BufferedWriter writer = new BufferedWriter(new FileWriter(file))) {
                 updatedTaxis.moveToFirst();
                 for(int i=0; i<updatedTaxis.size();i++) {

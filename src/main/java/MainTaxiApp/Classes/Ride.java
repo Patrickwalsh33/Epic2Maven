@@ -1,6 +1,9 @@
 package MainTaxiApp.Classes;
 
-public class Ride implements RideSubject{
+import MainTaxiApp.Interfaces.RideObserver;
+import MainTaxiApp.Interfaces.RideSubject;
+
+public class Ride implements RideSubject {
     private RideObserver[] observers;
     private int observerCount = 0;
     private boolean rideInProgress = false;

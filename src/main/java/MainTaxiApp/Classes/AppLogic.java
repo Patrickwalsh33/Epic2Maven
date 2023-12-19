@@ -51,7 +51,7 @@ public class AppLogic {
             int x = scanner.nextInt();
             int y = scanner.nextInt();
             if(x>-1&&x<20&&y>-1&&y<20){
-                map.moveTaxiAndUserToLocation(x,y,newLogin);
+                map.moveTaxiAndUserToLocation(x,y,newLogin.getCurrentUser());
             }else {
                 System.out.println("One or more integers were invalid please try again.");
                 i--;

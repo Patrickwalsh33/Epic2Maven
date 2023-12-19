@@ -5,8 +5,6 @@ import java.util.Random;
 import static MainTaxiApp.Classes.AppLogic.anythingToContinue;
 
 public class Map {
-
-
     TextHandler text = new TextHandler();
     private final LinkedList<Taxi> taxis =text.readTaxiData(text.getTAXIS_FILE_PATH());
 
@@ -104,8 +102,7 @@ public class Map {
         moveTaxisOnTheMap(usersLocation,nearestTaxi,usersLocation);
         System.out.println("The taxi has arrived and has picked you up.");
     }
-    public void moveTaxiAndUserToLocation(int x,int y,Login newLogin)  {
-        User user1 = newLogin.getCurrentUser();
+    public void moveTaxiAndUserToLocation(int x,int y,User user1)  {
         Ride ride = new Ride(1);
         ride.addObserver(user1);
         ride.startRide();
@@ -140,9 +137,6 @@ public class Map {
                 e.printStackTrace();
             }
         }
-
-
-
     }
 
     public Location[][] getGrid() {
