@@ -88,7 +88,7 @@ public class Map {
                 Location location = grid[i][j];
 
                 //Debug prints
-                System.out.println("Checking Location: (" + i + ", " + j + ") for a taxi. hasTaxi(map): " + location.getTaxi());
+                //System.out.println("Checking Location: (" + i + ", " + j + "));
 
                 if (location.getTaxi()!=null&& location.getTaxi().getSize().equals(size)) {
                     return location; // Found a taxi within the search radius
