@@ -4,9 +4,7 @@ import MainTaxiApp.Classes.TextHandler;
 import MainTaxiApp.Classes.User;
 import org.junit.jupiter.api.Test;
 
-import java.io.BufferedReader;
-import java.io.FileReader;
-import java.io.IOException;
+import java.io.*;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.StandardOpenOption;
@@ -73,14 +71,41 @@ class TextHandlerTest {
         Path tempFile = Files.createTempFile("testUsers", ".csv");
 
         TextHandler textHandler = new TextHandler();
-
-        textHandler.writeInNewUser("testUser", "testPassword", tempFile.toString());
+        User testUser = new User("testUser", "testPassword");
+        textHandler.writeInNewUser(testUser, tempFile.toString());
 
         try (BufferedReader reader = new BufferedReader(new FileReader(tempFile.toString()))) {
             String line = reader.readLine();
             assertEquals("testUser,testPassword", line);
         }
 
+        Files.delete(tempFile);
+    }
+    @Test
+    void testWriteInNewTaxiRating() throws IOException {
+        Path tempFile = Files.createTempFile("testTaxis", ".csv");
+        String testFilePath = "testTaxis.csv";
+
+        TextHandler textHandler = new TextHandler();
+        Taxi sampleTaxi = new Taxi("08-MH-3038", "John Doe", 3, "Toyota", "Medium");
+
+        try (BufferedWriter writer = new BufferedWriter(new FileWriter(testFilePath))) {
+            String line = sampleTaxi.getRegistration() + "," + sampleTaxi.getName() + "," + sampleTaxi.getRating() + "," + sampleTaxi.getBrand() + "," + sampleTaxi.getSize();
+            writer.write(line);
+            writer.newLine();
+        }
+
+        textHandler.writeInNewTaxiRating(sampleTaxi, 4, testFilePath);
+
+        try (BufferedReader reader = new BufferedReader(new FileReader(testFilePath))) {
+            String line = reader.readLine();
+            String[] values = line.split(",");
+            assertEquals("08-MH-3038", values[0]);  // Registration should remain the same
+            assertEquals("John Doe", values[1]);  // Name should remain the same
+            assertEquals("4", values[2]);  // Rating should be updated to 4
+            assertEquals("Toyota", values[3]);  // Brand should remain the same
+            assertEquals("Medium", values[4]);  // Size should remain the same
+        }
         Files.delete(tempFile);
     }
 }

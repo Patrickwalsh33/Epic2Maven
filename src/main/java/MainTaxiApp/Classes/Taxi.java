@@ -7,7 +7,6 @@ public class Taxi {
     private final String brand;
     private final String size;
 
-
     public Taxi(String registration, String name, int rating, String brand, String size){
         this.registration = registration;
         this.name = name;

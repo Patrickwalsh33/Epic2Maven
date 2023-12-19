@@ -83,7 +83,7 @@ public class Login {
         System.out.println("---\nSign up enter your chosen username: ");
         String username=input.nextLine();
         String usernameLowerCase = username.toLowerCase();
-        if(usernameLowerCase.equals("")) {
+        if(usernameLowerCase.isEmpty()) {
             System.out.println("Invalid input please try again.");
             i--;
         }else if(doesContain(usernameLowerCase, usernames)!=-1) {
@@ -105,14 +105,14 @@ public class Login {
                 }
             }
         }else{
+
             System.out.println("---\nWelcome "+username+" please enter your chosen password:");
             String password= input.nextLine();
             String passwordLowerCase = password.toLowerCase();
-            text.writeInNewUser(usernameLowerCase,passwordLowerCase,text.getUSERS_FILE_PATH());
             System.out.println("Congratulations "+username+" you are now registered!");
             this.password=passwordLowerCase;
         }this.username=usernameLowerCase;
-
+        text.writeInNewUser(getCurrentUser(),text.getUSERS_FILE_PATH());
         }
     }
     public int doesContain(String username,LinkedList<User> usernames) {

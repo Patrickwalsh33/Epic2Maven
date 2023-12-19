@@ -1,12 +1,12 @@
 package MainTaxiApp.Classes;
 
 import java.util.Random;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 
 import static MainTaxiApp.Classes.AppLogic.anythingToContinue;
 
 public class Map {
-
-
     TextHandler text = new TextHandler();
     private final LinkedList<Taxi> taxis =text.readTaxiData(text.getTAXIS_FILE_PATH());
 
@@ -14,8 +14,8 @@ public class Map {
         private final Location[][] grid;
         private Location usersLocation;
         private final int mapRadius;
-
         private Taxi chosenTaxi;
+         private static final Logger logger = Logger.getLogger(TextHandler.class.getName());
 
 
 
@@ -60,19 +60,16 @@ public class Map {
     private Location searchAlgorithm() {
             AppLogic size = new AppLogic();
             String taxiSize =(size.findSize()+"").toLowerCase();
-        int searchRadius = 1; // Start with a small search radius
-        Location nearestTaxiLocation=null;
+        int searchRadius = 1;
+        Location nearestTaxiLocation;
         while (true) {
             nearestTaxiLocation = findNearestTaxi(usersLocation, searchRadius,taxiSize);
 
             if (nearestTaxiLocation != null) {
                 nearestTaxiLocation.changeTaxiToDriver();
                 System.out.println("Nearest taxi found at coordinates: (" + nearestTaxiLocation.getX() + ", " + nearestTaxiLocation.getY() + ")");
-                break; // Exit the loop once a taxi is found
-            } else {
-                //System.out.println("No taxi found within the current radius. Increasing search radius.");
-                searchRadius++; // Increment the search radius for the next iteration
-            }//test
+                break;
+            } else {searchRadius++;}
         }
         System.out.println("Driver name: "+nearestTaxiLocation.getDriver().getName()+"\n" +
                 "Brand of taxi: "+nearestTaxiLocation.getDriver().getBrand()+"\n" +
@@ -86,17 +83,12 @@ public class Map {
         for (int i = Math.max(0, userLocation.getX() - searchRadius); i <= Math.min(mapRadius - 1, userLocation.getX() + searchRadius); i++) {
             for (int j = Math.max(0, userLocation.getY() - searchRadius); j <= Math.min(mapRadius - 1, userLocation.getY() + searchRadius); j++) {
                 Location location = grid[i][j];
-
-                //Debug prints
-                //System.out.println("Checking Location: (" + i + ", " + j + "));
-
                 if (location.getTaxi()!=null&& location.getTaxi().getSize().equals(size)) {
-                    return location; // Found a taxi within the search radius
+                    return location;
                 }
             }
         }
-
-        return null; // No taxi found within the current search radius
+        return null;
     }
     public void moveTaxiToUser()  {
         Location nearestTaxi = searchAlgorithm();
@@ -104,17 +96,12 @@ public class Map {
         moveTaxisOnTheMap(usersLocation,nearestTaxi,usersLocation);
         System.out.println("The taxi has arrived and has picked you up.");
     }
-    public void moveTaxiAndUserToLocation(int x,int y,Login newLogin)  {
-        User user1 = newLogin.getCurrentUser();
-        Ride ride = new Ride(1);
-        ride.addObserver(user1);
-        ride.startRide();
+    public void moveTaxiAndUserToLocation(int x,int y)  {
         System.out.println("Busy today mate ?");
         System.out.println("Beginning drive to destination.");
             Location destination = grid[x][y];
             moveTaxisOnTheMap(destination,usersLocation,null);
         System.out.println("You have arrived at your destination.");
-        ride.endRide();
     }
 
     public Taxi getChosenTaxi() {
@@ -124,35 +111,32 @@ public class Map {
 
     public void moveTaxisOnTheMap(Location destination, Location taxiLocation, Location user) {
         while (!taxiLocation.equals(destination)) {
+            User userInLocation =taxiLocation.getUserInLocation();
+
             int deltaX = Integer.compare(destination.getX(), taxiLocation.getX());
             int deltaY = Integer.compare(destination.getY(), taxiLocation.getY());
 
             Location oldtaxiLocation = taxiLocation;
+
             taxiLocation = grid[taxiLocation.getX() + deltaX][taxiLocation.getY() + deltaY];
             taxiLocation.addDrivingTaxi(oldtaxiLocation.getDriver());
+
+            if (taxiLocation.getUserInLocation() == null&&userInLocation!=null) {
+                taxiLocation.addUser(userInLocation);
+                userInLocation.update(null, taxiLocation);
+            }
             oldtaxiLocation.removeDriver();
+
+            oldtaxiLocation.removeUser();
             printMap(user);
 
             System.out.println("Taxi is now at (" + taxiLocation.getX() + "," + taxiLocation.getY() + ")");
             try {
                 Thread.sleep(1000);
             } catch (InterruptedException e) {
-                e.printStackTrace();
+                logger.log(Level.SEVERE, "Error in thread sleep in the move taxis on the map class", e);
             }
         }
-
-
-
-    }
-
-    public Location[][] getGrid() {
-
-            return grid;
-    }
-
-    public Location getUsersLocation() {
-
-            return usersLocation;
     }
 }
 

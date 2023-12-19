@@ -4,10 +4,14 @@ import MainTaxiApp.Enums.Size;
 
 import java.util.Scanner;
 public class AppLogic {
+
+    private static Login newLogin;
     private static Map current;
-
+    private static final int radius=20;
     static Scanner scanner = new Scanner(System.in);
-
+    public static void makeMap(){
+    current= new Map(radius,newLogin.getCurrentUser());
+    }
 
     public static void clearConsole(){
         for(int i = 0; i < 100; i++)
@@ -41,17 +45,16 @@ public class AppLogic {
 
         return null;
     }
-    public static void taxiRide(Map map,Login newLogin){
-        current=map;
+    public static void taxiRide(){
         AppLogic.anythingToContinue();
-        map.moveTaxiToUser();
+        current.moveTaxiToUser();
         Scanner scanner = new Scanner(System.in);
         for(int i=0;i<1;i++) {
             System.out.println("\n---\nWhere would you like to go?\nInput 2 integers between 0 and 19.");
             int x = scanner.nextInt();
             int y = scanner.nextInt();
             if(x>-1&&x<20&&y>-1&&y<20){
-                map.moveTaxiAndUserToLocation(x,y,newLogin);
+                current.moveTaxiAndUserToLocation(x,y);
             }else {
                 System.out.println("One or more integers were invalid please try again.");
                 i--;
@@ -77,8 +80,13 @@ public class AppLogic {
         }
         System.out.println("Thank you for your input!");
     }
-    public static void printExitMessage(Login newLogin){
+    public static void printExitMessage(){
         System.out.println("\n---\nThank you for using the taxi app "+newLogin.getCurrentUser().getUsername()+".See you next time!\n---");
+    }
+    public static void login(){
+        Login login = new Login();
+        login.loginOrSignUp();
+        newLogin=login;
     }
 }
 

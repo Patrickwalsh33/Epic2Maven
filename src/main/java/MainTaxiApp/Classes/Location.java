@@ -29,18 +29,26 @@ public class Location {
     }
     public void addUser(User user){
         userInLocation=user;
-        //System.out.println(user.getUsername()+" added to (" + x + "," + y + ")");
-        mapPoint = "U\t";
+        if(taxiInLocation[1]!=null){
+            mapPoint="F\t";
+        }else{mapPoint = "U\t";}
+    }
+    public void removeUser(){
+        userInLocation=null;
+        if (taxiInLocation[0]==null) {
+            mapPoint=".\t";
+        }else{mapPoint="T\t";}
 
     }
    public void addTaxi(Taxi taxi){
-        //System.out.println(taxi.getRegistration()+" added to ("+x+","+y + ")");
         taxiInLocation[0]=taxi;
         mapPoint = "T\t";
     }
     public void addDrivingTaxi(Taxi driver){
         taxiInLocation[1]=driver;
-        mapPoint ="D\t";
+        if(getUserInLocation()!=null){
+            mapPoint="F\t";
+        }else{mapPoint ="E\t";}
     }
     public void removeTaxi(){
         taxiInLocation[0]=null;
@@ -55,7 +63,6 @@ public class Location {
 
     public Taxi getTaxi(){
         return taxiInLocation[0];
-        //If you get taxi is not null taxi is in location
     }
     public Taxi getDriver(){
         return taxiInLocation[1];
@@ -64,6 +71,9 @@ public class Location {
         taxiInLocation[1]=taxiInLocation[0];
         taxiInLocation[0]=null;
         mapPoint="D\t";
+    }
+    public User getUserInLocation(){
+        return userInLocation;
     }
 
 
