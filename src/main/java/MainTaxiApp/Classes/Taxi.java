@@ -3,7 +3,7 @@ package MainTaxiApp.Classes;
 public class Taxi {
     private final String registration;
     private final String name;
-    private final int rating;
+    private int rating;
     private final String brand;
     private final String size;
 
@@ -28,8 +28,11 @@ public class Taxi {
     public String getBrand() {
         return brand;
     }
+
     public String getSize() {
         return size;
     }
-
+    public void setRating(int rating){
+        this.rating=rating;
+    }
 }

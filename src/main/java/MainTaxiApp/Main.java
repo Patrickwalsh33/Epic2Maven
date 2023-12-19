@@ -11,5 +11,8 @@ public class Main {
        AppLogic.anythingToContinue();
        AppLogic.clearConsole();
        AppLogic.taxiRide(newLogin);
+       AppLogic.rateTaxiDriver();
+       AppLogic.printExitMessage();
+
     }
 }

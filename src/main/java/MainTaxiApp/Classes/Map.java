@@ -2,6 +2,8 @@ package MainTaxiApp.Classes;
 
 import java.util.Random;
 
+import static MainTaxiApp.Classes.AppLogic.anythingToContinue;
+
 public class Map {
     TextHandler text = new TextHandler();
     private final LinkedList<Taxi> taxis =text.readTaxiData(text.getTAXIS_FILE_PATH());
@@ -10,6 +12,8 @@ public class Map {
         private final Location[][] grid;
         private Location usersLocation;
         private final int mapRadius;
+
+        private Taxi chosenTaxi;
 
 
 
@@ -49,11 +53,6 @@ public class Map {
             usersLocation=grid[random.nextInt(radius)][random.nextInt(radius)];
             usersLocation.addUser(currentUser);
         }
-        public void callTaxiToUser(){
-        }
-        public void taxiRide(){
-
-        }
 
     private Location searchAlgorithm() {
             AppLogic size = new AppLogic();
@@ -68,10 +67,15 @@ public class Map {
                 System.out.println("Nearest taxi found at coordinates: (" + nearestTaxiLocation.getX() + ", " + nearestTaxiLocation.getY() + ")");
                 break; // Exit the loop once a taxi is found
             } else {
-                System.out.println("No taxi found within the current radius. Increasing search radius.");
+                //System.out.println("No taxi found within the current radius. Increasing search radius.");
                 searchRadius++; // Increment the search radius for the next iteration
             }//test
         }
+        System.out.println("Driver name: "+nearestTaxiLocation.getTaxi().getName()+"\n" +
+                "Brand of taxi: "+nearestTaxiLocation.getTaxi().getBrand()+"\n" +
+                "Registration: "+nearestTaxiLocation.getTaxi().getRegistration()+"\n" +
+                nearestTaxiLocation.getTaxi().getName()+" is a "+nearestTaxiLocation.getTaxi().getRating()+" star driver.");
+        this.chosenTaxi=nearestTaxiLocation.getTaxi();
         return nearestTaxiLocation;
     }
 
@@ -93,6 +97,7 @@ public class Map {
     }
     public void moveTaxiToUser()  {
         Location nearestTaxi = searchAlgorithm();
+        anythingToContinue();
         moveTaxisOnTheMap(usersLocation,nearestTaxi,usersLocation);
         System.out.println("The taxi has arrived and has picked you up.");
     }
@@ -102,6 +107,11 @@ public class Map {
             moveTaxisOnTheMap(destination,usersLocation,null);
         System.out.println("You have arrived at your destination.");
     }
+
+    public Taxi getChosenTaxi() {
+        return chosenTaxi;
+    }
+
     public void moveTaxisOnTheMap(Location destination, Location taxi, Location user) {
         while (!taxi.equals(destination)) {
             int deltaX = Integer.compare(destination.getX(), taxi.getX());
@@ -120,6 +130,7 @@ public class Map {
                 e.printStackTrace();
             }
         }
+
 
 
     }
