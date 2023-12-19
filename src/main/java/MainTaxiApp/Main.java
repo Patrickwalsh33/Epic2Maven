@@ -11,8 +11,15 @@ public class Main {
        AppLogic.anythingToContinue();
        AppLogic.clearConsole();
        AppLogic.taxiRide(newLogin);
+        User user1 = new User("Eddie","password");
+        Ride ride = new Ride(1);
+        ride.addObserver(user1);
+        ride.startRide();
+        System.out.println("Busy today mate ?");
+        ride.endRide();
        AppLogic.rateTaxiDriver();
        AppLogic.printExitMessage();
+
 
     }
 }
