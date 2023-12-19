@@ -104,28 +104,36 @@ public class Map {
         moveTaxisOnTheMap(usersLocation,nearestTaxi,usersLocation);
         System.out.println("The taxi has arrived and has picked you up.");
     }
-    public void moveTaxiAndUserToLocation(int x,int y)  {
+    public void moveTaxiAndUserToLocation(int x,int y,Login newLogin)  {
+        User user1 = newLogin.getCurrentUser();
+        Ride ride = new Ride(1);
+        ride.addObserver(user1);
+        ride.startRide();
+        System.out.println("Busy today mate ?");
         System.out.println("Beginning drive to destination.");
             Location destination = grid[x][y];
             moveTaxisOnTheMap(destination,usersLocation,null);
         System.out.println("You have arrived at your destination.");
+        ride.endRide();
     }
 
     public Taxi getChosenTaxi() {
-        return chosenTaxi;
+
+            return chosenTaxi;
     }
 
-    public void moveTaxisOnTheMap(Location destination, Location taxi, Location user) {
-        while (!taxi.equals(destination)) {
-            int deltaX = Integer.compare(destination.getX(), taxi.getX());
-            int deltaY = Integer.compare(destination.getY(), taxi.getY());
+    public void moveTaxisOnTheMap(Location destination, Location taxiLocation, Location user) {
+        while (!taxiLocation.equals(destination)) {
+            int deltaX = Integer.compare(destination.getX(), taxiLocation.getX());
+            int deltaY = Integer.compare(destination.getY(), taxiLocation.getY());
 
-            Location old = taxi;
-            taxi = grid[taxi.getX() + deltaX][taxi.getY() + deltaY];
-            taxi.addDrivingTaxi(old.getDriver());
-            old.removeDriver();
+            Location oldtaxiLocation = taxiLocation;
+            taxiLocation = grid[taxiLocation.getX() + deltaX][taxiLocation.getY() + deltaY];
+            taxiLocation.addDrivingTaxi(oldtaxiLocation.getDriver());
+            oldtaxiLocation.removeDriver();
             printMap(user);
-            System.out.println("Taxi is now at (" + taxi.getX() + "," + taxi.getY() + ")");
+
+            System.out.println("Taxi is now at (" + taxiLocation.getX() + "," + taxiLocation.getY() + ")");
             try {
                 Thread.sleep(1000);
             } catch (InterruptedException e) {
@@ -138,11 +146,13 @@ public class Map {
     }
 
     public Location[][] getGrid() {
-        return grid;
+
+            return grid;
     }
 
     public Location getUsersLocation() {
-        return usersLocation;
+
+            return usersLocation;
     }
 }
 

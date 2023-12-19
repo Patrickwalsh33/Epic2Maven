@@ -6,6 +6,7 @@ public class Ride implements RideSubject{
     private boolean rideInProgress = false;
 
     public Ride(int maxObservers){
+
         this.observers = new RideObserver[maxObservers];
     }
 
@@ -52,6 +53,7 @@ public class Ride implements RideSubject{
     }
 
     public boolean isRideInProgress(){
+
         return rideInProgress;
     }
 }

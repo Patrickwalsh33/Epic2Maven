@@ -11,6 +11,7 @@ public class User implements RideObserver{
     }
 
     public void setUsersLocation(Location usersLocation) {
+
         this.usersLocation = usersLocation;
     }
 
@@ -20,14 +21,17 @@ public class User implements RideObserver{
     }
 
     public String getUsername() {
+
         return username;
     }
 
     public String getPassword() {
+
         return password;
     }
 
     public void setUsername(String username) {
+
         this.username = username;
     }
 
