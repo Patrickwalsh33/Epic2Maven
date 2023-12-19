@@ -5,7 +5,9 @@ public class Location {
     private final int y;
     private String mapPoint;
 
-    public Taxi taxiInLocation=null;
+    public User userInLocation;
+
+    public Taxi[] taxiInLocation={null,null};
 
     public int getX() {
         return x;
@@ -26,30 +28,42 @@ public class Location {
         this.mapPoint = ".\t";
     }
     public void addUser(User user){
+        userInLocation=user;
         //System.out.println(user.getUsername()+" added to (" + x + "," + y + ")");
         mapPoint = "U\t";
 
     }
    public void addTaxi(Taxi taxi){
         //System.out.println(taxi.getRegistration()+" added to ("+x+","+y + ")");
-        this.taxiInLocation=taxi;
+        taxiInLocation[0]=taxi;
         mapPoint = "T\t";
     }
-    public void DrivingTaxi(){
+    public void addDrivingTaxi(Taxi driver){
+        taxiInLocation[1]=driver;
         mapPoint ="D\t";
     }
     public void removeTaxi(){
-        this.taxiInLocation=null;
+        taxiInLocation[0]=null;
         mapPoint =".\t";
     }
-
-    public boolean hasTaxi() {
-        return this.getMapPoint().equals("T\t");
+    public void removeDriver(){
+        taxiInLocation[1]=null;
+        if (taxiInLocation[0]==null) {
+            mapPoint=".\t";
+        }else{mapPoint="T\t";}
     }
 
     public Taxi getTaxi(){
-        return taxiInLocation;
+        return taxiInLocation[0];
         //If you get taxi is not null taxi is in location
+    }
+    public Taxi getDriver(){
+        return taxiInLocation[1];
+    }
+    public void changeTaxiToDriver(){
+        taxiInLocation[1]=taxiInLocation[0];
+        taxiInLocation[0]=null;
+        mapPoint="D\t";
     }
 
 

@@ -3,6 +3,17 @@ package MainTaxiApp.Classes;
 public class User {
     private String username;
     private String password;
+
+    private Location usersLocation;
+
+    public Location getUsersLocation() {
+        return usersLocation;
+    }
+
+    public void setUsersLocation(Location usersLocation) {
+        this.usersLocation = usersLocation;
+    }
+
     public User(String username, String password){
         this.password=password;
         this.username=username;

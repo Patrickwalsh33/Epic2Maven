@@ -52,6 +52,7 @@ public class Map {
             }
             usersLocation=grid[random.nextInt(radius)][random.nextInt(radius)];
             usersLocation.addUser(currentUser);
+            currentUser.setUsersLocation(usersLocation);
         }
 
     private Location searchAlgorithm() {
@@ -63,7 +64,7 @@ public class Map {
             nearestTaxiLocation = findNearestTaxi(usersLocation, searchRadius,taxiSize);
 
             if (nearestTaxiLocation != null) {
-                nearestTaxiLocation.DrivingTaxi();
+                nearestTaxiLocation.changeTaxiToDriver();
                 System.out.println("Nearest taxi found at coordinates: (" + nearestTaxiLocation.getX() + ", " + nearestTaxiLocation.getY() + ")");
                 break; // Exit the loop once a taxi is found
             } else {
@@ -71,11 +72,11 @@ public class Map {
                 searchRadius++; // Increment the search radius for the next iteration
             }//test
         }
-        System.out.println("Driver name: "+nearestTaxiLocation.getTaxi().getName()+"\n" +
-                "Brand of taxi: "+nearestTaxiLocation.getTaxi().getBrand()+"\n" +
-                "Registration: "+nearestTaxiLocation.getTaxi().getRegistration()+"\n" +
-                nearestTaxiLocation.getTaxi().getName()+" is a "+nearestTaxiLocation.getTaxi().getRating()+" star driver.");
-        this.chosenTaxi=nearestTaxiLocation.getTaxi();
+        System.out.println("Driver name: "+nearestTaxiLocation.getDriver().getName()+"\n" +
+                "Brand of taxi: "+nearestTaxiLocation.getDriver().getBrand()+"\n" +
+                "Registration: "+nearestTaxiLocation.getDriver().getRegistration()+"\n" +
+                nearestTaxiLocation.getDriver().getName()+" is a "+nearestTaxiLocation.getDriver().getRating()+" star driver.");
+        this.chosenTaxi=nearestTaxiLocation.getDriver();
         return nearestTaxiLocation;
     }
 
@@ -119,9 +120,8 @@ public class Map {
 
             Location old = taxi;
             taxi = grid[taxi.getX() + deltaX][taxi.getY() + deltaY];
-            taxi.addTaxi(old.getTaxi());
-            old.removeTaxi();
-            taxi.DrivingTaxi();
+            taxi.addDrivingTaxi(old.getDriver());
+            old.removeDriver();
             printMap(user);
             System.out.println("Taxi is now at (" + taxi.getX() + "," + taxi.getY() + ")");
             try {

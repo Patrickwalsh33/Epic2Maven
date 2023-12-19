@@ -4,11 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9e87768c-0d7a-4f13-8d97-1e4f7eae840e" name="Changes" comment="Rating implemented">
+    <list default="true" id="9e87768c-0d7a-4f13-8d97-1e4f7eae840e" name="Changes" comment="Dcoker">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Epic2Maven-1.0.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/Epic2Maven-1.0.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/MainTaxiApp/Classes/AppLogic.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/MainTaxiApp/Classes/AppLogic.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/MainTaxiApp/Classes/TextHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/MainTaxiApp/Classes/TextHandler.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/MainTaxiApp/Classes/Location.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/MainTaxiApp/Classes/Location.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/MainTaxiApp/Classes/Map.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/MainTaxiApp/Classes/Map.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/MainTaxiApp/Classes/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/MainTaxiApp/Classes/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/MainTaxiApp/Classes/Map.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/MainTaxiApp/Classes/Map.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -94,7 +95,7 @@
     "Maven.Epic2Maven [verify].executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "master",
+    "git-widget-placeholder": "Locations-to-have-multiple-taxis",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "C:/Users/eddie_uooosyh/Documents/GitHub/Epic2MavenTaxiApp",
     "settings.editor.selected.configurable": "com.intellij.jarRepository.settings.RemoteRepositoriesConfigurable"
@@ -207,22 +208,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1702551602801</updated>
-    </task>
-    <task id="LOCAL-00004" summary="fix eddie projetct">
-      <option name="closed" value="true" />
-      <created>1702644341040</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1702644341040</updated>
-    </task>
-    <task id="LOCAL-00005" summary="fix eddie projetct">
-      <option name="closed" value="true" />
-      <created>1702644397978</created>
-      <option name="number" value="00005" />
-      <option name="presentableId" value="LOCAL-00005" />
-      <option name="project" value="LOCAL" />
-      <updated>1702644397978</updated>
     </task>
     <task id="LOCAL-00006" summary="fix eddie projetct">
       <option name="closed" value="true" />
@@ -600,7 +585,23 @@
       <option name="project" value="LOCAL" />
       <updated>1702990150708</updated>
     </task>
-    <option name="localTasksCounter" value="53" />
+    <task id="LOCAL-00053" summary="Rating implemented">
+      <option name="closed" value="true" />
+      <created>1702997230912</created>
+      <option name="number" value="00053" />
+      <option name="presentableId" value="LOCAL-00053" />
+      <option name="project" value="LOCAL" />
+      <updated>1702997230912</updated>
+    </task>
+    <task id="LOCAL-00054" summary="Dcoker">
+      <option name="closed" value="true" />
+      <created>1702997261820</created>
+      <option name="number" value="00054" />
+      <option name="presentableId" value="LOCAL-00054" />
+      <option name="project" value="LOCAL" />
+      <updated>1702997261820</updated>
+    </task>
+    <option name="localTasksCounter" value="55" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -626,7 +627,8 @@
     <MESSAGE value="Taxi movement implemented" />
     <MESSAGE value="Taxi to be pushed to docker hub" />
     <MESSAGE value="Rating implemented" />
-    <option name="LAST_COMMIT_MESSAGE" value="Rating implemented" />
+    <MESSAGE value="Dcoker" />
+    <option name="LAST_COMMIT_MESSAGE" value="Dcoker" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/Epic2MavenTaxiApp$Main.ic" NAME="Main Coverage Results" MODIFIED="1702912226381" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
