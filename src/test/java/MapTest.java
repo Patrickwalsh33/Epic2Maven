@@ -1,7 +1,8 @@
-import MainTaxiApp.Classes.Map;
+import MainTaxiApp.Classes.*;
 import MainTaxiApp.Classes.User;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
+import static org.junit.Assert.*;
 
 import static org.junit.jupiter.api.Assertions.assertDoesNotThrow;
 public class MapTest {
@@ -15,11 +16,15 @@ public class MapTest {
     }
     @Test
     public void testPrintMap() {
-        //we used try methods at first to catch the exeption but found lambdas were better
+        //we used try methods at first to catch the exception but found lambdas were better
         assertDoesNotThrow(() -> testMap.printMap(null));
     }
     @Test
     public void testAddTaxisAndUsersToMap() {
         assertDoesNotThrow(() -> testMap.addTaxisAndUsersToMap(MAP_RADIUS, testUser));
     }
+
+
+
+
 }

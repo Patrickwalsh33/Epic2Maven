@@ -5,6 +5,8 @@ import java.util.Random;
 import static MainTaxiApp.Classes.AppLogic.anythingToContinue;
 
 public class Map {
+
+
     TextHandler text = new TextHandler();
     private final LinkedList<Taxi> taxis =text.readTaxiData(text.getTAXIS_FILE_PATH());
 
@@ -85,7 +87,7 @@ public class Map {
                 Location location = grid[i][j];
 
                 //Debug prints
-                //System.out.println("Checking Location: (" + i + ", " + j + ") for a taxi. hasTaxi(map): " + location.hasTaxi());
+                System.out.println("Checking Location: (" + i + ", " + j + ") for a taxi. hasTaxi(map): " + location.hasTaxi());
 
                 if (location.getTaxi()!=null&& location.getTaxi().getSize().equals(size)) {
                     return location; // Found a taxi within the search radius
@@ -133,6 +135,14 @@ public class Map {
 
 
 
+    }
+
+    public Location[][] getGrid() {
+        return grid;
+    }
+
+    public Location getUsersLocation() {
+        return usersLocation;
     }
 }
 
