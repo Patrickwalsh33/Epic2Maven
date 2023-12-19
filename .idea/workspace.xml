@@ -4,8 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9e87768c-0d7a-4f13-8d97-1e4f7eae840e" name="Changes" comment="jar file made to not be a snapshot">
+    <list default="true" id="9e87768c-0d7a-4f13-8d97-1e4f7eae840e" name="Changes" comment="Rating implemented">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Epic2Maven-1.0.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/Epic2Maven-1.0.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/MainTaxiApp/Classes/AppLogic.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/MainTaxiApp/Classes/AppLogic.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/MainTaxiApp/Classes/TextHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/MainTaxiApp/Classes/TextHandler.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,13 +57,16 @@
   &quot;associatedIndex&quot;: 3
 }</component>
   <component name="ProjectId" id="2ZWxOGa6KfisUxIDGaDZNZmakWq" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
     "Application.Main.executor": "Run",
     "Docker.Dockerfile.executor": "Run",
     "Docker.src/Dockerfile.executor": "Run",
@@ -88,7 +94,7 @@
     "Maven.Epic2Maven [verify].executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "DockerTest",
+    "git-widget-placeholder": "master",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "C:/Users/eddie_uooosyh/Documents/GitHub/Epic2MavenTaxiApp",
     "settings.editor.selected.configurable": "com.intellij.jarRepository.settings.RemoteRepositoriesConfigurable"
@@ -113,7 +119,14 @@
       <command value="maven test" />
     </option>
   </component>
-  <component name="RunManager" selected="Docker.Dockerfile">
+  <component name="RunDashboard">
+    <option name="configurationTypes">
+      <set>
+        <option value="docker-deploy" />
+      </set>
+    </option>
+  </component>
+  <component name="RunManager" selected="Application.Main">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="MainTaxiApp.Main" />
       <module name="Epic2Maven" />
@@ -136,17 +149,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="AppLogicTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="AppLogicTest.testAnythingToContinue" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Epic2Maven" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="Tests.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="Tests" />
-      <option name="MAIN_CLASS_NAME" value="Tests.AppLogicTest" />
-      <option name="TEST_OBJECT" value="class" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="AppLogicTest" />
+      <option name="METHOD_NAME" value="testAnythingToContinue" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -175,11 +183,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Docker.Dockerfile" />
         <item itemvalue="Application.Main" />
+        <item itemvalue="JUnit.AppLogicTest.testAnythingToContinue" />
+        <item itemvalue="Docker.Dockerfile" />
         <item itemvalue="Docker.src/Dockerfile" />
         <item itemvalue="JUnit.AppLogicTest (1)" />
-        <item itemvalue="JUnit.AppLogicTest" />
       </list>
     </recent_temporary>
   </component>
@@ -199,30 +207,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1702551602801</updated>
-    </task>
-    <task id="LOCAL-00001" summary="Fixed code">
-      <option name="closed" value="true" />
-      <created>1702582306424</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1702582306424</updated>
-    </task>
-    <task id="LOCAL-00002" summary="LocationTest implemented">
-      <option name="closed" value="true" />
-      <created>1702588802889</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1702588802889</updated>
-    </task>
-    <task id="LOCAL-00003" summary="User and taxi tests">
-      <option name="closed" value="true" />
-      <created>1702595948461</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1702595948461</updated>
     </task>
     <task id="LOCAL-00004" summary="fix eddie projetct">
       <option name="closed" value="true" />
@@ -576,10 +560,51 @@
       <option name="project" value="LOCAL" />
       <updated>1702849241146</updated>
     </task>
-    <option name="localTasksCounter" value="48" />
+    <task id="LOCAL-00048" summary="Scanner test">
+      <option name="closed" value="true" />
+      <created>1702849773485</created>
+      <option name="number" value="00048" />
+      <option name="presentableId" value="LOCAL-00048" />
+      <option name="project" value="LOCAL" />
+      <updated>1702849773485</updated>
+    </task>
+    <task id="LOCAL-00049" summary="interactive dockerfile">
+      <option name="closed" value="true" />
+      <created>1702904665734</created>
+      <option name="number" value="00049" />
+      <option name="presentableId" value="LOCAL-00049" />
+      <option name="project" value="LOCAL" />
+      <updated>1702904665734</updated>
+    </task>
+    <task id="LOCAL-00050" summary="Taxi movement implemented">
+      <option name="closed" value="true" />
+      <created>1702919922837</created>
+      <option name="number" value="00050" />
+      <option name="presentableId" value="LOCAL-00050" />
+      <option name="project" value="LOCAL" />
+      <updated>1702919922842</updated>
+    </task>
+    <task id="LOCAL-00051" summary="Taxi to be pushed to docker hub">
+      <option name="closed" value="true" />
+      <created>1702925033597</created>
+      <option name="number" value="00051" />
+      <option name="presentableId" value="LOCAL-00051" />
+      <option name="project" value="LOCAL" />
+      <updated>1702925033600</updated>
+    </task>
+    <task id="LOCAL-00052" summary="Rating implemented">
+      <option name="closed" value="true" />
+      <created>1702990150707</created>
+      <option name="number" value="00052" />
+      <option name="presentableId" value="LOCAL-00052" />
+      <option name="project" value="LOCAL" />
+      <updated>1702990150708</updated>
+    </task>
+    <option name="localTasksCounter" value="53" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="Fixed code" />
     <MESSAGE value="LocationTest implemented" />
     <MESSAGE value="User and taxi tests" />
@@ -596,6 +621,16 @@
     <MESSAGE value="Taxi algorithm now intakes size" />
     <MESSAGE value="docker file updated to add the csv files" />
     <MESSAGE value="jar file made to not be a snapshot" />
-    <option name="LAST_COMMIT_MESSAGE" value="jar file made to not be a snapshot" />
+    <MESSAGE value="Scanner test" />
+    <MESSAGE value="interactive dockerfile" />
+    <MESSAGE value="Taxi movement implemented" />
+    <MESSAGE value="Taxi to be pushed to docker hub" />
+    <MESSAGE value="Rating implemented" />
+    <option name="LAST_COMMIT_MESSAGE" value="Rating implemented" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/Epic2MavenTaxiApp$Main.ic" NAME="Main Coverage Results" MODIFIED="1702912226381" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>MainTaxiApp.*</FILTER>
+    </SUITE>
   </component>
 </project>

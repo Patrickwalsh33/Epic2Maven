@@ -37,7 +37,7 @@ public class AppLogicTest {
     public void testAnythingToContinue() {
         provideInput();
         AppLogic.anythingToContinue();
-        assertEquals("\nPress any key to continue...", outputStreamCaptor.toString());
+        assertEquals("\nPress any key to continue...\n", outputStreamCaptor.toString());
     }
 
     private void provideInput() {

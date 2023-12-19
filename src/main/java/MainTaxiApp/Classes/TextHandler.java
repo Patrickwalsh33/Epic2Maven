@@ -62,5 +62,39 @@ public class TextHandler {
         }
         return taxis;
     }
+        public void writeInNewTaxiRating(Taxi subject, int newRating, String file) {
+            LinkedList<Taxi> updatedTaxis = readTaxiData(file);
+            //System.out.println( subject.getName());
+            updatedTaxis.moveToFirst();
+            // Find the taxi to update
+            //System.out.println("beggining search");
+            for(int i=0; i<updatedTaxis.size();i++) {
+                //System.out.println(updatedTaxis.getData().getName());
+                if (subject.getName().equals(updatedTaxis.getData().getName())) {
+                    //System.out.println("found");
+                    updatedTaxis.getData().setRating(newRating);
+                    break;
+                } else {
+                   // System.out.println("move to next");
+                    updatedTaxis.moveToNext();
+                }
+            }
+            //System.out.println("writing in taxi");
+            try (BufferedWriter writer = new BufferedWriter(new FileWriter(file))) {
+                updatedTaxis.moveToFirst();
+                for(int i=0; i<updatedTaxis.size();i++) {
+                   Taxi current= updatedTaxis.getData();
+                   String line = current.getRegistration()+","+current.getName()+","+current.getRating()+","+current.getBrand()+","+current.getSize();
+                    writer.write(line);
+                    writer.newLine();
+                    updatedTaxis.moveToNext();
+                }
+            } catch (IOException e) {
+                System.out.println("Error writing to Taxis.csv file");
+                e.printStackTrace();
+            }
+        }
+        }
 
-}
+
+

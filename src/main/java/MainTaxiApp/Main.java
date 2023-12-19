@@ -1,9 +1,8 @@
 package MainTaxiApp;
 
-import MainTaxiApp.Classes.AppLogic;
-import MainTaxiApp.Classes.Login;
-import MainTaxiApp.Classes.Map;
-import MainTaxiApp.Classes.Taxi;
+import MainTaxiApp.Classes.*;
+
+
 public class Main {
     public static void main(String[] args) {
        AppLogic.clearConsole();
@@ -11,18 +10,9 @@ public class Main {
        newLogin.loginOrSignUp();
        AppLogic.anythingToContinue();
        AppLogic.clearConsole();
-
-        Map map = new Map(20,newLogin.getCurrentUser());
-        map.printMap();
-
-        AppLogic.anythingToContinue();
-        Taxi taxiFound = map.searchAlgorithm();
-        System.out.println("The closest taxi found was "
-                + taxiFound.getRegistration()
-                + " driven by "
-                + taxiFound.getName()
-                + " Taxi size: "
-                +taxiFound.getSize());
+       AppLogic.taxiRide(newLogin);
+       AppLogic.rateTaxiDriver();
+       AppLogic.printExitMessage();
 
     }
 }
