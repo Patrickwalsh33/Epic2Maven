@@ -4,7 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9e87768c-0d7a-4f13-8d97-1e4f7eae840e" name="Changes" comment="observer boiler plate code" />
+    <list default="true" id="9e87768c-0d7a-4f13-8d97-1e4f7eae840e" name="Changes" comment="Locations can now take multiple taxis and user saves their location">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Taxis.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Taxis.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/MainTaxiApp/Classes/AppLogic.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/MainTaxiApp/Classes/AppLogic.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/MainTaxiApp/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/MainTaxiApp/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/MainTaxiApp/Classes/AppLogic.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/MainTaxiApp/Classes/AppLogic.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/MainTaxiApp/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/MainTaxiApp/Main.class" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -13,11 +20,13 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Enum" />
-        <option value="Interface" />
         <option value="Class" />
+        <option value="Enum" />
       </list>
     </option>
+  </component>
+  <component name="Git.Merge.Settings">
+    <option name="BRANCH" value="Locations-to-have-multiple-taxis" />
   </component>
   <component name="Git.Settings">
     <option name="PREVIOUS_COMMIT_AUTHORS">
@@ -27,7 +36,7 @@
     </option>
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="master" />
+        <entry key="$PROJECT_DIR$" value="Locations-to-have-multiple-taxis" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -60,42 +69,42 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "Application.Main.executor": "Run",
-    "Docker.Dockerfile.executor": "Run",
-    "Docker.src/Dockerfile.executor": "Run",
-    "JUnit.AppLogicTest (1).executor": "Run",
-    "JUnit.AppLogicTest.executor": "Run",
-    "JUnit.AppLogicTest.testAnythingToContinue.executor": "Run",
-    "JUnit.AppLogicTest.testClearConsole.executor": "Run",
-    "JUnit.LinkedListTest.executor": "Run",
-    "JUnit.LocationTest.executor": "Run",
-    "JUnit.LoginTest.executor": "Run",
-    "JUnit.LoginTest.testDoesContain.executor": "Run",
-    "JUnit.LoginTest.testLoginOrSignUp.executor": "Run",
-    "JUnit.LoginTest.testLoginOrSignUp_SignUp.executor": "Run",
-    "JUnit.LoginTest.testLoginToApp.executor": "Run",
-    "JUnit.LoginTest.testSignUpToApp.executor": "Run",
-    "JUnit.MapTest.executor": "Run",
-    "JUnit.TaxiTest.testGetTaxiDetails.executor": "Run",
-    "JUnit.TextHandlerTest.executor": "Run",
-    "JUnit.TextHandlerTest.testReadUsersAndPasswords.executor": "Run",
-    "JUnit.UserTest.testGetUsername.executor": "Run",
-    "Maven.Epic2Maven [deploy].executor": "Run",
-    "Maven.Epic2Maven [install].executor": "Run",
-    "Maven.Epic2Maven [package].executor": "Run",
-    "Maven.Epic2Maven [test].executor": "Run",
-    "Maven.Epic2Maven [verify].executor": "Run",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "observer",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/eddie_uooosyh/Documents/GitHub/Epic2MavenTaxiApp",
-    "settings.editor.selected.configurable": "com.intellij.jarRepository.settings.RemoteRepositoriesConfigurable"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;Application.Main.executor&quot;: &quot;Run&quot;,
+    &quot;Docker.Dockerfile.executor&quot;: &quot;Run&quot;,
+    &quot;Docker.src/Dockerfile.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.AppLogicTest (1).executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.AppLogicTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.AppLogicTest.testAnythingToContinue.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.AppLogicTest.testClearConsole.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.LinkedListTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.LocationTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.LoginTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.LoginTest.testDoesContain.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.LoginTest.testLoginOrSignUp.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.LoginTest.testLoginOrSignUp_SignUp.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.LoginTest.testLoginToApp.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.LoginTest.testSignUpToApp.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.MapTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.TaxiTest.testGetTaxiDetails.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.TextHandlerTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.TextHandlerTest.testReadUsersAndPasswords.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.UserTest.testGetUsername.executor&quot;: &quot;Run&quot;,
+    &quot;Maven.Epic2Maven [deploy].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.Epic2Maven [install].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.Epic2Maven [package].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.Epic2Maven [test].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.Epic2Maven [verify].executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/eddie_uooosyh/Documents/GitHub/Epic2MavenTaxiApp&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;com.intellij.jarRepository.settings.RemoteRepositoriesConfigurable&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="MainTaxiApp.Classes" />
@@ -179,11 +188,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Main" />
-        <item itemvalue="JUnit.AppLogicTest.testAnythingToContinue" />
-        <item itemvalue="Docker.Dockerfile" />
-        <item itemvalue="Docker.src/Dockerfile" />
         <item itemvalue="JUnit.AppLogicTest (1)" />
+        <item itemvalue="JUnit.AppLogicTest.testAnythingToContinue" />
+        <item itemvalue="Docker.src/Dockerfile" />
+        <item itemvalue="Docker.Dockerfile" />
+        <item itemvalue="Application.Main" />
       </list>
     </recent_temporary>
   </component>
@@ -203,30 +212,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1702551602801</updated>
-    </task>
-    <task id="LOCAL-00007" summary="Fix imports">
-      <option name="closed" value="true" />
-      <created>1702644612773</created>
-      <option name="number" value="00007" />
-      <option name="presentableId" value="LOCAL-00007" />
-      <option name="project" value="LOCAL" />
-      <updated>1702644612773</updated>
-    </task>
-    <task id="LOCAL-00008" summary="Fix imports">
-      <option name="closed" value="true" />
-      <created>1702645487988</created>
-      <option name="number" value="00008" />
-      <option name="presentableId" value="LOCAL-00008" />
-      <option name="project" value="LOCAL" />
-      <updated>1702645487988</updated>
-    </task>
-    <task id="LOCAL-00009" summary="CD pipeline fixes">
-      <option name="closed" value="true" />
-      <created>1702645932590</created>
-      <option name="number" value="00009" />
-      <option name="presentableId" value="LOCAL-00009" />
-      <option name="project" value="LOCAL" />
-      <updated>1702645932590</updated>
     </task>
     <task id="LOCAL-00010" summary="Delete files">
       <option name="closed" value="true" />
@@ -572,31 +557,55 @@
       <option name="project" value="LOCAL" />
       <updated>1702990150708</updated>
     </task>
-    <task id="LOCAL-00053" summary="commit">
+    <task id="LOCAL-00053" summary="Rating implemented">
       <option name="closed" value="true" />
-      <created>1702997826054</created>
+      <created>1702997230912</created>
       <option name="number" value="00053" />
       <option name="presentableId" value="LOCAL-00053" />
       <option name="project" value="LOCAL" />
-      <updated>1702997826054</updated>
+      <updated>1702997230912</updated>
     </task>
-    <task id="LOCAL-00054" summary="observer boiler plate code">
+    <task id="LOCAL-00054" summary="Dcoker">
       <option name="closed" value="true" />
-      <created>1703001337153</created>
+      <created>1702997261820</created>
       <option name="number" value="00054" />
       <option name="presentableId" value="LOCAL-00054" />
       <option name="project" value="LOCAL" />
-      <updated>1703001337154</updated>
+      <updated>1702997261820</updated>
     </task>
-    <task id="LOCAL-00055" summary="observer boiler plate code">
+    <task id="LOCAL-00055" summary="Locations can now take multiple taxis and user saves their location">
       <option name="closed" value="true" />
-      <created>1703001362963</created>
+      <created>1703000016254</created>
       <option name="number" value="00055" />
       <option name="presentableId" value="LOCAL-00055" />
       <option name="project" value="LOCAL" />
-      <updated>1703001362963</updated>
+      <updated>1703000016254</updated>
     </task>
-    <option name="localTasksCounter" value="56" />
+    <task id="LOCAL-00056" summary="Locations can now take multiple taxis and user saves their location">
+      <option name="closed" value="true" />
+      <created>1703000131668</created>
+      <option name="number" value="00056" />
+      <option name="presentableId" value="LOCAL-00056" />
+      <option name="project" value="LOCAL" />
+      <updated>1703000131668</updated>
+    </task>
+    <task id="LOCAL-00057" summary="Locations can now take multiple taxis and user saves their location">
+      <option name="closed" value="true" />
+      <created>1703001882421</created>
+      <option name="number" value="00057" />
+      <option name="presentableId" value="LOCAL-00057" />
+      <option name="project" value="LOCAL" />
+      <updated>1703001882422</updated>
+    </task>
+    <task id="LOCAL-00058" summary="Locations can now take multiple taxis and user saves their location">
+      <option name="closed" value="true" />
+      <created>1703002006514</created>
+      <option name="number" value="00058" />
+      <option name="presentableId" value="LOCAL-00058" />
+      <option name="project" value="LOCAL" />
+      <updated>1703002006515</updated>
+    </task>
+    <option name="localTasksCounter" value="59" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -622,9 +631,9 @@
     <MESSAGE value="Taxi movement implemented" />
     <MESSAGE value="Taxi to be pushed to docker hub" />
     <MESSAGE value="Rating implemented" />
-    <MESSAGE value="commit" />
-    <MESSAGE value="observer boiler plate code" />
-    <option name="LAST_COMMIT_MESSAGE" value="observer boiler plate code" />
+    <MESSAGE value="Dcoker" />
+    <MESSAGE value="Locations can now take multiple taxis and user saves their location" />
+    <option name="LAST_COMMIT_MESSAGE" value="Locations can now take multiple taxis and user saves their location" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/Epic2MavenTaxiApp$Main.ic" NAME="Main Coverage Results" MODIFIED="1702912226381" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
