@@ -1,6 +1,6 @@
 package MainTaxiApp.Classes;
 
-public class User {
+public class User implements RideObserver{
     private String username;
     private String password;
 
@@ -33,5 +33,17 @@ public class User {
 
     public void setPassword(String password) {
         this.password = password;
+    }
+
+    @Override
+    public void update(RideSubject subject) {
+        if (subject instanceof Ride){
+            Ride ride = (Ride) subject;
+            if (ride.isRideInProgress()){
+                System.out.println("User " + getUsername() + ": The ride has started.");
+            }else {
+                System.out.println("User " + getUsername() + ": The ride has ended.");
+            }
+        }
     }
 }

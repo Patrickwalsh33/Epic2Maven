@@ -69,42 +69,42 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "Application.Main.executor": "Run",
-    "Docker.Dockerfile.executor": "Run",
-    "Docker.src/Dockerfile.executor": "Run",
-    "JUnit.AppLogicTest (1).executor": "Run",
-    "JUnit.AppLogicTest.executor": "Run",
-    "JUnit.AppLogicTest.testAnythingToContinue.executor": "Run",
-    "JUnit.AppLogicTest.testClearConsole.executor": "Run",
-    "JUnit.LinkedListTest.executor": "Run",
-    "JUnit.LocationTest.executor": "Run",
-    "JUnit.LoginTest.executor": "Run",
-    "JUnit.LoginTest.testDoesContain.executor": "Run",
-    "JUnit.LoginTest.testLoginOrSignUp.executor": "Run",
-    "JUnit.LoginTest.testLoginOrSignUp_SignUp.executor": "Run",
-    "JUnit.LoginTest.testLoginToApp.executor": "Run",
-    "JUnit.LoginTest.testSignUpToApp.executor": "Run",
-    "JUnit.MapTest.executor": "Run",
-    "JUnit.TaxiTest.testGetTaxiDetails.executor": "Run",
-    "JUnit.TextHandlerTest.executor": "Run",
-    "JUnit.TextHandlerTest.testReadUsersAndPasswords.executor": "Run",
-    "JUnit.UserTest.testGetUsername.executor": "Run",
-    "Maven.Epic2Maven [deploy].executor": "Run",
-    "Maven.Epic2Maven [install].executor": "Run",
-    "Maven.Epic2Maven [package].executor": "Run",
-    "Maven.Epic2Maven [test].executor": "Run",
-    "Maven.Epic2Maven [verify].executor": "Run",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "master",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/eddie_uooosyh/Documents/GitHub/Epic2MavenTaxiApp",
-    "settings.editor.selected.configurable": "com.intellij.jarRepository.settings.RemoteRepositoriesConfigurable"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;Application.Main.executor&quot;: &quot;Run&quot;,
+    &quot;Docker.Dockerfile.executor&quot;: &quot;Run&quot;,
+    &quot;Docker.src/Dockerfile.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.AppLogicTest (1).executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.AppLogicTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.AppLogicTest.testAnythingToContinue.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.AppLogicTest.testClearConsole.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.LinkedListTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.LocationTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.LoginTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.LoginTest.testDoesContain.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.LoginTest.testLoginOrSignUp.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.LoginTest.testLoginOrSignUp_SignUp.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.LoginTest.testLoginToApp.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.LoginTest.testSignUpToApp.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.MapTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.TaxiTest.testGetTaxiDetails.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.TextHandlerTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.TextHandlerTest.testReadUsersAndPasswords.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.UserTest.testGetUsername.executor&quot;: &quot;Run&quot;,
+    &quot;Maven.Epic2Maven [deploy].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.Epic2Maven [install].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.Epic2Maven [package].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.Epic2Maven [test].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.Epic2Maven [verify].executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/eddie_uooosyh/Documents/GitHub/Epic2MavenTaxiApp&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;com.intellij.jarRepository.settings.RemoteRepositoriesConfigurable&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="MainTaxiApp.Classes" />
@@ -188,11 +188,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Main" />
         <item itemvalue="JUnit.AppLogicTest (1)" />
         <item itemvalue="JUnit.AppLogicTest.testAnythingToContinue" />
         <item itemvalue="Docker.src/Dockerfile" />
         <item itemvalue="Docker.Dockerfile" />
+        <item itemvalue="Application.Main" />
       </list>
     </recent_temporary>
   </component>
