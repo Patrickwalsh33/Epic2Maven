@@ -4,27 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9e87768c-0d7a-4f13-8d97-1e4f7eae840e" name="Changes" comment="Adding tests">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/MainTaxiApp/Classes/AppLogic.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/MainTaxiApp/Classes/AppLogic.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/MainTaxiApp/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/MainTaxiApp/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/AppLogicTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/AppLogicTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/MainTaxiApp/Classes/AppLogic.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/MainTaxiApp/Classes/AppLogic.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/MainTaxiApp/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/MainTaxiApp/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/AppLogicTest.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/AppLogicTest.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/LinkedListTest.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/LinkedListTest.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/LocationTest.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/LocationTest.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/MapTest.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/MapTest.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-AppLogicTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-AppLogicTest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-LinkedListTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-LinkedListTest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-LocationTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-LocationTest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-MapTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-MapTest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-TaxiTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-TaxiTest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-TextHandlerTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-TextHandlerTest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-UserTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-UserTest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TaxiTest.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TaxiTest.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TextHandlerTest.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TextHandlerTest.txt" afterDir="false" />
+    <list default="true" id="9e87768c-0d7a-4f13-8d97-1e4f7eae840e" name="Changes" comment="fixes">
+      <change beforePath="$PROJECT_DIR$/src/test/java/TextHandlerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/TextHandlerTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testTaxis.csv" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -157,20 +139,11 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.AppLogicTest">
+  <component name="RunManager" selected="JUnit.TextHandlerTest.testWriteInNewTaxiRating">
     <configuration name="AppLogicTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Epic2Maven" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="AppLogicTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="MapTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Epic2Maven" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="MapTest" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -190,6 +163,16 @@
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="TextHandlerTest" />
       <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TextHandlerTest.testWriteInNewTaxiRating" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Epic2Maven" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="TextHandlerTest" />
+      <option name="METHOD_NAME" value="testWriteInNewTaxiRating" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -278,17 +261,17 @@
       <item itemvalue="JUnit.AppLogicTest" />
       <item itemvalue="JUnit.TaxiTest" />
       <item itemvalue="JUnit.TextHandlerTest" />
+      <item itemvalue="JUnit.TextHandlerTest.testWriteInNewTaxiRating" />
       <item itemvalue="JUnit.UserTest" />
-      <item itemvalue="JUnit.MapTest" />
       <item itemvalue="Maven.Epic2Maven [test]" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.TextHandlerTest.testWriteInNewTaxiRating" />
         <item itemvalue="JUnit.AppLogicTest" />
         <item itemvalue="JUnit.UserTest" />
         <item itemvalue="JUnit.TextHandlerTest" />
         <item itemvalue="JUnit.TaxiTest" />
-        <item itemvalue="JUnit.MapTest" />
       </list>
     </recent_temporary>
   </component>
@@ -308,14 +291,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1702551602801</updated>
-    </task>
-    <task id="LOCAL-00011" summary="Delete files">
-      <option name="closed" value="true" />
-      <created>1702646815890</created>
-      <option name="number" value="00011" />
-      <option name="presentableId" value="LOCAL-00011" />
-      <option name="project" value="LOCAL" />
-      <updated>1702646815890</updated>
     </task>
     <task id="LOCAL-00012" summary="THIS BREAKS STUFF">
       <option name="closed" value="true" />
@@ -701,7 +676,15 @@
       <option name="project" value="LOCAL" />
       <updated>1703022843334</updated>
     </task>
-    <option name="localTasksCounter" value="60" />
+    <task id="LOCAL-00060" summary="fixes">
+      <option name="closed" value="true" />
+      <created>1703037058533</created>
+      <option name="number" value="00060" />
+      <option name="presentableId" value="LOCAL-00060" />
+      <option name="project" value="LOCAL" />
+      <updated>1703037058533</updated>
+    </task>
+    <option name="localTasksCounter" value="61" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -730,7 +713,8 @@
     <MESSAGE value="Dcoker" />
     <MESSAGE value="Locations can now take multiple taxis and user saves their location" />
     <MESSAGE value="Adding tests" />
-    <option name="LAST_COMMIT_MESSAGE" value="Adding tests" />
+    <MESSAGE value="fixes" />
+    <option name="LAST_COMMIT_MESSAGE" value="fixes" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/Epic2MavenTaxiApp$MapTest.ic" NAME="MapTest Coverage Results" MODIFIED="1703036401359" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />

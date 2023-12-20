@@ -84,20 +84,19 @@ class TextHandlerTest {
     @Test
     void testWriteInNewTaxiRating() throws IOException {
         Path tempFile = Files.createTempFile("testTaxis", ".csv");
-        String testFilePath = "testTaxis.csv";
 
         TextHandler textHandler = new TextHandler();
         Taxi sampleTaxi = new Taxi("08-MH-3038", "John Doe", 3, "Toyota", "Medium");
 
-        try (BufferedWriter writer = new BufferedWriter(new FileWriter(testFilePath))) {
+        try (BufferedWriter writer = new BufferedWriter(new FileWriter(tempFile.toString()))) {
             String line = sampleTaxi.getRegistration() + "," + sampleTaxi.getName() + "," + sampleTaxi.getRating() + "," + sampleTaxi.getBrand() + "," + sampleTaxi.getSize();
             writer.write(line);
             writer.newLine();
         }
 
-        textHandler.writeInNewTaxiRating(sampleTaxi, 4, testFilePath);
+        textHandler.writeInNewTaxiRating(sampleTaxi, 4, tempFile.toString());
 
-        try (BufferedReader reader = new BufferedReader(new FileReader(testFilePath))) {
+        try (BufferedReader reader = new BufferedReader(new FileReader(tempFile.toString()))) {
             String line = reader.readLine();
             String[] values = line.split(",");
             assertEquals("08-MH-3038", values[0]);  // Registration should remain the same
