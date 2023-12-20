@@ -4,22 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9e87768c-0d7a-4f13-8d97-1e4f7eae840e" name="Changes" comment="fixes">
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_18_12_2023_17_31__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_18_12_2023_17_31__Changes_.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_19_12_2023_18_08__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_19_12_2023_18_08__Changes_.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_19_12_2023_18_10__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_19_12_2023_18_10__Changes_.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_19_12_2023_18_13__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_19_12_2023_18_13__Changes_.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_19_12_2023_18_14__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_19_12_2023_18_14__Changes_.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_14_12_2023_20_54__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_14_12_2023_20_54__Changes_.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_15_12_2023_19_05__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_15_12_2023_19_05__Changes_.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_16_12_2023_17_40__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_16_12_2023_17_40__Changes_.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_16_12_2023_17_40__Changes_1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_16_12_2023_17_40__Changes_1.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_17_12_2023_13_56__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_17_12_2023_13_56__Changes_.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_17_12_2023_18_57__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_17_12_2023_18_57__Changes_.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_17_12_2023_21_21__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_17_12_2023_21_21__Changes_.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_19_12_2023_14_56__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_19_12_2023_14_56__Changes_.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_19_12_2023_18_09__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_19_12_2023_18_09__Changes_.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_19_12_2023_19_17__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_19_12_2023_19_17__Changes_.xml" afterDir="false" />
+    <list default="true" id="9e87768c-0d7a-4f13-8d97-1e4f7eae840e" name="Changes" comment="pushing jar">
+      <change afterPath="$PROJECT_DIR$/src/main/java/MainTaxiApp/Interfaces/VehicleHiringTesting.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Taxis.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Taxis.csv" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -79,54 +67,54 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
-    &quot;Application.Main.executor&quot;: &quot;Run&quot;,
-    &quot;Docker.Dockerfile.executor&quot;: &quot;Run&quot;,
-    &quot;Docker.src/Dockerfile.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.AppLogicTest (1).executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.AppLogicTest.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.AppLogicTest.testAnythingToContinue.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.AppLogicTest.testClearConsole.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.LinkedListTest.executor&quot;: &quot;Coverage&quot;,
-    &quot;JUnit.LocationTest.executor&quot;: &quot;Coverage&quot;,
-    &quot;JUnit.LocationTest.testAddDrivingTaxi.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.LoginTest.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.LoginTest.testDoesContain.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.LoginTest.testLoginOrSignUp.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.LoginTest.testLoginOrSignUp_SignUp.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.LoginTest.testLoginToApp.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.LoginTest.testSignUpToApp.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.MapTest.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.MapTest.testAddTaxisAndUsersToMap.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.MapTest.testMoveTaxiAndUserToLocation.executor&quot;: &quot;Debug&quot;,
-    &quot;JUnit.MapTest.testMoveTaxiToUser.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.MapTest.testMoveTaxisOnTheMap.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.MapTest.testPrintMap.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.TaxiTest.executor&quot;: &quot;Coverage&quot;,
-    &quot;JUnit.TaxiTest.testGetTaxiDetails.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.TextHandlerTest.executor&quot;: &quot;Coverage&quot;,
-    &quot;JUnit.TextHandlerTest.testReadUsersAndPasswords.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.TextHandlerTest.testWriteInNewTaxiRating.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.UserTest.executor&quot;: &quot;Coverage&quot;,
-    &quot;JUnit.UserTest.testGetUsername.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.UserTest.testSetAndGetUsersLocation.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.java in Epic2Maven.executor&quot;: &quot;Run&quot;,
-    &quot;Maven.Epic2Maven [deploy].executor&quot;: &quot;Run&quot;,
-    &quot;Maven.Epic2Maven [install].executor&quot;: &quot;Run&quot;,
-    &quot;Maven.Epic2Maven [package].executor&quot;: &quot;Run&quot;,
-    &quot;Maven.Epic2Maven [test].executor&quot;: &quot;Run&quot;,
-    &quot;Maven.Epic2Maven [verify].executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/eddie_uooosyh/Documents/GitHub/Epic2MavenTaxiApp&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;com.intellij.jarRepository.settings.RemoteRepositoriesConfigurable&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "Application.Main.executor": "Run",
+    "Docker.Dockerfile.executor": "Run",
+    "Docker.src/Dockerfile.executor": "Run",
+    "JUnit.AppLogicTest (1).executor": "Run",
+    "JUnit.AppLogicTest.executor": "Run",
+    "JUnit.AppLogicTest.testAnythingToContinue.executor": "Run",
+    "JUnit.AppLogicTest.testClearConsole.executor": "Run",
+    "JUnit.LinkedListTest.executor": "Coverage",
+    "JUnit.LocationTest.executor": "Coverage",
+    "JUnit.LocationTest.testAddDrivingTaxi.executor": "Run",
+    "JUnit.LoginTest.executor": "Run",
+    "JUnit.LoginTest.testDoesContain.executor": "Run",
+    "JUnit.LoginTest.testLoginOrSignUp.executor": "Run",
+    "JUnit.LoginTest.testLoginOrSignUp_SignUp.executor": "Run",
+    "JUnit.LoginTest.testLoginToApp.executor": "Run",
+    "JUnit.LoginTest.testSignUpToApp.executor": "Run",
+    "JUnit.MapTest.executor": "Run",
+    "JUnit.MapTest.testAddTaxisAndUsersToMap.executor": "Run",
+    "JUnit.MapTest.testMoveTaxiAndUserToLocation.executor": "Debug",
+    "JUnit.MapTest.testMoveTaxiToUser.executor": "Run",
+    "JUnit.MapTest.testMoveTaxisOnTheMap.executor": "Run",
+    "JUnit.MapTest.testPrintMap.executor": "Run",
+    "JUnit.TaxiTest.executor": "Coverage",
+    "JUnit.TaxiTest.testGetTaxiDetails.executor": "Run",
+    "JUnit.TextHandlerTest.executor": "Coverage",
+    "JUnit.TextHandlerTest.testReadUsersAndPasswords.executor": "Run",
+    "JUnit.TextHandlerTest.testWriteInNewTaxiRating.executor": "Run",
+    "JUnit.UserTest.executor": "Coverage",
+    "JUnit.UserTest.testGetUsername.executor": "Run",
+    "JUnit.UserTest.testSetAndGetUsersLocation.executor": "Run",
+    "JUnit.java in Epic2Maven.executor": "Run",
+    "Maven.Epic2Maven [deploy].executor": "Run",
+    "Maven.Epic2Maven [install].executor": "Run",
+    "Maven.Epic2Maven [package].executor": "Run",
+    "Maven.Epic2Maven [test].executor": "Run",
+    "Maven.Epic2Maven [verify].executor": "Run",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "git-widget-placeholder": "master",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/eddie_uooosyh/Documents/GitHub/Epic2/src/main/java/MainTaxiApp",
+    "settings.editor.selected.configurable": "preferences.pluginManager"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="MainTaxiApp.Interfaces" />
@@ -154,7 +142,7 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.MapTest.testMoveTaxisOnTheMap">
+  <component name="RunManager" selected="Application.Main">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="MainTaxiApp.Main" />
       <module name="Epic2Maven" />
@@ -287,8 +275,8 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.MapTest.testMoveTaxisOnTheMap" />
         <item itemvalue="Application.Main" />
+        <item itemvalue="JUnit.MapTest.testMoveTaxisOnTheMap" />
         <item itemvalue="JUnit.MapTest.testMoveTaxiToUser" />
         <item itemvalue="JUnit.MapTest" />
         <item itemvalue="JUnit.MapTest.testMoveTaxiAndUserToLocation" />
@@ -311,22 +299,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1702551602801</updated>
-    </task>
-    <task id="LOCAL-00013" summary="Fix it">
-      <option name="closed" value="true" />
-      <created>1702647058587</created>
-      <option name="number" value="00013" />
-      <option name="presentableId" value="LOCAL-00013" />
-      <option name="project" value="LOCAL" />
-      <updated>1702647058587</updated>
-    </task>
-    <task id="LOCAL-00014" summary="Fix it">
-      <option name="closed" value="true" />
-      <created>1702647962958</created>
-      <option name="number" value="00014" />
-      <option name="presentableId" value="LOCAL-00014" />
-      <option name="project" value="LOCAL" />
-      <updated>1702647962958</updated>
     </task>
     <task id="LOCAL-00015" summary="Fix it">
       <option name="closed" value="true" />
@@ -704,12 +676,27 @@
       <option name="project" value="LOCAL" />
       <updated>1703037562177</updated>
     </task>
-    <option name="localTasksCounter" value="62" />
+    <task id="LOCAL-00062" summary="pushing jar">
+      <option name="closed" value="true" />
+      <created>1703051413183</created>
+      <option name="number" value="00062" />
+      <option name="presentableId" value="LOCAL-00062" />
+      <option name="project" value="LOCAL" />
+      <updated>1703051413184</updated>
+    </task>
+    <task id="LOCAL-00063" summary="pushing jar">
+      <option name="closed" value="true" />
+      <created>1703051579338</created>
+      <option name="number" value="00063" />
+      <option name="presentableId" value="LOCAL-00063" />
+      <option name="project" value="LOCAL" />
+      <updated>1703051579338</updated>
+    </task>
+    <option name="localTasksCounter" value="64" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="Fixed code" />
     <MESSAGE value="LocationTest implemented" />
     <MESSAGE value="User and taxi tests" />
     <MESSAGE value="fix eddie projetct" />
@@ -734,7 +721,8 @@
     <MESSAGE value="Locations can now take multiple taxis and user saves their location" />
     <MESSAGE value="Adding tests" />
     <MESSAGE value="fixes" />
-    <option name="LAST_COMMIT_MESSAGE" value="fixes" />
+    <MESSAGE value="pushing jar" />
+    <option name="LAST_COMMIT_MESSAGE" value="pushing jar" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/Epic2MavenTaxiApp$MapTest.ic" NAME="MapTest Coverage Results" MODIFIED="1703036401359" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
