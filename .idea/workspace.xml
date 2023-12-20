@@ -5,8 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9e87768c-0d7a-4f13-8d97-1e4f7eae840e" name="Changes" comment="fixes">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Taxis.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Taxis.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/MainTaxiApp/Classes/AppLogic.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/MainTaxiApp/Classes/AppLogic.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/MainTaxiApp/Classes/Map.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/MainTaxiApp/Classes/Map.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/MainTaxiApp/Classes/Taxi.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/MainTaxiApp/Classes/Taxi.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/MapTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/MapTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/TextHandlerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/TextHandlerTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/testTaxis.csv" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -85,10 +90,12 @@
     "JUnit.LoginTest.testLoginOrSignUp_SignUp.executor": "Run",
     "JUnit.LoginTest.testLoginToApp.executor": "Run",
     "JUnit.LoginTest.testSignUpToApp.executor": "Run",
-    "JUnit.MapTest.executor": "Coverage",
-    "JUnit.MapTest.testMoveTaxiAndUserToLocation.executor": "Run",
+    "JUnit.MapTest.executor": "Run",
+    "JUnit.MapTest.testAddTaxisAndUsersToMap.executor": "Run",
+    "JUnit.MapTest.testMoveTaxiAndUserToLocation.executor": "Debug",
     "JUnit.MapTest.testMoveTaxiToUser.executor": "Run",
     "JUnit.MapTest.testMoveTaxisOnTheMap.executor": "Run",
+    "JUnit.MapTest.testPrintMap.executor": "Run",
     "JUnit.TaxiTest.executor": "Coverage",
     "JUnit.TaxiTest.testGetTaxiDetails.executor": "Run",
     "JUnit.TextHandlerTest.executor": "Coverage",
@@ -139,49 +146,55 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.TextHandlerTest.testWriteInNewTaxiRating">
-    <configuration name="AppLogicTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.MapTest.testMoveTaxisOnTheMap">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="MainTaxiApp.Main" />
+      <module name="Epic2Maven" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="MainTaxiApp.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MapTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Epic2Maven" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="AppLogicTest" />
+      <option name="MAIN_CLASS_NAME" value="MapTest" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TaxiTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="MapTest.testMoveTaxiAndUserToLocation" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Epic2Maven" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="TaxiTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="TextHandlerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Epic2Maven" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="TextHandlerTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="TextHandlerTest.testWriteInNewTaxiRating" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Epic2Maven" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="TextHandlerTest" />
-      <option name="METHOD_NAME" value="testWriteInNewTaxiRating" />
+      <option name="MAIN_CLASS_NAME" value="MapTest" />
+      <option name="METHOD_NAME" value="testMoveTaxiAndUserToLocation" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="UserTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="MapTest.testMoveTaxiToUser" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Epic2Maven" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="UserTest" />
-      <option name="TEST_OBJECT" value="class" />
+      <option name="MAIN_CLASS_NAME" value="MapTest" />
+      <option name="METHOD_NAME" value="testMoveTaxiToUser" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MapTest.testMoveTaxisOnTheMap" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Epic2Maven" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="MapTest" />
+      <option name="METHOD_NAME" value="testMoveTaxisOnTheMap" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -258,20 +271,19 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="JUnit.AppLogicTest" />
-      <item itemvalue="JUnit.TaxiTest" />
-      <item itemvalue="JUnit.TextHandlerTest" />
-      <item itemvalue="JUnit.TextHandlerTest.testWriteInNewTaxiRating" />
-      <item itemvalue="JUnit.UserTest" />
-      <item itemvalue="Maven.Epic2Maven [test]" />
+      <item itemvalue="Application.Main" />
+      <item itemvalue="JUnit.MapTest" />
+      <item itemvalue="JUnit.MapTest.testMoveTaxiAndUserToLocation" />
+      <item itemvalue="JUnit.MapTest.testMoveTaxiToUser" />
+      <item itemvalue="JUnit.MapTest.testMoveTaxisOnTheMap" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.TextHandlerTest.testWriteInNewTaxiRating" />
-        <item itemvalue="JUnit.AppLogicTest" />
-        <item itemvalue="JUnit.UserTest" />
-        <item itemvalue="JUnit.TextHandlerTest" />
-        <item itemvalue="JUnit.TaxiTest" />
+        <item itemvalue="JUnit.MapTest.testMoveTaxisOnTheMap" />
+        <item itemvalue="Application.Main" />
+        <item itemvalue="JUnit.MapTest.testMoveTaxiToUser" />
+        <item itemvalue="JUnit.MapTest" />
+        <item itemvalue="JUnit.MapTest.testMoveTaxiAndUserToLocation" />
       </list>
     </recent_temporary>
   </component>
@@ -291,14 +303,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1702551602801</updated>
-    </task>
-    <task id="LOCAL-00012" summary="THIS BREAKS STUFF">
-      <option name="closed" value="true" />
-      <created>1702646981156</created>
-      <option name="number" value="00012" />
-      <option name="presentableId" value="LOCAL-00012" />
-      <option name="project" value="LOCAL" />
-      <updated>1702646981156</updated>
     </task>
     <task id="LOCAL-00013" summary="Fix it">
       <option name="closed" value="true" />
@@ -684,7 +688,15 @@
       <option name="project" value="LOCAL" />
       <updated>1703037058533</updated>
     </task>
-    <option name="localTasksCounter" value="61" />
+    <task id="LOCAL-00061" summary="fixes">
+      <option name="closed" value="true" />
+      <created>1703037562176</created>
+      <option name="number" value="00061" />
+      <option name="presentableId" value="LOCAL-00061" />
+      <option name="project" value="LOCAL" />
+      <updated>1703037562177</updated>
+    </task>
+    <option name="localTasksCounter" value="62" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">

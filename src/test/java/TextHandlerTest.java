@@ -99,11 +99,11 @@ class TextHandlerTest {
         try (BufferedReader reader = new BufferedReader(new FileReader(tempFile.toString()))) {
             String line = reader.readLine();
             String[] values = line.split(",");
-            assertEquals("08-MH-3038", values[0]);  // Registration should remain the same
-            assertEquals("John Doe", values[1]);  // Name should remain the same
-            assertEquals("4", values[2]);  // Rating should be updated to 4
-            assertEquals("Toyota", values[3]);  // Brand should remain the same
-            assertEquals("Medium", values[4]);  // Size should remain the same
+            assertEquals("08-MH-3038", values[0]);
+            assertEquals("John Doe", values[1]);
+            assertEquals("4", values[2]);
+            assertEquals("Toyota", values[3]);
+            assertEquals("Medium", values[4]);
         }
         Files.delete(tempFile);
     }

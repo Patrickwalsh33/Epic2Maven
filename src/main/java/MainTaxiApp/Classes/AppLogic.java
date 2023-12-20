@@ -46,6 +46,8 @@ public class AppLogic {
         return null;
     }
     public static void taxiRide(){
+        AppLogic size = new AppLogic();
+        currentMap.setSize((size.findSize()+"").toLowerCase());
         AppLogic.anythingToContinue();
         currentMap.moveTaxiToUser();
         Scanner scanner = new Scanner(System.in);

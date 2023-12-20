@@ -9,6 +9,11 @@ import static MainTaxiApp.Classes.AppLogic.anythingToContinue;
 public class Map {
     TextHandler text = new TextHandler();
     private final LinkedList<Taxi> taxis =text.readTaxiData(text.getTAXIS_FILE_PATH());
+    private String taxiSize;
+
+    public void setSize(String size) {
+        this.taxiSize = size;
+    }
 
     LinkedList<Location> taxisOnMap = new LinkedList<>();
         private final Location[][] grid;
@@ -57,9 +62,7 @@ public class Map {
             currentUser.setUsersLocation(usersLocation);
         }
 
-    private Location searchAlgorithm() {
-            AppLogic size = new AppLogic();
-            String taxiSize =(size.findSize()+"").toLowerCase();
+    public Location searchAlgorithm() {
         int searchRadius = 1;
         Location nearestTaxiLocation;
         while (true) {
@@ -76,6 +79,7 @@ public class Map {
                 "Registration: "+nearestTaxiLocation.getDriver().getRegistration()+"\n" +
                 nearestTaxiLocation.getDriver().getName()+" is a "+nearestTaxiLocation.getDriver().getRating()+" star driver.");
         this.chosenTaxi=nearestTaxiLocation.getDriver();
+        chosenTaxi.setLocation(nearestTaxiLocation);
         return nearestTaxiLocation;
     }
 
@@ -97,7 +101,6 @@ public class Map {
         System.out.println("The taxi has arrived and has picked you up.");
     }
     public void moveTaxiAndUserToLocation(int x,int y)  {
-        System.out.println("Busy today mate ?");
         System.out.println("Beginning drive to destination.");
             Location destination = grid[x][y];
             moveTaxisOnTheMap(destination,usersLocation,null);
@@ -109,6 +112,19 @@ public class Map {
             return chosenTaxi;
     }
 
+    public Location[][] getGrid() {
+        return grid;
+    }
+
+
+    public Location getUsersLocation() {
+        return usersLocation;
+    }
+
+    public int getMapRadius() {
+        return mapRadius;
+    }
+
     public void moveTaxisOnTheMap(Location destination, Location taxiLocation, Location user) {
         while (!taxiLocation.equals(destination)) {
             User userInLocation =taxiLocation.getUserInLocation();
@@ -117,9 +133,9 @@ public class Map {
             int deltaY = Integer.compare(destination.getY(), taxiLocation.getY());
 
             Location oldtaxiLocation = taxiLocation;
-
             taxiLocation = grid[taxiLocation.getX() + deltaX][taxiLocation.getY() + deltaY];
             taxiLocation.addDrivingTaxi(oldtaxiLocation.getDriver());
+            oldtaxiLocation.getDriver().setLocation(taxiLocation);
 
             if (taxiLocation.getUserInLocation() == null&&userInLocation!=null) {
                 taxiLocation.addUser(userInLocation);

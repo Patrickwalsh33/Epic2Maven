@@ -6,6 +6,15 @@ public class Taxi {
     private int rating;
     private final String brand;
     private final String size;
+    private Location location;
+
+    public Location getLocation() {
+        return location;
+    }
+
+    public void setLocation(Location location) {
+        this.location = location;
+    }
 
     public Taxi(String registration, String name, int rating, String brand, String size){
         this.registration = registration;
