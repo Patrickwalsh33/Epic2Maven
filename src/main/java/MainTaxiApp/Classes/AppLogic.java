@@ -6,11 +6,11 @@ import java.util.Scanner;
 public class AppLogic {
 
     private static Login newLogin;
-    private static Map current;
+    private static Map currentMap;
     private static final int radius=20;
     static Scanner scanner = new Scanner(System.in);
     public static void makeMap(){
-    current= new Map(radius,newLogin.getCurrentUser());
+        currentMap= new Map(radius,newLogin.getCurrentUser());
     }
 
     public static void clearConsole(){
@@ -47,14 +47,14 @@ public class AppLogic {
     }
     public static void taxiRide(){
         AppLogic.anythingToContinue();
-        current.moveTaxiToUser();
+        currentMap.moveTaxiToUser();
         Scanner scanner = new Scanner(System.in);
         for(int i=0;i<1;i++) {
             System.out.println("\n---\nWhere would you like to go?\nInput 2 integers between 0 and 19.");
             int x = scanner.nextInt();
             int y = scanner.nextInt();
             if(x>-1&&x<20&&y>-1&&y<20){
-                current.moveTaxiAndUserToLocation(x,y);
+                currentMap.moveTaxiAndUserToLocation(x,y);
             }else {
                 System.out.println("One or more integers were invalid please try again.");
                 i--;
@@ -62,7 +62,7 @@ public class AppLogic {
         }
     }
     public static void rateTaxiDriver(){
-        Taxi taxi = current.getChosenTaxi();
+        Taxi taxi = currentMap.getChosenTaxi();
         Scanner scanner = new Scanner(System.in);
         TextHandler text = new TextHandler();
         for(int i=0;i<1;i++) {

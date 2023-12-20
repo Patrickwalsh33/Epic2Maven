@@ -5,32 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9e87768c-0d7a-4f13-8d97-1e4f7eae840e" name="Changes" comment="Adding tests">
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/MainTaxiApp/Interfaces/Observer.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Taxis.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Taxis.csv" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/MainTaxiApp/Classes/AppLogic.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/MainTaxiApp/Classes/AppLogic.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/MainTaxiApp/Classes/Location.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/MainTaxiApp/Classes/Location.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/MainTaxiApp/Classes/Login.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/MainTaxiApp/Classes/Login.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/MainTaxiApp/Classes/Map.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/MainTaxiApp/Classes/Map.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/MainTaxiApp/Classes/Ride.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/MainTaxiApp/Classes/Taxi.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/MainTaxiApp/Classes/Taxi.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/MainTaxiApp/Classes/TextHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/MainTaxiApp/Classes/TextHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/MainTaxiApp/Classes/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/MainTaxiApp/Classes/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/MainTaxiApp/Interfaces/RideObserver.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/MainTaxiApp/Interfaces/RideSubject.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/MainTaxiApp/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/MainTaxiApp/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/TextHandlerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/TextHandlerTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/AppLogicTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/AppLogicTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/MainTaxiApp/Classes/AppLogic.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/MainTaxiApp/Classes/AppLogic.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/MainTaxiApp/Classes/Location.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/MainTaxiApp/Classes/Location.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/MainTaxiApp/Classes/Login.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/MainTaxiApp/Classes/Login.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/MainTaxiApp/Classes/Map.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/MainTaxiApp/Classes/Map.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/MainTaxiApp/Classes/Ride.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/MainTaxiApp/Classes/TextHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/MainTaxiApp/Classes/TextHandler.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/MainTaxiApp/Classes/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/MainTaxiApp/Classes/User.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/MainTaxiApp/Interfaces/RideObserver.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/MainTaxiApp/Interfaces/RideSubject.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/MainTaxiApp/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/MainTaxiApp/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/surefire-reports/AppLogicTest.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/AppLogicTest.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/surefire-reports/LinkedListTest.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/LinkedListTest.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/surefire-reports/LocationTest.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/LocationTest.txt" afterDir="false" />
@@ -44,8 +25,6 @@
       <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-UserTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-UserTest.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/surefire-reports/TaxiTest.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TaxiTest.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/surefire-reports/TextHandlerTest.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TextHandlerTest.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/UserTest.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/UserTest.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/MapTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/MapTest.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -62,7 +41,7 @@
     </option>
   </component>
   <component name="Git.Merge.Settings">
-    <option name="BRANCH" value="Locations-to-have-multiple-taxis" />
+    <option name="BRANCH" value="Observer" />
   </component>
   <component name="Git.Settings">
     <option name="PREVIOUS_COMMIT_AUTHORS">
@@ -115,8 +94,8 @@
     "JUnit.AppLogicTest.executor": "Run",
     "JUnit.AppLogicTest.testAnythingToContinue.executor": "Run",
     "JUnit.AppLogicTest.testClearConsole.executor": "Run",
-    "JUnit.LinkedListTest.executor": "Run",
-    "JUnit.LocationTest.executor": "Run",
+    "JUnit.LinkedListTest.executor": "Coverage",
+    "JUnit.LocationTest.executor": "Coverage",
     "JUnit.LocationTest.testAddDrivingTaxi.executor": "Run",
     "JUnit.LoginTest.executor": "Run",
     "JUnit.LoginTest.testDoesContain.executor": "Run",
@@ -124,14 +103,16 @@
     "JUnit.LoginTest.testLoginOrSignUp_SignUp.executor": "Run",
     "JUnit.LoginTest.testLoginToApp.executor": "Run",
     "JUnit.LoginTest.testSignUpToApp.executor": "Run",
-    "JUnit.MapTest.executor": "Run",
+    "JUnit.MapTest.executor": "Coverage",
     "JUnit.MapTest.testMoveTaxiAndUserToLocation.executor": "Run",
     "JUnit.MapTest.testMoveTaxiToUser.executor": "Run",
     "JUnit.MapTest.testMoveTaxisOnTheMap.executor": "Run",
+    "JUnit.TaxiTest.executor": "Coverage",
     "JUnit.TaxiTest.testGetTaxiDetails.executor": "Run",
-    "JUnit.TextHandlerTest.executor": "Run",
+    "JUnit.TextHandlerTest.executor": "Coverage",
     "JUnit.TextHandlerTest.testReadUsersAndPasswords.executor": "Run",
     "JUnit.TextHandlerTest.testWriteInNewTaxiRating.executor": "Run",
+    "JUnit.UserTest.executor": "Coverage",
     "JUnit.UserTest.testGetUsername.executor": "Run",
     "JUnit.UserTest.testSetAndGetUsersLocation.executor": "Run",
     "JUnit.java in Epic2Maven.executor": "Run",
@@ -143,7 +124,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "git-widget-placeholder": "Observer",
+    "git-widget-placeholder": "master",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "C:/Users/eddie_uooosyh/Documents/GitHub/Epic2MavenTaxiApp",
     "settings.editor.selected.configurable": "com.intellij.jarRepository.settings.RemoteRepositoriesConfigurable"
@@ -176,16 +157,12 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Application.Main">
-    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="MainTaxiApp.Main" />
+  <component name="RunManager" selected="JUnit.AppLogicTest">
+    <configuration name="AppLogicTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Epic2Maven" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="MainTaxiApp.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="AppLogicTest" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -199,35 +176,97 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MapTest.testMoveTaxiAndUserToLocation" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="TaxiTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Epic2Maven" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="MapTest" />
-      <option name="METHOD_NAME" value="testMoveTaxiAndUserToLocation" />
-      <option name="TEST_OBJECT" value="method" />
+      <option name="MAIN_CLASS_NAME" value="TaxiTest" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MapTest.testMoveTaxiToUser" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="TextHandlerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Epic2Maven" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="MapTest" />
-      <option name="METHOD_NAME" value="testMoveTaxiToUser" />
-      <option name="TEST_OBJECT" value="method" />
+      <option name="MAIN_CLASS_NAME" value="TextHandlerTest" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MapTest.testMoveTaxisOnTheMap" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="UserTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Epic2Maven" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="MapTest" />
-      <option name="METHOD_NAME" value="testMoveTaxisOnTheMap" />
-      <option name="TEST_OBJECT" value="method" />
+      <option name="MAIN_CLASS_NAME" value="UserTest" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
+    </configuration>
+    <configuration name="Epic2Maven [test]" type="MavenRunConfiguration" factoryName="Maven">
+      <MavenSettings>
+        <option name="myGeneralSettings">
+          <MavenGeneralSettings>
+            <option name="alwaysUpdateSnapshots" value="false" />
+            <option name="checksumPolicy" value="NOT_SET" />
+            <option name="emulateTerminal" value="false" />
+            <option name="failureBehavior" value="NOT_SET" />
+            <option name="localRepository" value="" />
+            <option name="mavenHome" value="Bundled (Maven 3)" />
+            <option name="mavenHomeType">
+              <MavenHomeType />
+            </option>
+            <option name="nonRecursive" value="false" />
+            <option name="outputLevel" value="INFO" />
+            <option name="printErrorStackTraces" value="false" />
+            <option name="showDialogWithAdvancedSettings" value="false" />
+            <option name="threads" />
+            <option name="useMavenConfig" value="true" />
+            <option name="userSettingsFile" value="" />
+            <option name="workOffline" value="false" />
+          </MavenGeneralSettings>
+        </option>
+        <option name="myRunnerSettings">
+          <MavenRunnerSettings>
+            <option name="delegateBuildToMaven" value="false" />
+            <option name="environmentProperties">
+              <map />
+            </option>
+            <option name="jreName" value="#USE_PROJECT_JDK" />
+            <option name="mavenProperties">
+              <map />
+            </option>
+            <option name="passParentEnv" value="true" />
+            <option name="runMavenInBackground" value="true" />
+            <option name="skipTests" value="false" />
+            <option name="vmOptions" value="" />
+          </MavenRunnerSettings>
+        </option>
+        <option name="myRunnerParameters">
+          <MavenRunnerParameters>
+            <option name="cmdOptions" />
+            <option name="profiles">
+              <set />
+            </option>
+            <option name="goals">
+              <list>
+                <option value="test" />
+              </list>
+            </option>
+            <option name="multimoduleDir" />
+            <option name="pomFileName" value="pom.xml" />
+            <option name="profilesMap">
+              <map />
+            </option>
+            <option name="projectsCmdOptionValues">
+              <list />
+            </option>
+            <option name="resolveToWorkspace" value="false" />
+            <option name="workingDirPath" value="$PROJECT_DIR$" />
+          </MavenRunnerParameters>
+        </option>
+      </MavenSettings>
+      <method v="2" />
     </configuration>
     <configuration default="true" type="docker-deploy" factoryName="dockerfile" temporary="true">
       <deployment type="dockerfile">
@@ -236,19 +275,20 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Application.Main" />
+      <item itemvalue="JUnit.AppLogicTest" />
+      <item itemvalue="JUnit.TaxiTest" />
+      <item itemvalue="JUnit.TextHandlerTest" />
+      <item itemvalue="JUnit.UserTest" />
       <item itemvalue="JUnit.MapTest" />
-      <item itemvalue="JUnit.MapTest.testMoveTaxiAndUserToLocation" />
-      <item itemvalue="JUnit.MapTest.testMoveTaxiToUser" />
-      <item itemvalue="JUnit.MapTest.testMoveTaxisOnTheMap" />
+      <item itemvalue="Maven.Epic2Maven [test]" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Main" />
+        <item itemvalue="JUnit.AppLogicTest" />
+        <item itemvalue="JUnit.UserTest" />
+        <item itemvalue="JUnit.TextHandlerTest" />
+        <item itemvalue="JUnit.TaxiTest" />
         <item itemvalue="JUnit.MapTest" />
-        <item itemvalue="JUnit.MapTest.testMoveTaxiToUser" />
-        <item itemvalue="JUnit.MapTest.testMoveTaxisOnTheMap" />
-        <item itemvalue="JUnit.MapTest.testMoveTaxiAndUserToLocation" />
       </list>
     </recent_temporary>
   </component>
@@ -693,8 +733,13 @@
     <option name="LAST_COMMIT_MESSAGE" value="Adding tests" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/Epic2MavenTaxiApp$Main.ic" NAME="Main Coverage Results" MODIFIED="1703013858128" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
-      <FILTER>MainTaxiApp.*</FILTER>
-    </SUITE>
+    <SUITE FILE_PATH="coverage/Epic2MavenTaxiApp$MapTest.ic" NAME="MapTest Coverage Results" MODIFIED="1703036401359" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/Epic2MavenTaxiApp$LocationTest.ic" NAME="LocationTest Coverage Results" MODIFIED="1703036386725" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/Epic2MavenTaxiApp$Main.ic" NAME="Main Coverage Results" MODIFIED="1703035957852" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/Epic2MavenTaxiApp$TaxiTest.ic" NAME="TaxiTest Coverage Results" MODIFIED="1703036414283" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/Epic2MavenTaxiApp$AppLogicTest.ic" NAME="AppLogicTest Coverage Results" MODIFIED="1703036330691" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/Epic2MavenTaxiApp$LinkedListTest.ic" NAME="LinkedListTest Coverage Results" MODIFIED="1703036348800" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/Epic2MavenTaxiApp$TextHandlerTest.ic" NAME="TextHandlerTest Coverage Results" MODIFIED="1703036426055" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/Epic2MavenTaxiApp$UserTest.ic" NAME="UserTest Coverage Results" MODIFIED="1703036438945" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
   </component>
 </project>
