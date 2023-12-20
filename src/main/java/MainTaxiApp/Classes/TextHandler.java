@@ -1,18 +1,19 @@
 package MainTaxiApp.Classes;
 
 import java.io.*;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 
 public class TextHandler {
-    private final String USERS_FILE_PATH = "users.csv";
-    private final String TAXIS_FILE_PATH = "Taxis.csv";
 
     public String getUSERS_FILE_PATH() {
-        return USERS_FILE_PATH;
+        return "users.csv";
     }
 
     public String getTAXIS_FILE_PATH() {
-        return TAXIS_FILE_PATH;
+        return "Taxis.csv";
     }
+    private static final Logger logger = Logger.getLogger(TextHandler.class.getName());
 
 
 
@@ -25,16 +26,15 @@ public class TextHandler {
                 usersAndPasswords.insert(new User(values[0], values[1]));
             }
         } catch (IOException e) {
-            System.out.println("Cant find or read users.csv file");
-            e.printStackTrace();
+            logger.log(Level.SEVERE, "Error reading users.csv file", e);
         }
         return usersAndPasswords;
     }
-    public void writeInNewUser(String username, String password, String file){
+    public void writeInNewUser(User user, String file){
         try {
             BufferedWriter writer = new BufferedWriter(new FileWriter(file, true));
 
-            String[] data = { username, password };
+            String[] data = { user.getUsername(), user.getPassword() };
             String dataLine = String.join(",", data);
             writer.write(dataLine);
             writer.newLine();
@@ -42,7 +42,7 @@ public class TextHandler {
             writer.close();
 
         } catch (IOException e) {
-            e.printStackTrace();
+            logger.log(Level.SEVERE, "Error writing to User.csv file", e);
         }
 
 
@@ -57,8 +57,7 @@ public class TextHandler {
                 taxis.insert( new Taxi(values[0],values[1],Integer.parseInt(values[2]),values[3],values[4]));
             }
         } catch (IOException e) {
-            System.out.println("Cant find or read Taxis.csv file");
-            e.printStackTrace();
+            logger.log(Level.SEVERE, "Error reading to Taxi.csv file", e);
         }
         return taxis;
     }
@@ -84,8 +83,7 @@ public class TextHandler {
                     updatedTaxis.moveToNext();
                 }
             } catch (IOException e) {
-                System.out.println("Error writing to Taxis.csv file");
-                e.printStackTrace();
+                logger.log(Level.SEVERE, "Error writing the rating into the Taxi.csv file", e);
             }
         }
         }

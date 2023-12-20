@@ -6,15 +6,13 @@ import MainTaxiApp.Classes.*;
 public class Main {
     public static void main(String[] args) {
        AppLogic.clearConsole();
-       Login newLogin = new Login();
-       newLogin.loginOrSignUp();
+       AppLogic.login();
        AppLogic.anythingToContinue();
        AppLogic.clearConsole();
-       Map map = new Map(20,newLogin.getCurrentUser());
-       AppLogic.taxiRide(map,newLogin);
+       AppLogic.makeMap();
+       AppLogic.taxiRide();
        AppLogic.rateTaxiDriver();
-       AppLogic.printExitMessage(newLogin);
-
+       AppLogic.printExitMessage();
 
     }
 }

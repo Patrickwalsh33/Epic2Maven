@@ -7,16 +7,6 @@ public class Taxi {
     private final String brand;
     private final String size;
 
-    private Location Location;
-
-    public Location getLocation() {
-        return Location;
-    }
-
-    public void setLocation(Location taxiLocation) {
-        this.Location = Location;
-    }
-
     public Taxi(String registration, String name, int rating, String brand, String size){
         this.registration = registration;
         this.name = name;

@@ -41,7 +41,7 @@ public class LocationTest {
         location.addDrivingTaxi(driver);
 
         assertEquals(driver, location.getDriver());
-        assertEquals("D\t", location.getMapPoint());
+        assertEquals("E\t", location.getMapPoint());
     }
 
     @Test

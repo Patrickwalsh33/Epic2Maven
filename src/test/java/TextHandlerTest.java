@@ -71,8 +71,8 @@ class TextHandlerTest {
         Path tempFile = Files.createTempFile("testUsers", ".csv");
 
         TextHandler textHandler = new TextHandler();
-
-        textHandler.writeInNewUser("testUser", "testPassword", tempFile.toString());
+        User testUser = new User("testUser", "testPassword");
+        textHandler.writeInNewUser(testUser, tempFile.toString());
 
         try (BufferedReader reader = new BufferedReader(new FileReader(tempFile.toString()))) {
             String line = reader.readLine();
@@ -87,7 +87,7 @@ class TextHandlerTest {
         String testFilePath = "testTaxis.csv";
 
         TextHandler textHandler = new TextHandler();
-        Taxi sampleTaxi = new Taxi("ABC123", "TaxiDriver", 3, "Toyota", "Medium");
+        Taxi sampleTaxi = new Taxi("08-MH-3038", "John Doe", 3, "Toyota", "Medium");
 
         try (BufferedWriter writer = new BufferedWriter(new FileWriter(testFilePath))) {
             String line = sampleTaxi.getRegistration() + "," + sampleTaxi.getName() + "," + sampleTaxi.getRating() + "," + sampleTaxi.getBrand() + "," + sampleTaxi.getSize();
@@ -100,8 +100,8 @@ class TextHandlerTest {
         try (BufferedReader reader = new BufferedReader(new FileReader(testFilePath))) {
             String line = reader.readLine();
             String[] values = line.split(",");
-            assertEquals("ABC123", values[0]);  // Registration should remain the same
-            assertEquals("TaxiDriver", values[1]);  // Name should remain the same
+            assertEquals("08-MH-3038", values[0]);  // Registration should remain the same
+            assertEquals("John Doe", values[1]);  // Name should remain the same
             assertEquals("4", values[2]);  // Rating should be updated to 4
             assertEquals("Toyota", values[3]);  // Brand should remain the same
             assertEquals("Medium", values[4]);  // Size should remain the same

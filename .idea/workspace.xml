@@ -4,41 +4,33 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9e87768c-0d7a-4f13-8d97-1e4f7eae840e" name="Changes" comment="Locations can now take multiple taxis and user saves their location">
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_19_12_2023_18_08__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_19_12_2023_18_08__Changes_.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_19_12_2023_18_10__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_19_12_2023_18_10__Changes_.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_19_12_2023_18_13__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_19_12_2023_18_13__Changes_.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_19_12_2023_18_14__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_19_12_2023_18_14__Changes_.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_19_12_2023_18_09__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_19_12_2023_18_09__Changes_.xml" afterDir="false" />
+    <list default="true" id="9e87768c-0d7a-4f13-8d97-1e4f7eae840e" name="Changes" comment="Adding tests">
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/MainTaxiApp/Interfaces/Observer.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Taxis.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Taxis.csv" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/MainTaxiApp/Classes/AppLogic.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/MainTaxiApp/Classes/AppLogic.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/MainTaxiApp/Classes/Location.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/MainTaxiApp/Classes/Location.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/MainTaxiApp/Classes/Login.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/MainTaxiApp/Classes/Login.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/MainTaxiApp/Classes/Map.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/MainTaxiApp/Classes/Map.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/MainTaxiApp/Classes/Ride.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/MainTaxiApp/Classes/Ride.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/MainTaxiApp/Classes/RideObserver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/MainTaxiApp/Interfaces/RideObserver.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/MainTaxiApp/Classes/RideSubject.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/MainTaxiApp/Interfaces/RideSubject.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/MainTaxiApp/Classes/Ride.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/MainTaxiApp/Classes/Taxi.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/MainTaxiApp/Classes/Taxi.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/MainTaxiApp/Classes/TextHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/MainTaxiApp/Classes/TextHandler.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/MainTaxiApp/Classes/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/MainTaxiApp/Classes/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/MainTaxiApp/Interfaces/Testing.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/AppLogicTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/AppLogicTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/LocationTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/LocationTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/MapTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/MapTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/MainTaxiApp/Interfaces/RideObserver.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/MainTaxiApp/Interfaces/RideSubject.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/MainTaxiApp/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/MainTaxiApp/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/TextHandlerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/TextHandlerTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/UserTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/UserTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/MainTaxiApp/Classes/AppLogic.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/MainTaxiApp/Classes/AppLogic.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/MainTaxiApp/Classes/Location.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/MainTaxiApp/Classes/Location.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/MainTaxiApp/Classes/Login.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/MainTaxiApp/Classes/Login.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/MainTaxiApp/Classes/Map.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/MainTaxiApp/Classes/Map.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/MainTaxiApp/Classes/Ride.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/MainTaxiApp/Classes/Ride.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/MainTaxiApp/Classes/RideObserver.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/MainTaxiApp/Classes/RideSubject.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/MainTaxiApp/Classes/Taxi.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/MainTaxiApp/Classes/Taxi.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/MainTaxiApp/Classes/Ride.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/MainTaxiApp/Classes/TextHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/MainTaxiApp/Classes/TextHandler.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/MainTaxiApp/Classes/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/MainTaxiApp/Classes/User.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/MainTaxiApp/Interfaces/Testing$VehicleHiringTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/MainTaxiApp/Interfaces/Testing.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/MainTaxiApp/Interfaces/RideObserver.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/MainTaxiApp/Interfaces/RideSubject.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/MainTaxiApp/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/MainTaxiApp/Main.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/surefire-reports/AppLogicTest.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/AppLogicTest.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/surefire-reports/LinkedListTest.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/LinkedListTest.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/surefire-reports/LocationTest.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/LocationTest.txt" afterDir="false" />
@@ -50,12 +42,10 @@
       <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-TaxiTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-TaxiTest.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-TextHandlerTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-TextHandlerTest.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-UserTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-UserTest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TaxiTest.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TaxiTest.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/surefire-reports/TextHandlerTest.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TextHandlerTest.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/surefire-reports/UserTest.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/UserTest.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/LocationTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/LocationTest.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/MapTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/MapTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/TextHandlerTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/TextHandlerTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/UserTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/UserTest.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -67,6 +57,7 @@
       <list>
         <option value="Class" />
         <option value="Enum" />
+        <option value="Interface" />
       </list>
     </option>
   </component>
@@ -81,7 +72,7 @@
     </option>
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="Locations-to-have-multiple-taxis" />
+        <entry key="$PROJECT_DIR$" value="master" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -117,7 +108,7 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "ASKED_ADD_EXTERNAL_FILES": "true",
-    "Application.Main.executor": "Coverage",
+    "Application.Main.executor": "Run",
     "Docker.Dockerfile.executor": "Run",
     "Docker.src/Dockerfile.executor": "Run",
     "JUnit.AppLogicTest (1).executor": "Run",
@@ -151,7 +142,8 @@
     "Maven.Epic2Maven [verify].executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "master",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "git-widget-placeholder": "Observer",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "C:/Users/eddie_uooosyh/Documents/GitHub/Epic2MavenTaxiApp",
     "settings.editor.selected.configurable": "com.intellij.jarRepository.settings.RemoteRepositoriesConfigurable"
@@ -159,6 +151,7 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
+      <recent name="MainTaxiApp.Interfaces" />
       <recent name="MainTaxiApp.Classes" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
@@ -183,7 +176,20 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.MapTest">
+  <component name="RunManager" selected="Application.Main">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="MainTaxiApp.Main" />
+      <module name="Epic2Maven" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="MainTaxiApp.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="MapTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Epic2Maven" />
       <option name="PACKAGE_NAME" value="" />
@@ -223,16 +229,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TextHandlerTest.testWriteInNewTaxiRating" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Epic2Maven" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="TextHandlerTest" />
-      <option name="METHOD_NAME" value="testWriteInNewTaxiRating" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration default="true" type="docker-deploy" factoryName="dockerfile" temporary="true">
       <deployment type="dockerfile">
         <settings />
@@ -240,19 +236,19 @@
       <method v="2" />
     </configuration>
     <list>
+      <item itemvalue="Application.Main" />
       <item itemvalue="JUnit.MapTest" />
       <item itemvalue="JUnit.MapTest.testMoveTaxiAndUserToLocation" />
       <item itemvalue="JUnit.MapTest.testMoveTaxiToUser" />
       <item itemvalue="JUnit.MapTest.testMoveTaxisOnTheMap" />
-      <item itemvalue="JUnit.TextHandlerTest.testWriteInNewTaxiRating" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Main" />
         <item itemvalue="JUnit.MapTest" />
         <item itemvalue="JUnit.MapTest.testMoveTaxiToUser" />
         <item itemvalue="JUnit.MapTest.testMoveTaxisOnTheMap" />
         <item itemvalue="JUnit.MapTest.testMoveTaxiAndUserToLocation" />
-        <item itemvalue="JUnit.TextHandlerTest.testWriteInNewTaxiRating" />
       </list>
     </recent_temporary>
   </component>
@@ -272,14 +268,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1702551602801</updated>
-    </task>
-    <task id="LOCAL-00010" summary="Delete files">
-      <option name="closed" value="true" />
-      <created>1702646560429</created>
-      <option name="number" value="00010" />
-      <option name="presentableId" value="LOCAL-00010" />
-      <option name="project" value="LOCAL" />
-      <updated>1702646560429</updated>
     </task>
     <task id="LOCAL-00011" summary="Delete files">
       <option name="closed" value="true" />
@@ -665,7 +653,15 @@
       <option name="project" value="LOCAL" />
       <updated>1703002006515</updated>
     </task>
-    <option name="localTasksCounter" value="59" />
+    <task id="LOCAL-00059" summary="Adding tests">
+      <option name="closed" value="true" />
+      <created>1703022843334</created>
+      <option name="number" value="00059" />
+      <option name="presentableId" value="LOCAL-00059" />
+      <option name="project" value="LOCAL" />
+      <updated>1703022843334</updated>
+    </task>
+    <option name="localTasksCounter" value="60" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -693,7 +689,8 @@
     <MESSAGE value="Rating implemented" />
     <MESSAGE value="Dcoker" />
     <MESSAGE value="Locations can now take multiple taxis and user saves their location" />
-    <option name="LAST_COMMIT_MESSAGE" value="Locations can now take multiple taxis and user saves their location" />
+    <MESSAGE value="Adding tests" />
+    <option name="LAST_COMMIT_MESSAGE" value="Adding tests" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/Epic2MavenTaxiApp$Main.ic" NAME="Main Coverage Results" MODIFIED="1703013858128" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
